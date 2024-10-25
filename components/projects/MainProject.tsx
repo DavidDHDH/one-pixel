@@ -18,21 +18,21 @@ export default function MainProject({
 }) {
 	if (index % 2 === 0) {
 		return (
-			<div className="overflow-hidden bg-white py-24 sm:py-32">
+			<div className="overflow-hidden bg-white py-20 sm:py-28">
 				<div className="mx-auto max-w-7xl px-6 lg:px-8">
 					<div className="mx-auto items-center grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
 						<div className="lg:ml-auto lg:pl-4 lg:pt-4 h-full py-10">
-							<div className="lg:max-w-lg flex flex-col h-full">
+							<div className="lg:max-w-xl flex flex-col h-full">
 								<p className="text-base font-semibold leading-7 text-indigo-600">
 									{project.type}
 								</p>
-								<h3 className="mt-2 text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+								<h3 className="font-rubik mt-1 text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
 									{project.title}
 								</h3>
 								<p className="mt-6 text-lg leading-8 text-gray-600">
 									{project.description}
 								</p>
-								<dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none flex-grow">
+								<dl className="my-6 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none flex-grow">
 									{project.features.map((feature) => (
 										<div
 											key={feature.name}
@@ -50,9 +50,11 @@ export default function MainProject({
 									))}
 								</dl>
 								<div className="flex items-center justify-between">
-									<div className="flex gap-4 mt-auto">
+									<div className="flex gap-4 ml-1">
 										{project.stack.map((s, i) => (
-											<TooltipProvider key={i}>
+											<TooltipProvider
+												delayDuration={100}
+												key={i}>
 												<Tooltip>
 													<TooltipTrigger>
 														<Icon name={s} />
@@ -91,17 +93,17 @@ export default function MainProject({
 				<div className="mx-auto max-w-7xl px-6 lg:px-8">
 					<div className="mx-auto items-center h-full grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
 						<div className="lg:mr-auto lg:pr-4 lg:pt-4 h-full py-10">
-							<div className="lg:max-w-lg flex flex-col h-full">
+							<div className="lg:max-w-xl flex flex-col h-full">
 								<p className="text-base font-semibold leading-7 text-indigo-600">
 									{project.type}
 								</p>
-								<h3 className="mt-2 text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+								<h3 className="font-rubik mt-1 text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
 									{project.title}
 								</h3>
 								<p className="mt-6 text-lg leading-8 text-gray-600">
 									{project.description}
 								</p>
-								<dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none flex-grow">
+								<dl className="my-6 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none flex-grow">
 									{project.features.map((feature) => (
 										<div
 											key={feature.name}
@@ -119,7 +121,7 @@ export default function MainProject({
 									))}
 								</dl>
 								<div className="flex items-center justify-between">
-									<div className="flex gap-4 mt-auto">
+									<div className="flex gap-4 mt-auto ml-1">
 										{project.stack.map((s, i) => (
 											<TooltipProvider key={i}>
 												<Tooltip>

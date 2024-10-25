@@ -30,23 +30,13 @@ export default function Services() {
 		<section className="bg-gray-900">
 			<div className=" mx-auto max-w-7xl px-6 lg:px-8">
 				{/* Section text */}
-				<div className="max-w-xl mx-auto text-center md:max-w-2xl lg:text-left lg:max-w-screen-xl">
-					<p className="text-base font-semibold leading-7 text-primary">
-						Ce que je vais faire pour vous.
+				<div>
+					<h2 className="text-base font-semibold leading-7 text-indigo-600">
+						Mes services.
+					</h2>
+					<p className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+						Ce que je peux faire pour vous.
 					</p>
-					<div className="grid w-full gap-6 mt-6 lg:grid-cols-5">
-						<div className="lg:col-span-3">
-							<h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-								Mes services.
-							</h2>
-						</div>
-						{/* <div className="lg:col-span-2">
-							<p className="mt-6 text-lg leading-8 text-gray-600">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. mi
-								quos, quia ipsa repellat a, deleniti quasi quis.
-							</p>
-						</div> */}
-					</div>
 				</div>
 				{/* Section content */}
 				<div className="grid justify-center w-full gap-12 mx-auto mt-12 lg:grid-cols-2 lg:gap-8 lg:mt-16 lg:max-w-screen-xl xl:max-w-screen-xl lg:justify-start">
@@ -65,8 +55,8 @@ export default function Services() {
 								<div className="max-w-lg mx-auto lg:mr-auto xl:mx-auto">
 									<div className="relative flex w-full px-8 py-6 shadow-xl bg-gray-100 rounded-3xl bg-dark-700 sm:px-10">
 										<div className="text-center sm:flex sm:text-left">
-											<div className="w-full sm:w-1/5">
-												<div className="flex items-center justify-center w-12 h-12 mx-auto bg-gradient-to-r rounded-2xl sm:mx-0 from-dark-800 to-dark-900">
+											<div className="w-full sm:w-1/6">
+												<div className="flex items-center justify-center mx-auto bg-gradient-to-r rounded-2xl sm:mx-0 from-dark-800 to-dark-900">
 													<Icon
 														name={service.icon}
 														className="w-6 h-6 text-dark-300"
@@ -77,7 +67,7 @@ export default function Services() {
 												<h5 className="text-lg font-semibold text-gray-900 ">
 													{service.label}
 												</h5>
-												<p className="mt-1 text-base text-dark-300">
+												<p className="mt-1 text-base text-gray-600">
 													{service.description}
 												</p>
 											</div>

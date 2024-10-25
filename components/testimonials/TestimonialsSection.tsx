@@ -39,12 +39,12 @@ export default function TestimonialsSection() {
 			className="bg-white">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="mx-auto max-w-2xl text-center">
-					<p className="text-base font-semibold leading-7 text-indigo-600">
+					<h2 className="text-base font-semibold leading-7 text-indigo-600">
+						Témoignages.
+					</h2>
+					<p className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
 						C&apos;est vous qui le dites.
 					</p>
-					<h2 className="mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-						Témoignages
-					</h2>
 				</div>
 				<div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none ">
 					<div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:grid lg:grid-cols-3">
@@ -53,7 +53,7 @@ export default function TestimonialsSection() {
 								key={index}
 								className="pt-8 sm:inline-block sm:w-full sm:px-4">
 								<figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
-									<blockquote className="text-gray-900">
+									<blockquote className="text-gray-600">
 										<p>{`“${testimonial.body}”`}</p>
 									</blockquote>
 									<figcaption className="mt-6 flex items-center gap-x-4">

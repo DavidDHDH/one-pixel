@@ -33,7 +33,7 @@ export default function AboutMe() {
 					<p className="text-base font-semibold leading-7 text-primary">
 						Votre partenaire local.
 					</p>
-					<h2 className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+					<h2 className="font-rubik mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
 						Développeur web fullstack, passionné par le code, le design, et
 						l&apos;IA.
 					</h2>
@@ -42,7 +42,7 @@ export default function AboutMe() {
 					<div className="col-span-1 mx-auto">
 						<Profil people={people} />
 					</div>
-					<div className="col-span-1 mx-auto space-y-8 mt-4">
+					<div className="col-span-1 mx-auto space-y-8 mt-4 text-gray-600">
 						<p className="text-start max-w-[600px]">
 							Je suis David Heimfert, développeur web freelance.
 							J&apos;accompagne les entreprises et les entrepreneurs dans la
@@ -59,11 +59,14 @@ export default function AboutMe() {
 							Ma spécialité ? Les applications métiers et les logiciels de type
 							SAAS (Software As A Service).
 						</p>
+						<p className="text-start max-w-[600px]">
+							Mon kiff ? Trouver des solutions à vos défis du quotidien.
+						</p>
 						<div className="flex gap-4 justify-evenly">
 							{pros.map((pro, i) => (
 								<div
 									key={i}
-									className="flex flex-col items-center gap-2 border p-2 rounded-lg bg-gray-50 w-40">
+									className="flex flex-col items-center gap-2 border p-2 rounded-lg bg-gray-50 w-40 text-gray-900">
 									<Icon
 										name={pro.icon}
 										className="h-6 w-6 text-dark-900"

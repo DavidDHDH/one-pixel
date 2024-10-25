@@ -4,6 +4,7 @@ import {
 	WrenchIcon,
 } from "@heroicons/react/24/outline"
 import {
+	IconApi,
 	IconArtboard,
 	IconBrandBootstrap,
 	IconBrandCss3,
@@ -19,6 +20,19 @@ import {
 	IconBrandTailwind,
 	IconBrandTrello,
 	IconBrandTypescript,
+	IconCalendarMonth,
+	IconChartDotsFilled,
+	IconCodeCircle2,
+	IconCreditCard,
+	IconFiles,
+	IconListSearch,
+	IconMail,
+	IconObjectScan,
+	IconPackageExport,
+	IconPlaneTilt,
+	IconRotateClockwise2,
+	IconUsers,
+	IconUsersGroup,
 	IconWand,
 } from "@tabler/icons-react"
 
@@ -44,6 +58,20 @@ const iconOptions: {
 	speed: IconBrandSpeedtest,
 	creativity: IconWand,
 	pixel: IconArtboard,
+	calendarMonth: IconCalendarMonth,
+	mail: IconMail,
+	stats: IconChartDotsFilled,
+	users: IconUsers,
+	creditcard: IconCreditCard,
+	delivery: IconPackageExport,
+	social: IconUsersGroup,
+	search: IconListSearch,
+	files: IconFiles,
+	plane: IconPlaneTilt,
+	"API Platform": IconApi,
+	research: IconObjectScan,
+	dev: IconCodeCircle2,
+	rotateArrow: IconRotateClockwise2,
 }
 
 export const Icon = ({

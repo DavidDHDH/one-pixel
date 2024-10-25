@@ -1,33 +1,29 @@
-import {
-	ArrowPathIcon,
-	CloudArrowUpIcon,
-	LockClosedIcon,
-} from "@heroicons/react/20/solid"
+import { Icon } from "../shared/Icon"
 
 const features = [
 	{
 		name: "Etude",
 		description:
 			"Je vous aide à définir vos besoins et à les prioriser. Nous définissons ensemble le cahier des charges et les objectifs de votre projet, et je vous propose une solution adaptée.",
-		icon: CloudArrowUpIcon,
+		icon: "search",
 	},
 	{
 		name: "UX/UI Design",
 		description:
 			"Je conçois les interfaces utilisateurs de votre application, afin de la rendre le plus intuitive et agréable possible pour les utilisateurs finaux. Nous validons ensemble chaque écran.",
-		icon: LockClosedIcon,
+		icon: "pixel",
 	},
 	{
 		name: "Developpement",
 		description:
 			"Suivant les maquettes que nous avons définies ensemble, je développe votre application par sprint, en utilisant les technologies web les plus adaptées. Vous validez chaque étape.",
-		icon: ArrowPathIcon,
+		icon: "dev",
 	},
 	{
 		name: "Suivi",
 		description:
 			"Je vous accompagne de manière proactive dans la priorisation des futures fonctionnalités et vous suggère des améliorations basées sur mon expertise.",
-		icon: ArrowPathIcon,
+		icon: "rotateArrow",
 	},
 ]
 
@@ -38,13 +34,13 @@ export default function ProcessSection() {
 			className="bg-white py-24 sm:py-32">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="mx-auto max-w-2xl lg:text-center">
-					<p className="text-base font-semibold leading-7 text-indigo-600">
+					<h2 className="text-base font-semibold leading-7 text-indigo-600">
 						Process
-					</p>
-					<h2 className="mt-2 text-pretty text-4xl font-semibold tracking-tight  sm:text-5xl lg:text-balance text-gray-900">
-						Rien n&apos;est laissé au hasard.
 					</h2>
-					<p className="mt-6 text-lg leading-8 text-gray-900">
+					<p className="font-rubik mt-2 text-pretty text-4xl font-semibold tracking-tight  sm:text-5xl lg:text-balance text-gray-900">
+						Rien n&apos;est laissé au hasard.
+					</p>
+					<p className="mt-6 text-lg leading-8 text-gray-600">
 						De l&apos;accompagnement lors de la phase de recherche, à la mise en
 						production, je vous accompagne tout au long de votre projet.
 					</p>
@@ -56,9 +52,9 @@ export default function ProcessSection() {
 								key={feature.name}
 								className="flex flex-col">
 								<dt className="flex items-center gap-x-3 text-base font-semibold leading-7 ">
-									<feature.icon
-										aria-hidden="true"
-										className="h-5 w-5 flex-none text-indigo-400"
+									<Icon
+										name={feature.icon}
+										className="h-6 w-6 flex-none text-indigo-400"
 									/>
 									{feature.name}
 								</dt>

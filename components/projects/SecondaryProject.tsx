@@ -21,7 +21,7 @@ const SecondaryProject = ({ project }: { project: ProjectType }) => {
 			</div>
 			<div className="p-4 flex flex-col flex-grow">
 				<div className="flex justify-between items-center mb-4 ">
-					<h3 className="font-semibold text-xl"> {project.title}</h3>
+					<h3 className="font-semibold text-xl font-rubik"> {project.title}</h3>
 					<p className="border px-2 bg-gray-100 text-gray-900 text-sm rounded-full">
 						{project.type}
 					</p>
@@ -29,7 +29,9 @@ const SecondaryProject = ({ project }: { project: ProjectType }) => {
 				<p className="flex-grow">{project.description}</p>
 				<div className="flex gap-4">
 					{project.stack.map((s, i) => (
-						<TooltipProvider key={i}>
+						<TooltipProvider
+							delayDuration={100}
+							key={i}>
 							<Tooltip>
 								<TooltipTrigger>
 									<Icon name={s} />

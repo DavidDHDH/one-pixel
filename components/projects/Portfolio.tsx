@@ -11,13 +11,13 @@ const Portfolio = () => {
 		<section
 			id="portfolio"
 			className="min-h-screen">
-			<div className="mx-auto max-w-2xl lg:text-center">
-				<p className="text-base font-semibold leading-7 text-indigo-600">
+			<div className="mx-auto max-w-3xl lg:text-center">
+				<h2 className="text-base font-semibold leading-7 text-indigo-600">
+					Mes principaux projets.
+				</h2>
+				<p className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
 					Intelligement conçu, construit avec précision.
 				</p>
-				<h2 className="mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-					Mes projets
-				</h2>
 			</div>
 			{mainProjects.map((project, index) => (
 				<MainProject

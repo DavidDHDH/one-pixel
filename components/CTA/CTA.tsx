@@ -21,7 +21,7 @@ export default function CTA() {
 							className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
 						/>
 						<div className="w-full flex-auto">
-							<h2 className="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+							<h2 className="text-pretty font-rubik text-4xl font-semibold tracking-tight text-white sm:text-5xl">
 								Parlons de votre projet.
 							</h2>
 							<p className="mt-6 text-pretty text-lg/8 text-gray-300">

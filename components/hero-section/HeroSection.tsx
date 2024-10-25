@@ -58,13 +58,7 @@ export default function HeroSection() {
 							</a>
 						))}
 					</div>
-					<div className="hidden lg:flex lg:flex-1 lg:justify-end">
-						<a
-							href="#"
-							className="text-sm font-semibold leading-6 text-white">
-							Log in <span aria-hidden="true">&rarr;</span>
-						</a>
-					</div>
+					<div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
 				</nav>
 				<Dialog
 					open={mobileMenuOpen}
@@ -76,7 +70,7 @@ export default function HeroSection() {
 							<a
 								href="#"
 								className="-m-1.5 p-1.5">
-								<span className="sr-only">Your Company</span>
+								<span className="sr-only">One Pixel - David Heimfert</span>
 								<img
 									alt=""
 									src="https://tailwindui.com/plus/Image/logos/mark.svg?color=indigo&shade=500"
@@ -144,15 +138,14 @@ export default function HeroSection() {
 						</div>
 					</div>
 					<div className="text-center">
-						<h1 className="text-balance text-4xl font-bold tracking-tight text-white sm:text-6xl">
-							Transformez vos idées en succès grâce à des solutions numériques
+						<h1 className="text-balance text-4xl font-bold tracking-tight text-white sm:text-6xl font-rubik">
+							Transformez vos idées en succès grâce à des solutions digitales
 							sur mesure.
 						</h1>
 						<p className="mt-6 text-lg leading-8 text-gray-200 max-w-2xl mx-auto">
 							Bienvenue. Ici, j&apos;aide les entreprises et les entrepreneurs à
-							réduire leurs coûts et concrétiser leurs idées d&apos;innovations,
-							en développant des applications métiers et logiciels SAAS sur
-							mesure. Faisons connaissance.
+							concrétiser leurs idées d&apos;innovations, en développant des
+							applications métiers et des logiciels SAAS uniques.
 						</p>
 						<p className="mt-6 text-lg leading-8 text-gray-200 max-w-2xl mx-auto">
 							Faisons connaissance.
