@@ -11,7 +11,7 @@ import { Icon } from "../shared/Icon"
 
 const SecondaryProject = ({ project }: { project: ProjectType }) => {
 	return (
-		<div className="rounded-xl shadow-xl overflow-hidden bg-[#1F2937] h-[550px] flex flex-col text-white ">
+		<div className="rounded-xl shadow-2xl overflow-hidden bg-white h-[550px] flex flex-col text-gray-900 ">
 			<div className="h-[50%]">
 				<Image
 					src={project.mainImage}

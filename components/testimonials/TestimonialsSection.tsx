@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
 			className="bg-white">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="mx-auto max-w-2xl text-center">
-					<h2 className="text-base font-semibold leading-7 text-indigo-600">
+					<h2 className="text-base font-semibold leading-7 text-primaryText">
 						Témoignages.
 					</h2>
 					<p className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">

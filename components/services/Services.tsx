@@ -27,11 +27,11 @@ const services = [
 
 export default function Services() {
 	return (
-		<section className="bg-gray-900">
+		<section className="bg-gradient-to-br from-sand-600 via-sand-500 to-sand-700">
 			<div className=" mx-auto max-w-7xl px-6 lg:px-8">
 				{/* Section text */}
 				<div>
-					<h2 className="text-base font-semibold leading-7 text-indigo-600">
+					<h2 className="text-base font-semibold leading-7 text-white">
 						Mes services.
 					</h2>
 					<p className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
@@ -56,10 +56,10 @@ export default function Services() {
 									<div className="relative flex w-full px-8 py-6 shadow-xl bg-gray-100 rounded-3xl bg-dark-700 sm:px-10">
 										<div className="text-center sm:flex sm:text-left">
 											<div className="w-full sm:w-1/6">
-												<div className="flex items-center justify-center mx-auto bg-gradient-to-r rounded-2xl sm:mx-0 from-dark-800 to-dark-900">
+												<div className="flex items-center justify-center sm:mx-0 from-dark-800 to-dark-900">
 													<Icon
 														name={service.icon}
-														className="w-6 h-6 text-dark-300"
+														className="w-6 h-6 text-primaryText"
 													/>
 												</div>
 											</div>

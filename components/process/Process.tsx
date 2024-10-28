@@ -2,27 +2,27 @@ import { Icon } from "../shared/Icon"
 
 const features = [
 	{
-		name: "Etude",
+		name: "Étude",
 		description:
-			"Je vous aide à définir vos besoins et à les prioriser. Nous définissons ensemble le cahier des charges et les objectifs de votre projet, et je vous propose une solution adaptée.",
+			"Ensemble, nous établissons le cahier des charges et les objectifs précis de votre projet, et je vous propose une solution alignée avec vos attentes",
 		icon: "search",
 	},
 	{
 		name: "UX/UI Design",
 		description:
-			"Je conçois les interfaces utilisateurs de votre application, afin de la rendre le plus intuitive et agréable possible pour les utilisateurs finaux. Nous validons ensemble chaque écran.",
+			"Je conçois chaque écran pour offrir à vos utilisateurs une navigation fluide et agréable. Nous validons ensemble chaque étape pour garantir une expérience au plus proche de vos attentes.",
 		icon: "pixel",
 	},
 	{
-		name: "Developpement",
+		name: "Développement",
 		description:
-			"Suivant les maquettes que nous avons définies ensemble, je développe votre application par sprint, en utilisant les technologies web les plus adaptées. Vous validez chaque étape.",
+			"En suivant les maquettes définies ensemble, je développe votre application par étapes successives, en utilisant les technologies web les plus adaptées. Vous validez chaque étape avant de passer à la suivante.",
 		icon: "dev",
 	},
 	{
 		name: "Suivi",
 		description:
-			"Je vous accompagne de manière proactive dans la priorisation des futures fonctionnalités et vous suggère des améliorations basées sur mon expertise.",
+			"Je vous aide à prioriser les futures fonctionnalités et vous propose des améliorations continues, basées sur mon expertise, pour que votre application évolue avec vos besoins.",
 		icon: "rotateArrow",
 	},
 ]
@@ -34,7 +34,7 @@ export default function ProcessSection() {
 			className="bg-white py-24 sm:py-32">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="mx-auto max-w-2xl lg:text-center">
-					<h2 className="text-base font-semibold leading-7 text-indigo-600">
+					<h2 className="text-base font-semibold leading-7 text-primaryText">
 						Process
 					</h2>
 					<p className="font-rubik mt-2 text-pretty text-4xl font-semibold tracking-tight  sm:text-5xl lg:text-balance text-gray-900">
@@ -54,7 +54,7 @@ export default function ProcessSection() {
 								<dt className="flex items-center gap-x-3 text-base font-semibold leading-7 ">
 									<Icon
 										name={feature.icon}
-										className="h-6 w-6 flex-none text-indigo-400"
+										className="h-6 w-6 flex-none text-primaryText"
 									/>
 									{feature.name}
 								</dt>

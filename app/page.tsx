@@ -10,7 +10,7 @@ import CTA from "@/components/CTA/CTA"
 export default function Home() {
 	return (
 		<div>
-			<main>
+			<main id="root">
 				<HeroSection />
 				<Portfolio />
 				<TestimonialsSection />

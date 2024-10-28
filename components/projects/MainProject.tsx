@@ -7,7 +7,7 @@ import {
 	TooltipProvider,
 	TooltipTrigger,
 } from "../ui/tooltip"
-import Link from "next/link"
+// import Link from "next/link"
 
 export default function MainProject({
 	index,
@@ -23,7 +23,7 @@ export default function MainProject({
 					<div className="mx-auto items-center grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
 						<div className="lg:ml-auto lg:pl-4 lg:pt-4 h-full py-10">
 							<div className="lg:max-w-xl flex flex-col h-full">
-								<p className="text-base font-semibold leading-7 text-indigo-600">
+								<p className="text-base font-semibold leading-7 text-primaryText">
 									{project.type}
 								</p>
 								<h3 className="font-rubik mt-1 text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
@@ -41,7 +41,7 @@ export default function MainProject({
 												<Icon
 													name={feature.icon}
 													aria-hidden="true"
-													className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+													className="absolute left-1 top-1 h-5 w-5 text-primaryText"
 												/>
 												{feature.name}
 											</dt>{" "}
@@ -66,11 +66,11 @@ export default function MainProject({
 											</TooltipProvider>
 										))}
 									</div>
-									<Link
+									{/* <Link
 										href={`/projects/${project.internalUrl}`}
 										className="text-sm font-semibold leading-6 text-gray-900">
-										Use Case <span aria-hidden="true">→</span>
-									</Link>
+										Étude de cas <span aria-hidden="true">→</span>
+									</Link> */}
 								</div>
 							</div>
 						</div>
@@ -94,7 +94,7 @@ export default function MainProject({
 					<div className="mx-auto items-center h-full grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
 						<div className="lg:mr-auto lg:pr-4 lg:pt-4 h-full py-10">
 							<div className="lg:max-w-xl flex flex-col h-full">
-								<p className="text-base font-semibold leading-7 text-indigo-600">
+								<p className="text-base font-semibold leading-7 text-primaryText">
 									{project.type}
 								</p>
 								<h3 className="font-rubik mt-1 text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
@@ -112,7 +112,7 @@ export default function MainProject({
 												<Icon
 													name={feature.icon}
 													aria-hidden="true"
-													className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+													className="absolute left-1 top-1 h-5 w-5 text-primaryText"
 												/>
 												{feature.name}
 											</dt>{" "}
@@ -135,11 +135,11 @@ export default function MainProject({
 											</TooltipProvider>
 										))}
 									</div>
-									<Link
+									{/* <Link
 										href={`/projects/${project.internalUrl}`}
 										className="text-sm font-semibold leading-6 text-gray-900 hover:underline">
-										Use Case <span aria-hidden="true">→</span>
-									</Link>
+										Étude de cas <span aria-hidden="true">→</span>
+									</Link> */}
 								</div>
 							</div>
 						</div>

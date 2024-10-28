@@ -12,7 +12,7 @@ const Portfolio = () => {
 			id="portfolio"
 			className="min-h-screen">
 			<div className="mx-auto max-w-3xl lg:text-center">
-				<h2 className="text-base font-semibold leading-7 text-indigo-600">
+				<h2 className="text-base font-semibold leading-7 text-primaryText">
 					Mes principaux projets.
 				</h2>
 				<p className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
