@@ -4,7 +4,6 @@ import { Icon } from "../shared/Icon"
 import codePic from "@/public/images/Code illustration design.webp"
 import designPic from "@/public/images/Web design illustration.webp"
 import { ShaderGradientCanvas, ShaderGradient } from "@shadergradient/react"
-import * as reactSpring from "@react-spring/three"
 
 const services = [
 	{
