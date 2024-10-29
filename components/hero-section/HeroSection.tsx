@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Dialog, DialogPanel } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import Image from "next/image"
-import beach2 from "@/public/images/Ai Generated Beach Pixel Art.png"
+import beach1 from "@/public/images/beach-scene-1.webp"
 import LottieScrollDown from "./LottieScrollDown"
 import { PopupButton } from "react-calendly"
 
@@ -109,10 +109,10 @@ export default function HeroSection() {
 			<div className="relative isolate overflow-hidden -pt-14 h-screen flex flex-col items-center justify-center">
 				<Image
 					alt="beach in pixel art background"
-					src={beach2}
+					src={beach1}
 					className="absolute inset-0 -z-10 h-full w-full object-cover"
 				/>
-				<div className="bg-black absolute inset-0 -z-10 h-full w-full opacity-50"></div>
+				<div className="bg-black absolute inset-0 -z-10 h-full w-full opacity-40"></div>
 				<div
 					aria-hidden="true"
 					className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">

@@ -13,6 +13,7 @@ import {
 	IconBrandGatsby,
 	IconBrandGithub,
 	IconBrandHtml5,
+	IconBrandInstagram,
 	IconBrandLinkedin,
 	IconBrandNextjs,
 	IconBrandReact,
@@ -76,6 +77,7 @@ const iconOptions: {
 	research: IconObjectScan,
 	dev: IconCodeCircle2,
 	rotateArrow: IconRotateClockwise2,
+	Instagram: IconBrandInstagram,
 }
 
 export const Icon = ({

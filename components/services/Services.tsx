@@ -6,17 +6,18 @@ import designPic from "@/public/images/Web design illustration.webp"
 
 const services = [
 	{
-		label: "Web Design",
-		description:
-			"Conception d'interfaces utilisateurs modernes, intuitives et performantes.",
-		icon: "design",
-	},
-	{
 		label: "Développement",
 		description:
 			"Le code à ses régles : je développe des applications reactives et sécurisées.",
 		icon: "code",
 	},
+	{
+		label: "Web Design",
+		description:
+			"Conception d'interfaces utilisateurs modernes, intuitives et performantes.",
+		icon: "design",
+	},
+
 	{
 		label: "Maintenance & Optimisation",
 		description:
@@ -53,7 +54,7 @@ export default function Services() {
 									index === 2 && "mt-8 lg:mt-5 xl:mt-8 2xl:mt-10"
 								)}>
 								<div className="max-w-lg mx-auto lg:mr-auto xl:mx-auto">
-									<div className="relative flex w-full px-8 py-6 shadow-xl bg-gray-100 rounded-3xl bg-dark-700 sm:px-10">
+									<div className="relative flex w-full px-8 py-6 shadow-xl bg-white rounded-3xl bg-dark-700 sm:px-10">
 										<div className="text-center sm:flex sm:text-left">
 											<div className="w-full sm:w-1/6">
 												<div className="flex items-center justify-center sm:mx-0 from-dark-800 to-dark-900">
