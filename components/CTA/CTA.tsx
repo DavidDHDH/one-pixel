@@ -23,16 +23,6 @@ export default function CTA() {
 			<div className="relative isolate">
 				<div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
 					<div className="mx-auto backdrop-blur-md flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 border border-t-white/50 border-r-white/50 border-b-white/25 border-l-white/25 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-16 xl:gap-x-20 xl:px-16">
-						<div className="w-full lg:w-1/2 rounded-xl overflow-hidden">
-							<InlineWidget
-								url="https://calendly.com/david-heimfert/30min"
-								prefill={{
-									name: "David Heimfert",
-									email: "david@onepixel.studio",
-								}}
-							/>
-						</div>
-
 						<div className="w-full lg:w-1/2 flex-auto">
 							<h2 className="text-pretty font-rubik text-4xl font-semibold tracking-tight text-white sm:text-5xl">
 								Parlons de votre projet.
@@ -57,13 +47,20 @@ export default function CTA() {
 									</li>
 								))}
 							</ul>
-							<div className="mt-6 flex justify-end">
-								<a
-									href="#"
-									className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-primaryText shadow-sm hover:bg-sand-700 hover:text-white transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400">
-									Planifier un appel
-								</a>
+							<div className="mt-16 flex justify-end">
+								<p className="text-lg font-semibold text-white ">
+									Choississez un créneau et je vous rappel -{">"}{" "}
+								</p>
 							</div>
+						</div>
+						<div className="w-full lg:w-1/2 rounded-xl overflow-hidden">
+							<InlineWidget
+								url="https://calendly.com/david-heimfert/30min"
+								prefill={{
+									name: "David Heimfert",
+									email: "hello@one-pixel.com",
+								}}
+							/>
 						</div>
 					</div>
 				</div>

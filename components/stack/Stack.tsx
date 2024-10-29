@@ -51,7 +51,7 @@ const stack = [
 
 export default function Stack() {
 	return (
-		<div className="bg-white pb-24 sm:pb-32">
+		<div className="bg-white">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<p className="text-lg font-semibold leading-7 mb-4 ">
 					Mes technologies favorites

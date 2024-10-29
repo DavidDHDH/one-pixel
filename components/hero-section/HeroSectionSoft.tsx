@@ -6,6 +6,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { PopupButton } from "react-calendly"
 import profile from "@/public/images/profil-2.webp"
 import Image from "next/image"
+import AnimatedShinyText from "../ui/animated-shiny-text"
+import { cn } from "@/lib/utils"
 
 const navigation = [
 	{ name: "Portfolio", href: "#portfolio" },
@@ -68,7 +70,7 @@ export default function HeroSectionSoft() {
 							<a
 								href="#"
 								className="-m-1.5 p-1.5">
-								<span className="sr-only">Your Company</span>
+								<span className="sr-only">One Pixel - David Heimfert</span>
 								⬛️
 							</a>
 							<button
@@ -113,11 +115,17 @@ export default function HeroSectionSoft() {
 
 						<div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
 							<div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-								<div className="hidden sm:mb-10 sm:flex">
-									<div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-										One Pixel - Web & Dev Studio
+								<div className="hidden z-10 mb-10 sm:flex  items-center justify-start">
+									<div
+										className={cn(
+											"group rounded-full border border-black/5 text-sm/6 text-white transition-all ease-in "
+										)}>
+										<AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+											<span> One Pixel - Web & Dev Studio</span>
+										</AnimatedShinyText>
 									</div>
 								</div>
+
 								<h1 className="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
 									De l&apos;idée au succès.
 								</h1>

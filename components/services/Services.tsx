@@ -28,7 +28,7 @@ const services = [
 
 export default function Services() {
 	return (
-		<section className="bg-gradient-to-br from-sand-600 via-sand-500 to-sand-700">
+		<section className="bg-gradient-to-br from-sand-500  to-sand-600">
 			<div className=" mx-auto max-w-7xl px-6 lg:px-8">
 				{/* Section text */}
 				<div>
