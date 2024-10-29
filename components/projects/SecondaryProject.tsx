@@ -12,7 +12,7 @@ import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog"
 
 const SecondaryProject = ({ project }: { project: ProjectType }) => {
 	return (
-		<div className="rounded-xl shadow-2xl overflow-hidden bg-white h-[550px] flex flex-col text-gray-900 ">
+		<div className="rounded-xl shadow-2xl overflow-hidden bg-white h-[500px] flex flex-col text-gray-900 ">
 			<div className="h-[50%]">
 				<Dialog>
 					<DialogTrigger asChild>

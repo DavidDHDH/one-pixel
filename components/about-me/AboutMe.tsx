@@ -30,7 +30,7 @@ export default function AboutMe() {
 		<section id="aboutme">
 			<div className="mx-auto max-w-7xl px-6 text-center lg:px-8 pb-24">
 				<div className="mx-auto max-w-2xl">
-					<p className="text-base font-semibold leading-7 text-primaryText">
+					<p className="text-lg font-semibold leading-7 text-primaryText">
 						Votre partenaire local.
 					</p>
 					<h2 className="font-rubik mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">

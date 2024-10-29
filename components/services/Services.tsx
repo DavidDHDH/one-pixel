@@ -47,7 +47,7 @@ export default function Services() {
 			<div className=" mx-auto max-w-7xl px-6 lg:px-8 z-10">
 				{/* Section text */}
 				<div>
-					<h2 className="text-base font-semibold leading-7 text-white z-10">
+					<h2 className=" text-lg font-semibold leading-7 text-white z-10">
 						Mes services.
 					</h2>
 					<p className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
@@ -106,7 +106,7 @@ export default function Services() {
 							</div>
 							<div className="relative shadow-xl rounded-3xl">
 								<Image
-									src={designPic}
+									src={codePic}
 									alt="More office work"
 									className="object-cover object-center w-full h-full rounded-3xl"
 									sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"

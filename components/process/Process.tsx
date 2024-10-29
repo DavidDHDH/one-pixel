@@ -34,7 +34,7 @@ export default function ProcessSection() {
 			className="bg-white py-24 sm:py-32">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="mx-auto max-w-2xl lg:text-center">
-					<h2 className="text-base font-semibold leading-7 text-primaryText">
+					<h2 className="text-lg font-semibold leading-7 text-primaryText">
 						Process
 					</h2>
 					<p className="font-rubik mt-2 text-pretty text-4xl font-semibold tracking-tight  sm:text-5xl lg:text-balance text-gray-900">

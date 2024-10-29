@@ -66,11 +66,20 @@ export default function MainProject({
 											</TooltipProvider>
 										))}
 									</div>
-									{/* <Link
-										href={`/projects/${project.internalUrl}`}
-										className="text-sm font-semibold leading-6 text-gray-900">
-										Étude de cas <span aria-hidden="true">→</span>
-									</Link> */}
+									<div className="hidden xl:block">
+										<TooltipProvider delayDuration={0}>
+											<Tooltip>
+												<TooltipTrigger>
+													<p className="text-sm  leading-6 text-gray-400 cursor-default">
+														Étude de cas <span aria-hidden="true">→</span>
+													</p>
+												</TooltipTrigger>
+												<TooltipContent>
+													<p>Bientôt disponible</p>
+												</TooltipContent>
+											</Tooltip>
+										</TooltipProvider>
+									</div>
 								</div>
 							</div>
 						</div>
