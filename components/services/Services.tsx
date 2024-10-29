@@ -3,6 +3,8 @@ import Image from "next/image"
 import { Icon } from "../shared/Icon"
 import codePic from "@/public/images/Code illustration design.webp"
 import designPic from "@/public/images/Web design illustration.webp"
+import { ShaderGradientCanvas, ShaderGradient } from "@shadergradient/react"
+import * as reactSpring from "@react-spring/three"
 
 const services = [
 	{
@@ -28,11 +30,25 @@ const services = [
 
 export default function Services() {
 	return (
-		<section className="bg-gradient-to-br from-sand-500  to-sand-600">
-			<div className=" mx-auto max-w-7xl px-6 lg:px-8">
+		<section className="relative">
+			<ShaderGradientCanvas
+				style={{
+					position: "absolute",
+					top: 0,
+					left: 0,
+					right: 0,
+					bottom: 0,
+					zIndex: -1,
+				}}>
+				<ShaderGradient
+					control="query"
+					urlString="https://www.shadergradient.co/customize?animate=on&axesHelper=off&bgColor1=%23000000&bgColor2=%23000000&brightness=1.2&cAzimuthAngle=170&cDistance=4.4&cPolarAngle=70&cameraZoom=1&color1=%23DFD2C2&color2=%23BFA78D&color3=%23DFD2C2&destination=onCanvas&embedMode=off&envPreset=city&format=gif&fov=45&frameRate=10&gizmoHelper=hide&grain=off&lightType=3d&pixelDensity=1.6&positionX=0&positionY=0.9&positionZ=-0.3&range=disabled&rangeEnd=40&rangeStart=0&reflection=0.1&rotationX=45&rotationY=0&rotationZ=0&shader=defaults&type=waterPlane&uAmplitude=0&uDensity=1&uFrequency=0&uSpeed=0.2&uStrength=2.1&uTime=0&wireframe=false&zoomOut=false"
+				/>
+			</ShaderGradientCanvas>
+			<div className=" mx-auto max-w-7xl px-6 lg:px-8 z-10">
 				{/* Section text */}
 				<div>
-					<h2 className="text-base font-semibold leading-7 text-white">
+					<h2 className="text-base font-semibold leading-7 text-white z-10">
 						Mes services.
 					</h2>
 					<p className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
