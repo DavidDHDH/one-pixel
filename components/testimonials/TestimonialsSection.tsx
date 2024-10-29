@@ -1,36 +1,7 @@
-const testimonials = [
-	{
-		body: "Personne très à l'écoute des projets , je ne connais pas l'informatique et il partage sa passion , il sait prendre le temps pour optimiser les demandes ! Je recommande.",
-		author: {
-			name: "Philippe H.",
-			company: "Discover St Barths",
-			imageUrl:
-				"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-		},
-	},
-	{
-		body: "J’ai fait appel aux services de David pour la création d’un logiciel et suis plus que satisfaite de son travail. Efficacité, rapidité, professionnalisme et écoute. Je recommande sans hésiter!",
-		author: {
-			name: "Margaux B.",
-			company: "Villa Care",
-			imageUrl:
-				"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-		},
-	},
-	{
-		body: "Efficacité, professionnalisme, réactivité et gentillesse sont les atouts premiers de David. Nous avons ce que nous souhaitons depuis si longtemps : un site magnifique !. Merci encore David.",
-		author: {
-			name: "Pierre B.",
-			company: "The Tile & Design Shop",
-			imageUrl:
-				"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-		},
-	},
-
-	// More testimonials...
-]
-
 // REMETTRE COLUMN000-3 A LA PLACE DE GRID
+
+import { testimonials } from "@/datas/textimonials"
+import Image from "next/image"
 
 export default function TestimonialsSection() {
 	return (
@@ -57,9 +28,9 @@ export default function TestimonialsSection() {
 										<p>{`“${testimonial.body}”`}</p>
 									</blockquote>
 									<figcaption className="mt-6 flex items-center gap-x-4">
-										<img
+										<Image
 											alt=""
-											src={testimonial.author.imageUrl}
+											src={testimonial.author.image}
 											className="h-10 w-10 rounded-full bg-gray-50"
 										/>
 										<div>

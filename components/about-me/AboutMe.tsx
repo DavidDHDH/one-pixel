@@ -60,6 +60,7 @@ export default function AboutMe() {
 						<p className="text-start max-w-[600px]">
 							Mon kiff ? Trouver des solutions à vos défis du quotidien.
 						</p>
+
 						<div className="flex gap-4 justify-evenly">
 							{pros.map((pro, i) => (
 								<div

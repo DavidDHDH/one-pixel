@@ -5,6 +5,7 @@ import rwayMockup from "@/public/projects/Rway-mockup.webp"
 import SLmockup from "@/public/projects/SL-mockup.webp"
 import FWImockup from "@/public/projects/FWI-mockup.png"
 import SBmockup from "@/public/projects/SB-mockup.webp"
+import WIHscreen from "@/public/projects/wih-screen.png"
 
 export const projects = [
 	{
@@ -12,7 +13,7 @@ export const projects = [
 		type: "SAAS - Management de villas",
 		isMainProject: true,
 		description:
-			"Villa Care est un logiciel complet de gestions de biens immobiliers disponible à la location saisonnière, à destination des managers.",
+			"Conception et développement de Villa Care, un logiciel complet de gestions de biens immobiliers disponible à la location saisonnière, à destination des managers.",
 		mainImage: VCscreen,
 		features: [
 			{
@@ -55,7 +56,7 @@ export const projects = [
 		type: "E-commerce",
 		isMainProject: true,
 		description:
-			"Frip West Indies est une plateforme de e-commerce de reventes d'articles d'occasions entre particuliers, type Vinted, dans les Antilles Françaises.",
+			"Développement de Frip West Indies, une plateforme de e-commerce de reventes d'articles d'occasions entre particuliers, type Vinted, dans les Antilles Françaises.",
 		mainImage: FWImockup,
 		features: [
 			{
@@ -67,7 +68,7 @@ export const projects = [
 			{
 				name: "Livraisons Colissimo.",
 				description:
-					"Connexion à La Poste Colissimo, génération de bons de livraison et de suivi de colis via le profil utilisateur.",
+					"Connexion à l'API La Poste Colissimo, génération de bons de livraison et de suivi de colis via le profil utilisateur.",
 				icon: "delivery",
 			},
 			{
@@ -89,8 +90,8 @@ export const projects = [
 		type: "Application métier",
 		isMainProject: true,
 		description:
-			"Développement en cours d'une application métier destiné à une compagnie aérienne, afin de regrouper en un seul endroit toute la gestion des réservations, des vols, et de l'entreprise.",
-		mainImage: FWImockup,
+			"Conception et développement en cours d'une application métier destiné à une compagnie aérienne, afin de regrouper en un seul endroit toute la gestion des réservations, des vols, et de l'entreprise.",
+		mainImage: WIHscreen,
 		features: [
 			{
 				name: "Réservations.",
@@ -140,7 +141,6 @@ export const projects = [
 		],
 		stack: ["Figma", "Trello"],
 	},
-
 	{
 		title: "St Barth R Way",
 		type: "UI - Gestion de projet",
@@ -173,7 +173,7 @@ export const projects = [
 		type: "Site vitrine",
 		isMainProject: false,
 		description:
-			"Création d'un site vitrine multilangue pour une entreprise de location et de ventes de seabob, e-foil et autres équipements nautiques.",
+			"Design et développement d'un site vitrine multilangue pour une entreprise de location et de ventes de seabob, e-foil et autres équipements nautiques.",
 		mainImage: SBmockup,
 		features: [
 			{
@@ -200,7 +200,7 @@ export const projects = [
 		type: "Site vitrine",
 		isMainProject: false,
 		description:
-			"Création d'un site vitrine multilingue sans CMS, présentant les collections, les réalisations de l'entreprise et une visite 3D du showroom.",
+			"Design et développement d'un site vitrine multilingue sans CMS, pour une entreprise d'aménagement d'intérieur et exterieur, présentant les collections, les réalisations de l'entreprise et une visite 3D du showroom.",
 		mainImage: tileMockup,
 		features: [
 			{

@@ -49,7 +49,7 @@ export default function CTA() {
 							</ul>
 							<div className="mt-16 flex justify-end">
 								<p className="text-lg font-semibold text-white ">
-									Choississez un créneau et je vous rappel -{">"}{" "}
+									Choississez un créneau et je vous rappelle -{">"}{" "}
 								</p>
 							</div>
 						</div>

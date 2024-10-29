@@ -9,7 +9,6 @@ import Partners from "@/components/partners/Partners"
 import CTA from "@/components/CTA/CTA"
 import HeroSectionSoft from "@/components/hero-section/HeroSectionSoft"
 import Footer from "@/components/footer/Footer"
-import Stack from "@/components/stack/Stack"
 
 export default function Home() {
 	return (
@@ -18,10 +17,9 @@ export default function Home() {
 				<HeroSectionSoft />
 				<Portfolio />
 				<TestimonialsSection />
-				<AboutMe /> 
 				<Services />
 				<ProcessSection />
-				<Stack />
+				<AboutMe /> 
 				<Partners />
 				<CTA />
 				<Footer />
