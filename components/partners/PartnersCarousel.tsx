@@ -39,13 +39,14 @@ const partners = [
 		name: "Tile",
 		image: tile,
 	},
-	{
-		name: "Stafflink",
-		image: stafflink,
-	},
+
 	{
 		name: "Discover",
 		image: discover,
+	},
+	{
+		name: "Stafflink",
+		image: stafflink,
 	},
 ]
 
@@ -65,7 +66,7 @@ const PartnerCard = ({
 			src={image}
 			width={158}
 			height={100}
-			className="col-span-2 max-h-28 w-full object-contain lg:col-span-1"
+			className="col-span-2 max-h-28 w-full object-contain lg:col-span-1 px-2"
 		/>
 	)
 }
