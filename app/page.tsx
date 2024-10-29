@@ -17,9 +17,9 @@ export default function Home() {
 				<HeroSectionSoft />
 				<Portfolio />
 				<TestimonialsSection />
+				<AboutMe /> 
 				<Services />
 				<ProcessSection />
-				<AboutMe /> 
 				<Partners />
 				<CTA />
 				<Footer />
