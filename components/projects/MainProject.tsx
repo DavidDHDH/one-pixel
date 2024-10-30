@@ -7,6 +7,7 @@ import {
 	TooltipProvider,
 	TooltipTrigger,
 } from "../ui/tooltip"
+import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog"
 // import Link from "next/link"
 
 export default function MainProject({
@@ -84,13 +85,28 @@ export default function MainProject({
 							</div>
 						</div>
 						<div className="flex items-start justify-end lg:order-first">
-							<Image
-								alt={`${project.title} mockup`}
-								src={project.mainImage}
-								width={2432}
-								height={1442}
-								className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-							/>
+							<Dialog>
+								<DialogTrigger asChild>
+									<div className="cursor-pointer">
+										<Image
+											alt={`${project.title} mockup`}
+											src={project.mainImage}
+											width={2432}
+											height={1442}
+											className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+										/>
+									</div>
+								</DialogTrigger>
+								<DialogContent className="max-w-6xl">
+									<Image
+										src={project.mainImage}
+										alt={`${project.title} mockup`}
+										width={2432}
+										height={1442}
+										className="w-full h-auto"
+									/>
+								</DialogContent>
+							</Dialog>
 						</div>
 					</div>
 				</div>
@@ -152,13 +168,28 @@ export default function MainProject({
 								</div>
 							</div>
 						</div>
-						<Image
-							alt={`${project.title} mockup`}
-							src={project.mainImage}
-							width={2432}
-							height={1442}
-							className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-						/>
+						<Dialog>
+							<DialogTrigger asChild>
+								<div className="cursor-pointer">
+									<Image
+										alt={`${project.title} mockup`}
+										src={project.mainImage}
+										width={2432}
+										height={1442}
+										className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+									/>
+								</div>
+							</DialogTrigger>
+							<DialogContent className="max-w-6xl">
+								<Image
+									src={project.mainImage}
+									alt={`${project.title} mockup`}
+									width={2432}
+									height={1442}
+									className="w-full h-auto"
+								/>
+							</DialogContent>
+						</Dialog>
 					</div>
 				</div>
 			</div>
