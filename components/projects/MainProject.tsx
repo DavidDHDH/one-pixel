@@ -103,7 +103,7 @@ export default function MainProject({
 										alt={`${project.title} mockup`}
 										width={2432}
 										height={1442}
-										className="w-full h-auto"
+										className="w-full h-auto rounded-lg"
 									/>
 								</DialogContent>
 							</Dialog>
@@ -186,7 +186,7 @@ export default function MainProject({
 									alt={`${project.title} mockup`}
 									width={2432}
 									height={1442}
-									className="w-full h-auto"
+									className="w-full h-auto rounded-lg"
 								/>
 							</DialogContent>
 						</Dialog>

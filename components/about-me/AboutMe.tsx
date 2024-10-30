@@ -34,8 +34,8 @@ export default function AboutMe() {
 						Votre partenaire local.
 					</p>
 					<h2 className="font-rubik mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-						David Heimfert - Développeur web fullstack, passionné par le code,
-						le design, et l&apos;IA.
+						David Heimfert - Développeur web, passionné par le code, le design,
+						et l&apos;IA.
 					</h2>
 				</div>
 				<div className="grid grid-cols-2 gap-10 pt-10">

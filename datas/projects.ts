@@ -1,11 +1,12 @@
-import DImockup from "@/public/projects/DI-mockup.webp"
 import VCscreen from "@/public/projects/VC-screen.webp"
 import tileMockup from "@/public/projects/Tile-mockup.webp"
 import rwayMockup from "@/public/projects/Rway-mockup.webp"
 import SLmockup from "@/public/projects/SL-mockup.webp"
-import FWImockup from "@/public/projects/FWI-mockup.png"
+
 import SBmockup from "@/public/projects/SB-mockup.webp"
-import WIHscreen from "@/public/projects/wih-screen.png"
+import WIHscreen from "@/public/projects/WIH-screen.webp"
+import DLscreen2 from "@/public/projects/DL-screen-2.webp"
+import FWIscreen from "@/public/projects/FWI-screen.webp"
 
 export const projects = [
 	{
@@ -57,7 +58,7 @@ export const projects = [
 		isMainProject: true,
 		description:
 			"Développement de Frip West Indies, une plateforme de e-commerce de reventes d'articles d'occasions entre particuliers, type Vinted, dans les Antilles Françaises.",
-		mainImage: FWImockup,
+		mainImage: FWIscreen,
 		features: [
 			{
 				name: "Paiements sécurisés.",
@@ -120,7 +121,7 @@ export const projects = [
 		isMainProject: false,
 		description:
 			"Modernisation du design, amélioration de l'expérience utilisateurs clients et back office, et ajout régulier de fonctionnalités pour une application de livraison de repas et de courses.",
-		mainImage: DImockup,
+		mainImage: DLscreen2,
 		features: [
 			{
 				name: "UI/UX design",
