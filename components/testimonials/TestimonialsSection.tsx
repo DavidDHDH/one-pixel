@@ -1,6 +1,6 @@
 // REMETTRE COLUMN000-3 A LA PLACE DE GRID
 
-import { testimonials } from "@/datas/textimonials"
+import { testimonials } from "@/datas/testimonials"
 import Image from "next/image"
 
 export default function TestimonialsSection() {

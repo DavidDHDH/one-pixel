@@ -5,9 +5,9 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-	title: "One Pixel - Web Dev Studio by David Heimfert",
+	title: "One Pixel - Web & Dev Studio à Saint-Barthélemy",
 	description:
-		"Building websites and web applications with Next.js and Tailwind CSS",
+		"Studio de développement web à Saint-Barthélemy, spécialisé dans la création de web applications/logiciels sur mesure pour les entreprises et entrepreneurs.",
 }
 
 export default function RootLayout({

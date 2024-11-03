@@ -1,17 +1,15 @@
 import VCscreen from "@/public/projects/VC-screen.webp"
 import tileMockup from "@/public/projects/Tile-mockup.webp"
 import rwayMockup from "@/public/projects/Rway-mockup.webp"
-import SLmockup from "@/public/projects/SL-mockup.webp"
-
 import SBmockup from "@/public/projects/SB-mockup.webp"
 import WIHscreen from "@/public/projects/WIH-screen.webp"
-import DLscreen2 from "@/public/projects/DL-screen-2.webp"
 import FWIscreen from "@/public/projects/FWI-screen.webp"
+import DLmockup from "@/public/projects/DI-mockup.webp"
 
 export const projects = [
 	{
 		title: "Villa Care",
-		type: "SAAS - Management de villas",
+		type: "SAAS B2B- Management de villas",
 		isMainProject: true,
 		description:
 			"Conception et développement de Villa Care, un logiciel complet de gestions de biens immobiliers disponible à la location saisonnière, à destination des managers.",
@@ -54,10 +52,10 @@ export const projects = [
 	},
 	{
 		title: "Frip West Indies",
-		type: "E-commerce",
+		type: "Site e-commerce",
 		isMainProject: true,
 		description:
-			"Développement de Frip West Indies, une plateforme de e-commerce de reventes d'articles d'occasions entre particuliers, type Vinted, dans les Antilles Françaises.",
+			"Développement de Frip West Indies, une plateforme de e-commerce de reventes d'articles d'occasions entre particuliers, type Vinted, dans les Antilles Françaises. Disponible décembre 2024.",
 		mainImage: FWIscreen,
 		features: [
 			{
@@ -88,10 +86,10 @@ export const projects = [
 	},
 	{
 		title: "Compagnie XYZ",
-		type: "Application métier",
+		type: "Application métier B2B",
 		isMainProject: true,
 		description:
-			"Conception et développement en cours d'une application métier destiné à une compagnie aérienne, afin de regrouper en un seul endroit toute la gestion des réservations, des vols, et de l'entreprise.",
+			"Conception et développement d'une application métier destiné à une compagnie aérienne, afin de regrouper en un seul endroit toute la gestion des réservations, des vols, et de l'entreprise. En cours de développement.",
 		mainImage: WIHscreen,
 		features: [
 			{
@@ -121,7 +119,7 @@ export const projects = [
 		isMainProject: false,
 		description:
 			"Modernisation du design, amélioration de l'expérience utilisateurs clients et back office, et ajout régulier de fonctionnalités pour une application de livraison de repas et de courses.",
-		mainImage: DLscreen2,
+		mainImage: DLmockup,
 		features: [
 			{
 				name: "UI/UX design",
@@ -144,10 +142,10 @@ export const projects = [
 	},
 	{
 		title: "St Barth R Way",
-		type: "UI - Gestion de projet",
+		type: "UI Design",
 		isMainProject: false,
 		description:
-			"Refonte et modernisation du site vitrine d'une agence de voyage, spécialisé dans le VIP Service.",
+			"Refonte du design du site vitrine d'une agence de voyage de luxe, spécialisé dans le VIP Service.",
 		mainImage: rwayMockup,
 		features: [
 			{
@@ -223,16 +221,16 @@ export const projects = [
 		],
 		stack: ["Figma", "Bootstrap"],
 	},
-	{
-		title: "Staff Link",
-		type: "UI - Gestion de projet",
-		isMainProject: false,
-		description:
-			"Conception, UX design et gestion de projet pour une web application de mise en relation avancée entre des recruteurs et des candidats.",
-		mainImage: SLmockup,
-		features: [],
-		stack: ["Figma", "Trello"],
-	},
+	// {
+	// 	title: "Staff Link",
+	// 	type: "UI - Gestion de projet",
+	// 	isMainProject: false,
+	// 	description:
+	// 		"Conception, UX design et gestion de projet pour une web application de mise en relation avancée entre des recruteurs et des candidats.",
+	// 	mainImage: SLmockup,
+	// 	features: [],
+	// 	stack: ["Figma", "Trello"],
+	// },
 ]
 
 export type ProjectType = (typeof projects)[number]

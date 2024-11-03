@@ -98,7 +98,7 @@ export default function Services() {
 						<div className="grid w-full h-full grid-flow-col grid-rows-2 gap-4">
 							<div className="relative row-span-2 shadow-xl rounded-3xl">
 								<Image
-									src={designPic}
+									src={codePic}
 									alt="Office work"
 									className="object-cover object-right w-full h-full rounded-3xl"
 									sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
@@ -106,7 +106,7 @@ export default function Services() {
 							</div>
 							<div className="relative shadow-xl rounded-3xl">
 								<Image
-									src={codePic}
+									src={designPic}
 									alt="More office work"
 									className="object-cover object-center w-full h-full rounded-3xl"
 									sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
