@@ -29,7 +29,9 @@ const services = [
 
 export default function Services() {
 	return (
-		<section className="relative mt-24">
+		<section
+			id="services"
+			className="relative mt-24">
 			<ShaderGradientCanvas
 				style={{
 					position: "absolute",
