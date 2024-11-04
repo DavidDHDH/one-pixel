@@ -11,7 +11,7 @@ const Portfolio = () => {
 		<section
 			id="portfolio"
 			className="min-h-screen">
-			<div className="mx-auto max-w-3xl lg:text-center">
+			<div className="mx-auto max-w-3xl text-center px-6 lg:px-8">
 				<h2 className="text-lg font-semibold leading-7 text-primaryText">
 					Mes principaux projets.
 				</h2>
