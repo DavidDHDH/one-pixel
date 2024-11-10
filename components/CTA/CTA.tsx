@@ -4,6 +4,7 @@ import { CheckCircleIcon } from "@heroicons/react/20/solid"
 import { InlineWidget } from "react-calendly"
 import Image from "next/image"
 import beach3 from "@/public/images/beach-scene-3.png"
+// import beach from "@/public/images/CTAbackground.webp"
 const projectsType = [
 	"Application métier",
 	"SAAS",
