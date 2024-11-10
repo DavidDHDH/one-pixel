@@ -22,7 +22,9 @@ export default function TestimonialsSection() {
 						{testimonials.map((testimonial, index) => (
 							<div
 								key={index}
-								className="pt-8 sm:inline-block sm:w-full sm:px-4">
+								className={`pt-8 sm:inline-block sm:w-full sm:px-4 ${
+									index === 3 && "col-start-2"
+								}`}>
 								<figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
 									<blockquote className="text-gray-600">
 										<p>{`“${testimonial.body}”`}</p>
