@@ -8,6 +8,7 @@ import profile from "@/public/images/profil-2.webp"
 import Image from "next/image"
 import AnimatedShinyText from "../ui/animated-shiny-text"
 import { cn } from "@/lib/utils"
+import logo from "@/public/images/logo.webp"
 
 const navigation = [
 	{ name: "Portfolio", href: "#portfolio" },
@@ -35,7 +36,12 @@ export default function HeroSectionSoft() {
 							<a
 								href="#"
 								className="-m-1.5 p-1.5">
-								<span className="sr-only">One Pixel - David Heimfert</span>⬛️
+								<span className="sr-only">One Pixel - David Heimfert</span>
+								<Image
+									src={logo}
+									alt="One Pixel - David Heimfert"
+									className="w-6 h-6"
+								/>
 							</a>
 							<button
 								type="button"

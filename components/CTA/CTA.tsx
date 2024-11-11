@@ -4,6 +4,8 @@ import { CheckCircleIcon } from "@heroicons/react/20/solid"
 import { InlineWidget } from "react-calendly"
 import Image from "next/image"
 import beach3 from "@/public/images/beach-scene-3.png"
+import { CONTACT_EMAIL } from "@/lib/const"
+import { Icon } from "../shared/Icon"
 // import beach from "@/public/images/CTAbackground.webp"
 const projectsType = [
 	"Application métier",
@@ -22,20 +24,7 @@ export default function CTA() {
 				src={beach3}
 				className="absolute inset-0 -z-10 h-full w-full object-cover"
 			/>
-			{/* <ShaderGradientCanvas
-				style={{
-					position: "absolute",
-					top: 0,
-					left: 0,
-					right: 0,
-					bottom: 0,
-					zIndex: -1,
-				}}>
-				<ShaderGradient
-					control="query"
-					urlString="https://www.shadergradient.co/customize?animate=on&axesHelper=off&bgColor1=%23000000&bgColor2=%23000000&brightness=1.2&cAzimuthAngle=170&cDistance=4.4&cPolarAngle=70&cameraZoom=1&color1=%23DFD2C2&color2=%23BFA78D&color3=%23DFD2C2&destination=onCanvas&embedMode=off&envPreset=city&format=gif&fov=45&frameRate=10&gizmoHelper=hide&grain=off&lightType=3d&pixelDensity=1.6&positionX=0&positionY=0.9&positionZ=-0.3&range=disabled&rangeEnd=40&rangeStart=0&reflection=0.1&rotationX=45&rotationY=0&rotationZ=0&shader=defaults&type=waterPlane&uAmplitude=0&uDensity=1&uFrequency=0&uSpeed=0.2&uStrength=2.1&uTime=0&wireframe=false&zoomOut=false"
-				/>{" "}
-			</ShaderGradientCanvas> */}
+
 			<div className="relative isolate">
 				<div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
 					<div className="mx-auto backdrop-blur-md flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 border border-t-white/50 border-r-white/50 border-b-white/25 border-l-white/25 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-16 xl:gap-x-20 xl:px-16">
@@ -63,10 +52,23 @@ export default function CTA() {
 									</li>
 								))}
 							</ul>
-							<div className="mt-16 flex justify-end">
-								<p className="text-lg font-semibold text-white ">
-									Choississez un créneau et je vous rappelle -{">"}{" "}
+							<div className="mt-16 flex justify-end items-center">
+								<p className="text-base font-semibold text-white ">
+									Choisissez un créneau et je vous rappelle -{">"}{" "}
 								</p>
+							</div>
+							<div className="flex justify-end mt-8">
+								<div className="flex justify-center">
+									<a
+										href={`mailto:${CONTACT_EMAIL}?subject=Demande d'information`}>
+										<div className="rounded-md flex items-center gap-2 bg-sand-700 px-3.5 py-2.5 transition-all text-sm font-semibold text-white shadow-sm hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400">
+											<span>
+												<Icon name="mail" />
+											</span>{" "}
+											Me Contacter
+										</div>
+									</a>
+								</div>
 							</div>
 						</div>
 						<div className="w-full lg:w-1/2 rounded-xl overflow-hidden">

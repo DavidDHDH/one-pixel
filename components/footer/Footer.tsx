@@ -1,6 +1,17 @@
+import { CONTACT_EMAIL, WHATSAPP_NUMBER } from "@/lib/const"
 import { Icon } from "../shared/Icon"
 
 const navigation = [
+	{
+		name: "email",
+		href: `mailto:${CONTACT_EMAIL}?subject=Demande d'information`,
+		icon: "mail",
+	},
+	{
+		name: "Whatsapp",
+		href: `https://wa.me/${WHATSAPP_NUMBER}`,
+		icon: "whatsapp",
+	},
 	{
 		name: "Linkedin",
 		href: "https://www.linkedin.com/in/david-heimfert-571960265/",

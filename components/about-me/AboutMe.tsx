@@ -1,3 +1,4 @@
+import { CONTACT_EMAIL } from "@/lib/const"
 import { Icon } from "../shared/Icon"
 import Stack from "../stack/Stack"
 import Profil from "./Profil"
@@ -73,6 +74,16 @@ export default function AboutMe() {
 									<p>{pro.name}</p>
 								</div>
 							))}
+						</div>
+						<div className="flex justify-center">
+							<a href={`mailto:${CONTACT_EMAIL}?subject=Demande d'information`}>
+								<div className="rounded-md flex items-center gap-2 bg-sand-700 px-3.5 py-2.5 transition-all text-sm font-semibold text-white shadow-sm hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400">
+									<span>
+										<Icon name="mail" />
+									</span>{" "}
+									Me Contacter
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>

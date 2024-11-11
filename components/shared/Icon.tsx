@@ -23,6 +23,7 @@ import {
 	IconBrandTailwind,
 	IconBrandTrello,
 	IconBrandTypescript,
+	IconBrandWhatsapp,
 	IconCalendarMonth,
 	IconChartDotsFilled,
 	IconCodeCircle2,
@@ -78,6 +79,7 @@ const iconOptions: {
 	dev: IconCodeCircle2,
 	rotateArrow: IconRotateClockwise2,
 	Instagram: IconBrandInstagram,
+	whatsapp: IconBrandWhatsapp,
 }
 
 export const Icon = ({
