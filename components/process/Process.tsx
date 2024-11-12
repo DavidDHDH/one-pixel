@@ -4,25 +4,25 @@ const features = [
 	{
 		name: "Étude",
 		description:
-			"Ensemble, nous établissons le cahier des charges et les objectifs précis de votre projet, et je vous propose une solution alignée avec vos attentes",
+			"Une phase d'analyse approfondie pour définir un MVP qui cible précisément les besoins de vos utilisateurs. L'objectif : un plan de développement clair et optimal.",
 		icon: "search",
 	},
 	{
 		name: "UX/UI Design",
 		description:
-			"Je conçois chaque écran pour offrir à vos utilisateurs une navigation fluide et agréable. Nous validons ensemble chaque étape pour garantir une expérience au plus proche de vos attentes.",
+			"Une interface professionnelle pensée pour maximiser l'adoption. Chaque écran est validé pour garantir une expérience utilisateur fluide et engageante dès le lancement.",
 		icon: "pixel",
 	},
 	{
 		name: "Développement",
 		description:
-			"En suivant les maquettes définies ensemble, je développe votre application par étapes successives, en utilisant les technologies web les plus adaptées. Vous validez chaque étape avant de passer à la suivante.",
+			"Une construction itérative basée sur des technologies robustes et évolutives. Des validations régulières assurent un alignement parfait avec vos attentes.",
 		icon: "dev",
 	},
 	{
 		name: "Suivi",
 		description:
-			"Je vous aide à prioriser les futures fonctionnalités et vous propose des améliorations continues, basées sur mon expertise, pour que votre application évolue avec vos besoins.",
+			"Un accompagnement continu pour faire évoluer le produit. Analyse des usages, priorisation des features, optimisations : votre application grandit avec votre succès.",
 		icon: "rotateArrow",
 	},
 ]
