@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import { GoogleAnalytics } from "@/components/google-analytics/google-analytics"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -15,11 +16,16 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode
 }>) {
+	const gaId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID
+
 	return (
 		<html
 			lang="fr"
 			className="scroll-smooth">
-			<body className={`${inter.className} antialiased`}>{children}</body>
+			<body className={`${inter.className} antialiased`}>
+				{children}
+				{gaId && <GoogleAnalytics gaId={gaId} />}
+			</body>
 		</html>
 	)
 }
