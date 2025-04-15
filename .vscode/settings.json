@@ -1,0 +1,22 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.autoSaveDelay": 2000,
+  "files.autoSave": "onFocusChange",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "explicit"
+  },
+  "cursor.general.enableShadowWorkspace": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 8,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "CommitMono",
+  "editor.fontLigatures": true,
+  "cSpell.language": "en,lorem,fr,fr-FR",
+  "cSpell.enabledFileTypes": {
+    "json": true,
+    "env": false
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
