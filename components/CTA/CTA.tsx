@@ -2,7 +2,7 @@
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
 import { CONTACT_EMAIL } from '@/lib/const'
-import beach3 from '@/public/images/plage-2.webp'
+import beach3 from '@/public/images/beach-scene-3.webp'
 import Image from 'next/image'
 import { InlineWidget } from 'react-calendly'
 import { Icon } from '../shared/Icon'

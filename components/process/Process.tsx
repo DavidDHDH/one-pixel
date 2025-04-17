@@ -1,37 +1,37 @@
-import { Icon } from "../shared/Icon";
+import { Icon } from '../shared/Icon'
 
 const features = [
   {
-    name: "Étude",
+    name: 'Étude',
     description:
-      "Analyse de ton besoin métier, définition d’un MVP ciblé, cadrage du projet : on pose des bases solides pour un développement efficace.",
-    icon: "search",
+      'Analyse de ton besoin métier, définition d’un MVP ciblé, cadrage du projet : on pose des bases solides pour un développement efficace.',
+    icon: 'search',
   },
   {
-    name: "UX/UI Design",
+    name: 'UX/UI Design',
     description:
       "Maquettes validées à chaque étape, interface fluide, logique métier respectée. On pense l'expérience utilisateur dès le départ.",
-    icon: "pixel",
+    icon: 'pixel',
   },
   {
-    name: "Développement",
+    name: 'Développement',
     description:
-      "Avancement itératif, feedbacks réguliers, code robuste. Tu suis la progression pas à pas, jusqu’à un produit prêt à scaler.",
-    icon: "dev",
+      'Avancement itératif, feedbacks réguliers, code robuste. Tu suis la progression pas à pas, jusqu’à un produit prêt à scaler.',
+    icon: 'dev',
   },
   {
-    name: "Suivi",
+    name: 'Suivi',
     description:
-      "Une fois en ligne, je t’accompagne pour itérer : analyse des usages, roadmap, ajout de fonctionnalités, maintenance évolutive.",
-    icon: "rotateArrow",
+      'Une fois en ligne, je t’accompagne pour itérer : analyse des usages, roadmap, ajout de fonctionnalités, maintenance évolutive.',
+    icon: 'rotateArrow',
   },
-];
+]
 
 export default function ProcessSection() {
   return (
     <section id="process" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
+        <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-lg font-semibold leading-7 text-primaryText">
             Mon processus de création
           </h2>
@@ -71,5 +71,5 @@ export default function ProcessSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

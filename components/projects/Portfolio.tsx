@@ -1,12 +1,10 @@
-import { projects } from "@/datas/projects";
-import MainProject from "./MainProject";
-import SecondaryProject from "./SecondaryProject";
+import { projects } from '@/datas/projects'
+import MainProject from './MainProject'
+import SecondaryProject from './SecondaryProject'
 
 const Portfolio = () => {
-  const mainProjects = projects.filter((project) => project.isMainProject);
-  const secondaryProjects = projects.filter(
-    (project) => !project.isMainProject
-  );
+  const mainProjects = projects.filter((project) => project.isMainProject)
+  const secondaryProjects = projects.filter((project) => !project.isMainProject)
 
   return (
     <section
@@ -36,7 +34,7 @@ const Portfolio = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio

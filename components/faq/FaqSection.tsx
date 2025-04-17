@@ -65,7 +65,7 @@ export default function FaqSection() {
   return (
     <section id="faq" className="py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="md:text-center mb-16">
+        <div className="md:text-center mb-16 text-center">
           <p className="text-lg font-semibold leading-7 text-primaryText">
             Questions fréquentes.
           </p>

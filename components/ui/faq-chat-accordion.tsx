@@ -78,7 +78,7 @@ export function FaqAccordion({
                       {item.icon}
                     </span>
                   )}
-                  <span className="font-medium">{item.question}</span>
+                  <span className="font-medium text-left">{item.question}</span>
                 </div>
 
                 <span

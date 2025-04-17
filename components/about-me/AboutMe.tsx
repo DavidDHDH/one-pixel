@@ -1,36 +1,36 @@
-import { CONTACT_EMAIL } from "@/lib/const";
-import { Icon } from "../shared/Icon";
-import Stack from "../stack/Stack";
-import Profil from "./Profil";
+import { CONTACT_EMAIL } from '@/lib/const'
+import { Icon } from '../shared/Icon'
+import Stack from '../stack/Stack'
+import Profil from './Profil'
 
 const people = {
-  name: "David Heimfert",
-  role: "Développeur Web - Next.JS",
-  imageUrl: "public/images/IMG_7289.webp",
-  githubUrl: "https://github.com/DavidDHDH",
-  linkedinUrl: "https://www.linkedin.com/in/david-heimfert-571960265/",
-};
+  name: 'David Heimfert',
+  role: 'Développeur Web - Next.JS',
+  imageUrl: 'public/images/IMG_7289.webp',
+  githubUrl: 'https://github.com/DavidDHDH',
+  linkedinUrl: 'https://www.linkedin.com/in/david-heimfert-571960265/',
+}
 
 const pros = [
   {
-    name: "Réactivité",
-    icon: "speed",
+    name: 'Réactivité',
+    icon: 'speed',
   },
   {
-    name: "Créativité",
-    icon: "creativity",
+    name: 'Créativité',
+    icon: 'creativity',
   },
   {
-    name: "Pixel Perfect",
-    icon: "pixel",
+    name: 'Pixel Perfect',
+    icon: 'pixel',
   },
-];
+]
 
 export default function AboutMe() {
   return (
     <section id="aboutme">
       <div className="mx-auto max-w-7xl px-6 md:text-center lg:px-8 pb-24">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-4xl text-center">
           <p className="text-lg font-semibold leading-7 text-primaryText">
             On ne s’est pas présenté…
           </p>
@@ -83,7 +83,7 @@ export default function AboutMe() {
                 <div className="rounded-md flex items-center gap-2 bg-sand-700 px-3.5 py-2.5 transition-all text-sm font-semibold text-white shadow-sm hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400">
                   <span>
                     <Icon name="mail" />
-                  </span>{" "}
+                  </span>{' '}
                   Me Contacter
                 </div>
               </a>
@@ -93,5 +93,5 @@ export default function AboutMe() {
       </div>
       <Stack />
     </section>
-  );
+  )
 }

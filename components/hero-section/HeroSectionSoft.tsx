@@ -41,7 +41,7 @@ export default function HeroSectionSoft() {
                     </AnimatedShinyText>
                   </div>
                 </div>
-                <h1 className="font-rubik text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                <h1 className="font-rubik text-pretty text-5xl font-semibold tracking-tight text-gray-900">
                   Développeur web freelance à Saint-Barthélemy
                 </h1>
                 <h2 className="mt-6 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
