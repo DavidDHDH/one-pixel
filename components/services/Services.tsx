@@ -8,22 +8,22 @@ import { Icon } from "../shared/Icon";
 
 const services = [
   {
-    label: "Applications internes sur mesure",
+    label: "Applications métier personnalisées",
     description:
-      "→ pour automatiser les tâches répétitives, gagner en productivité et réduire les erreurs.",
+      "Pour automatiser les tâches internes, gagner du temps et améliorer ta productivité.",
     icon: "code",
   },
   {
-    label: "Plateformes SaaS",
+    label: "Plateformes SaaS évolutives",
     description:
-      "→ pour offrir à vos clients ou équipes une solution web fluide, accessible et évolutive.",
+      "Pour proposer à tes clients ou ton équipe une solution accessible, fluide et évolutive.",
     icon: "design",
   },
 
   {
-    label: "Intégration de l’intelligence artificielle",
+    label: "Fonctionnalités IA sur-mesure",
     description:
-      "→ pour enrichir vos outils avec des fonctionnalités intelligentes : automatisation, analyse de données, personnalisation.",
+      "Pour enrichir tes outils avec de l’intelligence artificielle : automatisation, analyse, recommandations.",
     icon: "tool",
   },
 ];
@@ -49,12 +49,17 @@ export default function Services() {
       <div className=" mx-auto max-w-7xl px-6 lg:px-8 z-10">
         {/* Section text */}
         <div>
-          <h2 className=" text-lg font-semibold leading-7 text-white z-10">
+          <p className=" text-lg font-semibold leading-7 text-white z-10">
             Mes services.
+          </p>
+          <h2 className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+            Applications métier, SaaS et solutions web sur-mesure pour booster
+            ton activité.
           </h2>
-          <p className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            Développement d&apos;applications métier et plateformes web
-            sur-mesure
+          <p className="sr-only">
+            Développeur web freelance aux Antilles, je crée des logiciels
+            métiers, plateformes SaaS et outils intégrant l’intelligence
+            artificielle, pour améliorer l’efficacité des entreprises locales.
           </p>
         </div>
         {/* Section content */}
@@ -84,9 +89,9 @@ export default function Services() {
                         </div>
                       </div>
                       <div className="w-full mt-3 sm:mt-0">
-                        <h5 className="text-lg font-semibold text-gray-900 ">
+                        <h3 className="text-lg font-semibold text-gray-900 ">
                           {service.label}
-                        </h5>
+                        </h3>
                         <p className="mt-1 text-base text-gray-600">
                           {service.description}
                         </p>
@@ -103,7 +108,7 @@ export default function Services() {
               <div className="relative row-span-2 shadow-xl rounded-3xl">
                 <Image
                   src={ipadPic}
-                  alt="Office work"
+                  alt="Prototype dâ€™application sur tablette"
                   className="object-cover object-right w-full h-full rounded-3xl"
                   sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
                 />
@@ -111,7 +116,7 @@ export default function Services() {
               <div className="relative shadow-xl rounded-3xl">
                 <Image
                   src={designPic}
-                  alt="More office work"
+                  alt="Conception d'interface utilisateur"
                   className="object-cover object-center w-full h-full rounded-3xl"
                   sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
                 />
@@ -119,7 +124,7 @@ export default function Services() {
               <div className="relative shadow-xl rounded-3xl">
                 <Image
                   src={me}
-                  alt="Group brainstorming"
+                  alt="Développeur web freelance à Saint-Barth"
                   className="object-cover object-center w-full h-full rounded-3xl"
                   sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
                 />
