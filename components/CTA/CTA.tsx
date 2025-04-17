@@ -1,20 +1,20 @@
-"use client";
-import { CheckCircleIcon } from "@heroicons/react/20/solid";
-// import { ShaderGradient, ShaderGradientCanvas } from "@shadergradient/react"
-import { CONTACT_EMAIL } from "@/lib/const";
-import beach3 from "@/public/images/beach-scene-3.png";
-import Image from "next/image";
-import { InlineWidget } from "react-calendly";
-import { Icon } from "../shared/Icon";
-// import beach from "@/public/images/CTAbackground.webp"
+'use client'
+import { CheckCircleIcon } from '@heroicons/react/20/solid'
+
+import { CONTACT_EMAIL } from '@/lib/const'
+import beach3 from '@/public/images/plage-2.webp'
+import Image from 'next/image'
+import { InlineWidget } from 'react-calendly'
+import { Icon } from '../shared/Icon'
+
 const projectTypes = [
-  "Application métier",
-  "SaaS",
-  "Dashboard interne",
-  "Automatisation de tâches",
-  "E-commerce",
-  "...",
-];
+  'Application métier',
+  'SaaS',
+  'Dashboard interne',
+  'Automatisation de tâches',
+  'E-commerce',
+  '...',
+]
 
 export default function CTA() {
   return (
@@ -66,7 +66,7 @@ export default function CTA() {
                     <div className="rounded-md flex items-center gap-2 bg-sand-700 px-3.5 py-2.5 transition-all text-sm font-semibold text-white shadow-sm hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400">
                       <span>
                         <Icon name="mail" />
-                      </span>{" "}
+                      </span>{' '}
                       Me Contacter
                     </div>
                   </a>
@@ -77,8 +77,8 @@ export default function CTA() {
               <InlineWidget
                 url="https://calendly.com/david-heimfert/30min"
                 prefill={{
-                  name: "David Heimfert",
-                  email: "hello@one-pixel.com",
+                  name: 'David Heimfert',
+                  email: 'hello@one-pixel.com',
                 }}
               />
             </div>
@@ -91,12 +91,12 @@ export default function CTA() {
           <div
             style={{
               clipPath:
-                "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",
+                'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
             }}
             className="aspect-[1318/752] w-[82.375rem] flex-none bg-gradient-to-r from-[#222] to-white opacity-25"
           />
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -1,18 +1,18 @@
-"use client";
+'use client'
 
-import { cn } from "@/lib/utils";
-import profile from "@/public/images/profil-2.webp";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import { PopupButton } from "react-calendly";
-import Navbar from "../navbar/Navbar";
-import AnimatedShinyText from "../ui/animated-shiny-text";
-import TestimonialHero from "./TestimonialHero";
+import { cn } from '@/lib/utils'
+import profile from '@/public/images/profil-2.webp'
+import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import { PopupButton } from 'react-calendly'
+import Navbar from '../navbar/Navbar'
+import AnimatedShinyText from '../ui/animated-shiny-text'
+import TestimonialHero from './TestimonialHero'
 export default function HeroSectionSoft() {
-  const [rootElement, setRootElement] = useState<HTMLElement | null>(null);
+  const [rootElement, setRootElement] = useState<HTMLElement | null>(null)
   useEffect(() => {
-    setRootElement(document.getElementById("calendly"));
-  }, []);
+    setRootElement(document.getElementById('calendly'))
+  }, [])
   return (
     <div id="calendly" className="">
       <Navbar />
@@ -33,7 +33,7 @@ export default function HeroSectionSoft() {
                 <div className="hidden z-10 mb-10 sm:flex items-center justify-start">
                   <div
                     className={cn(
-                      "group rounded-full border border-black/5 text-sm/6 text-white transition-all ease-in"
+                      'group rounded-full border border-black/5 text-sm/6 text-white transition-all ease-in'
                     )}
                   >
                     <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
@@ -87,5 +87,5 @@ export default function HeroSectionSoft() {
         </div>
       </div>
     </div>
-  );
+  )
 }

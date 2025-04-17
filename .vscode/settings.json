@@ -16,7 +16,9 @@
   "cSpell.language": "en,lorem,fr,fr-FR",
   "cSpell.enabledFileTypes": {
     "json": true,
-    "env": false
+    "env": false,
+    "xml": false,
+    "txt": false
   },
   "typescript.tsdk": "node_modules/typescript/lib"
 }

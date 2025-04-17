@@ -1,0 +1,6 @@
+# Dernière modification : 2025-04-17
+User-Agent: *
+Allow: /
+Crawl-delay: 10
+
+Sitemap: https://www.one-pixel.com/sitemap.xml
