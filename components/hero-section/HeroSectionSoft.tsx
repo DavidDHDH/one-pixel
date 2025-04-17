@@ -45,8 +45,8 @@ export default function HeroSectionSoft() {
                   Développeur web freelance à Saint-Barthélemy
                 </h1>
                 <h2 className="mt-6 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
-                  Création de sites internet, applications web et logiciels
-                  métiers pour les entreprises des Antilles.
+                  Création d&apos;applications web, logiciels métiers et sites
+                  internet pour les entreprises des Antilles.
                 </h2>
                 <p className="mt-4 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
                   💡 Des solutions sur-mesure pour digitaliser ton activité,
