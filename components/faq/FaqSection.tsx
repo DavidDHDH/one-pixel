@@ -39,7 +39,7 @@ const defaultData = [
     id: 6,
     question: 'Tu peux vraiment tout faire ?',
     answer:
-      "Non, et c’est normal. Mon truc, c’est le développement sur mesure. Pour le reste (stratégie SEO, photos, branding…), je travaille avec d'autres pros. On monte une équipe adaptée à ton projet, sans les lourdeurs ni les coûts d’une agence.",
+      "Non, et heureusement. Mon expertise, c’est le développement sur mesure. Pour le reste (stratégie SEO, branding, photos …), je travaille avec d'autres pros. On monte une équipe adaptée à ton projet, sans les lourdeurs ni les coûts d’une agence.",
   },
   {
     id: 7,
@@ -51,7 +51,7 @@ const defaultData = [
     id: 8,
     question: 'Je peux te parler de mon idée sans engagement ?',
     answer:
-      'Bien sûr. On peut en discuter ensemble, poser les bases, et voir si je suis la bonne personne pour t’accompagner. Aucun engagement tant qu’on n’a pas cadré un projet.',
+      'Bien sûr. On peut en discuter ensemble, poser les bases, et voir si je suis la bonne personne pour t’accompagner, ou te diriger vers un autre expert. Aucun engagement tant qu’on n’a pas cadré un projet. Et bien sur, tout reste en nous.',
   },
 ]
 
