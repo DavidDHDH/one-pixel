@@ -1,6 +1,12 @@
 import { CONTACT_EMAIL } from '@/lib/const'
 import { Icon } from '../shared/Icon'
 import Stack from '../stack/Stack'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '../ui/accordion'
 import Profil from './Profil'
 
 const people = {
@@ -32,11 +38,11 @@ export default function AboutMe() {
       <div className="mx-auto max-w-7xl px-6 md:text-center lg:px-8 pb-24">
         <div className="mx-auto max-w-4xl text-center">
           <p className="text-lg font-semibold leading-7 text-primaryText">
-            On ne s’est pas présenté…
+            On ne s&apos;est pas présenté…
           </p>
           <h2 className="font-rubik mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl lg:text-balance text-gray-900">
             Je suis David Heimfert, développeur web à Saint-Barthélemy,
-            passionné par le code, le design et l’IA.
+            passionné par le code, le design et l&apos;IA.
           </h2>
         </div>
         <div className="md:grid md:grid-cols-2 gap-10 pt-10 items-center">
@@ -46,20 +52,21 @@ export default function AboutMe() {
           <div className="col-span-1 mx-auto space-y-8 mt-4 text-gray-600 md:max-w-full text-start">
             <p>
               Je développe des applications métier et des plateformes SaaS qui
-              s’adaptent à toi — pas l’inverse. Chaque projet est sur mesure,
-              pensé pour ton quotidien, ton activité… et ta productivité.
+              s&apos;adaptent à toi — pas l&apos;inverse. Chaque projet est sur
+              mesure, pensé pour ton quotidien, ton activité… et ta
+              productivité.
             </p>
 
             <p>
               Basé à Saint-Barthélemy, je travaille en direct avec mes clients :
-              pas de sous-traitance, pas d’intermédiaire. Juste toi et moi, pour
-              aller droit au but, avec une vraie compréhension de ton contexte
-              et de tes besoins.
+              pas de sous-traitance, pas d&apos;intermédiaire. Juste toi et moi,
+              pour aller droit au but, avec une vraie compréhension de ton
+              contexte et de tes besoins.
             </p>
 
             <p>
               Mon objectif : te faire gagner du temps, réduire les erreurs,
-              automatiser ce qui peut l’être. Des outils solides, simples à
+              automatiser ce qui peut l&apos;être. Des outils solides, simples à
               prendre en main, pensés pour évoluer avec ton business.
             </p>
 
@@ -92,6 +99,65 @@ export default function AboutMe() {
         </div>
       </div>
       <Stack />
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 pb-24">
+        <Accordion type="single" collapsible className="w-full">
+          <AccordionItem value="technical-details">
+            <AccordionTrigger className="text-base font-semibold">
+              🛠️ Détails techniques (pour les curieux)
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className="space-y-6 text-gray-600 text-base leading-7">
+                <p>
+                  Chaque projet est construit sur des bases solides :
+                  architecture claire, code maintenable, performances au
+                  rendez-vous. J’adopte les principes du clean code pour
+                  garantir lisibilité, évolutivité et simplicité.
+                </p>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>
+                    <span className="font-medium text-gray-900">
+                      Architecture modulaire & DDD
+                    </span>{' '}
+                    : séparation métier stricte, organisation par domaine,
+                    logique métier encapsulée.
+                  </li>
+                  <li>
+                    <span className="font-medium text-gray-900">
+                      Clean Code & conventions
+                    </span>{' '}
+                    : nommage explicite, responsabilités bien réparties,
+                    composants réutilisables.
+                  </li>
+                  <li>
+                    <span className="font-medium text-gray-900">
+                      TDD & tests automatisés
+                    </span>{' '}
+                    : fiabilité assurée, régressions évitées.
+                  </li>
+                  <li>
+                    <span className="font-medium text-gray-900">CI/CD</span> :
+                    déploiements instantanés sur chaque commit avec Vercel &
+                    GitHub Actions.
+                  </li>
+                  <li>
+                    <span className="font-medium text-gray-900">
+                      Stack moderne
+                    </span>{' '}
+                    : Next.js App Router, TypeScript, TailwindCSS, Supabase,
+                    Prisma, Zustand, shadcn/ui.
+                  </li>
+                  <li>
+                    <span className="font-medium text-gray-900">
+                      Qualité & outillage
+                    </span>{' '}
+                    : ESLint, Prettier, Husky, commit conventions.
+                  </li>
+                </ul>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+      </div>
     </section>
   )
 }

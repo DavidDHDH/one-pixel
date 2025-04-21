@@ -1,23 +1,23 @@
-import { ProjectType } from "@/datas/projects";
-import Image from "next/image";
-import { Icon } from "../shared/Icon";
-import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
+import { ProjectType } from '@/datas/projects'
+import Image from 'next/image'
+import { Icon } from '../shared/Icon'
+import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "../ui/tooltip";
+} from '../ui/tooltip'
 
 const SecondaryProject = ({ project }: { project: ProjectType }) => {
   return (
     <article
       itemScope
-      itemType={`https://schema.org/${project.seoCategory || "CreativeWork"}`}
+      itemType={`https://schema.org/${project.seoCategory || 'CreativeWork'}`}
     >
       <meta itemProp="name" content={project.title} />
       <meta itemProp="applicationCategory" content={project.type} />
-      <meta itemProp="operatingSystem" content={project.seoPlatform || "Web"} />
+      <meta itemProp="operatingSystem" content={project.seoPlatform || 'Web'} />
       <meta itemProp="description" content={project.description} />
       <div className="rounded-xl shadow-2xl overflow-hidden bg-white h-[600px] flex flex-col text-gray-900 ">
         <div className="h-[50%]">
@@ -67,7 +67,7 @@ const SecondaryProject = ({ project }: { project: ProjectType }) => {
         </div>
       </div>
     </article>
-  );
-};
+  )
+}
 
-export default SecondaryProject;
+export default SecondaryProject

@@ -1,33 +1,33 @@
-import { ProjectType } from "@/datas/projects";
-import Image from "next/image";
-import { Icon } from "../shared/Icon";
-import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
+import { ProjectType } from '@/datas/projects'
+import Image from 'next/image'
+import { Icon } from '../shared/Icon'
+import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "../ui/tooltip";
+} from '../ui/tooltip'
 // import Link from "next/link"
 
 export default function MainProject({
   index,
   project,
 }: {
-  index: number;
-  project: ProjectType;
+  index: number
+  project: ProjectType
 }) {
   if (index % 2 === 0) {
     return (
       <article
         itemScope
-        itemType={`https://schema.org/${project.seoCategory || "CreativeWork"}`}
+        itemType={`https://schema.org/${project.seoCategory || 'CreativeWork'}`}
       >
         <meta itemProp="name" content={project.title} />
         <meta itemProp="applicationCategory" content={project.type} />
         <meta
           itemProp="operatingSystem"
-          content={project.seoPlatform || "Web"}
+          content={project.seoPlatform || 'Web'}
         />
         <meta itemProp="description" content={project.description} />
         <div className="overflow-hidden bg-white py-20 sm:py-28">
@@ -54,7 +54,7 @@ export default function MainProject({
                             className="absolute left-1 top-1 h-5 w-5 text-primaryText"
                           />
                           {feature.name}
-                        </dt>{" "}
+                        </dt>{' '}
                         <dd className="inline">{feature.description}</dd>
                       </div>
                     ))}
@@ -119,7 +119,7 @@ export default function MainProject({
           </div>
         </div>
       </article>
-    );
+    )
   } else {
     return (
       <article>
@@ -147,7 +147,7 @@ export default function MainProject({
                             className="absolute left-1 top-1 h-5 w-5 text-primaryText"
                           />
                           {feature.name}
-                        </dt>{" "}
+                        </dt>{' '}
                         <dd className="inline">{feature.description}</dd>
                       </div>
                     ))}
@@ -210,6 +210,6 @@ export default function MainProject({
           </div>
         </div>
       </article>
-    );
+    )
   }
 }
