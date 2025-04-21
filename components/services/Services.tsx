@@ -1,39 +1,39 @@
-import designPic from "@/public/images/design.webp";
-import ipadPic from "@/public/images/ipad.webp";
-import me from "@/public/images/me.webp";
-import { ShaderGradient, ShaderGradientCanvas } from "@shadergradient/react";
-import clsx from "clsx";
-import Image from "next/image";
-import { Icon } from "../shared/Icon";
+import designPic from '@/public/images/design.webp'
+import me from '@/public/images/desk-1.webp'
+import ipadPic from '@/public/images/ipad.webp'
+import { ShaderGradient, ShaderGradientCanvas } from '@shadergradient/react'
+import clsx from 'clsx'
+import Image from 'next/image'
+import { Icon } from '../shared/Icon'
 
 const services = [
   {
-    label: "Applications métier personnalisées",
+    label: 'Applications métier personnalisées',
     description:
-      "Pour automatiser les tâches internes, gagner du temps et améliorer ta productivité.",
-    icon: "code",
+      'Pour automatiser les tâches internes, gagner du temps et améliorer ta productivité.',
+    icon: 'code',
   },
   {
-    label: "Plateformes SaaS évolutives",
+    label: 'Plateformes SaaS évolutives',
     description:
-      "Pour proposer à tes clients ou ton équipe une solution accessible, fluide et évolutive.",
-    icon: "design",
+      'Pour proposer à tes clients ou ton équipe une solution accessible, fluide et évolutive.',
+    icon: 'design',
   },
 
   {
-    label: "Fonctionnalités IA sur-mesure",
+    label: 'Fonctionnalités IA sur-mesure',
     description:
-      "Pour enrichir tes outils avec de l’intelligence artificielle : automatisation, analyse, recommandations.",
-    icon: "tool",
+      'Pour enrichir tes outils avec de l’intelligence artificielle : automatisation, analyse, recommandations.',
+    icon: 'tool',
   },
-];
+]
 
 export default function Services() {
   return (
     <section id="services" className="relative mt-24">
       <ShaderGradientCanvas
         style={{
-          position: "absolute",
+          position: 'absolute',
           top: 0,
           left: 0,
           right: 0,
@@ -71,10 +71,10 @@ export default function Services() {
               <div
                 key={`service-${index}`}
                 className={clsx(
-                  "w-full",
+                  'w-full',
                   index === 1 &&
-                    " mt-8 lg:mt-5 xl:mt-8 2xl:mt-10 lg:pr-12 xl:pr-18 2xl:pr-28",
-                  index === 2 && "mt-8 lg:mt-5 xl:mt-8 2xl:mt-10"
+                    ' mt-8 lg:mt-5 xl:mt-8 2xl:mt-10 lg:pr-12 xl:pr-18 2xl:pr-28',
+                  index === 2 && 'mt-8 lg:mt-5 xl:mt-8 2xl:mt-10'
                 )}
               >
                 <div className="max-w-lg mx-auto lg:mr-auto xl:mx-auto">
@@ -134,5 +134,5 @@ export default function Services() {
         </div>
       </div>
     </section>
-  );
+  )
 }

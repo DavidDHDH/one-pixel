@@ -1,6 +1,6 @@
-import testimonialAvatar from "@/public/testimonials/frip_app.webp";
-import { StarIcon } from "@heroicons/react/24/solid";
-import Image from "next/image";
+import testimonialAvatar from '@/public/testimonials/frip_app.webp'
+import { StarIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image'
 
 export default function TesimonialHero() {
   return (
@@ -15,7 +15,7 @@ export default function TesimonialHero() {
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center mb-1">
-            <span className="text-xs font-semibold text-gray-700">
+            <span className="text-sm font-semibold text-gray-700">
               Mélina S.
             </span>
             <span className="mx-1.5 text-gray-300">•</span>
@@ -23,11 +23,11 @@ export default function TesimonialHero() {
               Frip West Indies
             </span>
           </div>
-          <p className="text-xs/5 text-gray-600">
+          <p className="text-sm/5 text-gray-600">
             Un <span className="font-bold">développeur</span> a l&apos;écoute,
-            rapide et qui sait ce qu&apos;il fait. J&apos;ai développé mon{" "}
-            <span className="font-bold">site</span> et{" "}
-            <span className="font-bold">web app</span> avec lui, et c&apos;était{" "}
+            rapide et qui sait ce qu&apos;il fait. J&apos;ai développé mon{' '}
+            <span className="font-bold">site</span> et{' '}
+            <span className="font-bold">web app</span> avec lui, et c&apos;était{' '}
             <span className="font-bold">parfait</span> !
           </p>
           <div className="flex mt-1.5">
@@ -38,5 +38,5 @@ export default function TesimonialHero() {
         </div>
       </div>
     </div>
-  );
+  )
 }

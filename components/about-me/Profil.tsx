@@ -1,47 +1,47 @@
-import { CONTACT_EMAIL, WHATSAPP_NUMBER } from "@/lib/const";
-import profilPic from "@/public/images/profil_pic_TI.webp";
-import Image from "next/image";
-import { Icon } from "../shared/Icon";
+import { CONTACT_EMAIL, WHATSAPP_NUMBER } from '@/lib/const'
+import profilPic from '@/public/images/profil_pic_TI.webp'
+import Image from 'next/image'
+import { Icon } from '../shared/Icon'
 
 const links = [
   {
-    name: "email",
+    name: 'email',
     href: `mailto:${CONTACT_EMAIL}?subject=Demande d'information`,
-    icon: "mail",
+    icon: 'mail',
   },
   {
-    name: "Whatsapp",
+    name: 'Whatsapp',
     href: `https://wa.me/${WHATSAPP_NUMBER}`,
-    icon: "whatsapp",
+    icon: 'whatsapp',
   },
   {
-    name: "Linkedin",
-    href: "https://www.linkedin.com/in/david-heimfert-571960265/",
-    icon: "LinkedIn",
+    name: 'Linkedin',
+    href: 'https://www.linkedin.com/in/david-heimfert-571960265/',
+    icon: 'LinkedIn',
   },
   {
-    name: "GitHub",
-    href: "https://github.com/DavidDHDH",
-    icon: "Github",
+    name: 'GitHub',
+    href: 'https://github.com/DavidDHDH',
+    icon: 'Github',
   },
-];
+]
 
 const Profil = ({
   people,
 }: {
   people: {
-    name: string;
-    role: string;
-    githubUrl: string;
-    linkedinUrl: string;
-  };
+    name: string
+    role: string
+    githubUrl: string
+    linkedinUrl: string
+  }
 }) => {
   return (
-    <div className="flex justify-center flex-col">
+    <div className="flex justify-center flex-col items-center">
       <Image
         alt="David Heimfert, Développeur Web - Next.JS"
         src={profilPic}
-        className="aspect-[1/1] w-full rounded-2xl object-cover"
+        className="aspect-[1/1] w-full max-w-[500px] rounded-2xl object-cover"
       />
       <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-primaryText">
         {people.name}
@@ -60,7 +60,7 @@ const Profil = ({
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Profil;
+export default Profil
