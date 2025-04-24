@@ -1,7 +1,7 @@
 // REMETTRE COLUMN000-3 A LA PLACE DE GRID
 
-import { testimonials } from "@/datas/testimonials";
-import Image from "next/image";
+import { testimonials } from '@/datas/testimonials'
+import Image from 'next/image'
 
 export default function TestimonialsSection() {
   return (
@@ -21,7 +21,7 @@ export default function TestimonialsSection() {
               <div
                 key={index}
                 className={`pt-8 sm:inline-block sm:w-full sm:px-4 ${
-                  index === 3 && "col-start-2"
+                  index === 3 && 'col-start-2'
                 }`}
               >
                 <figure
@@ -30,6 +30,8 @@ export default function TestimonialsSection() {
                   className="rounded-2xl bg-sand-100 p-8 text-sm leading-6"
                 >
                   <meta itemProp="author" content={testimonial.author.name} />
+                  <meta itemProp="itemReviewed" content="One Pixel" />
+                  <meta itemProp="reviewRating" content="5" />
                   <blockquote className="text-gray-600">
                     <p>{`“${testimonial.body}”`}</p>
                   </blockquote>
@@ -53,5 +55,5 @@ export default function TestimonialsSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }
