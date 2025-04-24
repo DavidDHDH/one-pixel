@@ -1,12 +1,12 @@
 type AdvantageItem = {
-  title: string;
-  description: string;
-  icon: JSX.Element;
-};
+  title: string
+  description: string
+  icon: JSX.Element
+}
 
 const advantages: AdvantageItem[] = [
   {
-    title: "Disponible rapidement",
+    title: 'Disponible rapidement',
     description:
       "Réactivité en cas d'urgence, réunions en face à face : ton développeur est là, sur place.",
     icon: (
@@ -27,9 +27,9 @@ const advantages: AdvantageItem[] = [
     ),
   },
   {
-    title: "Expertise terrain",
+    title: 'Expertise terrain',
     description:
-      "Je connais les spécificités de l’île, ses contraintes techniques, logistiques, humaines. C’est intégré dans la solution dès le départ.",
+      'Je connais les spécificités de l’île, ses contraintes techniques, logistiques, humaines. C’est intégré dans la solution dès le départ.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -48,9 +48,9 @@ const advantages: AdvantageItem[] = [
     ),
   },
   {
-    title: "Zéro décalage horaire",
+    title: 'Zéro décalage horaire',
     description:
-      "On parle la même langue, dans le même fuseau horaire. Moins d’aller-retours, plus d’efficacité.",
+      'On parle la même langue, dans le même fuseau horaire. Moins d’aller-retours, plus d’efficacité.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -69,9 +69,10 @@ const advantages: AdvantageItem[] = [
     ),
   },
   {
-    title: "Sécurité juridique",
+    title: 'Sécurité juridique & données protégées',
     description:
-      "Contrats conformes aux lois françaises et européennes. Tu travailles avec un pro local, en toute confiance.",
+      'Contrats conformes aux lois françaises et européennes, et projets développés dans le respect du RGPD. Tu travailles avec un pro local, en toute confiance.',
+
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -90,9 +91,9 @@ const advantages: AdvantageItem[] = [
     ),
   },
   {
-    title: "Impact local",
+    title: 'Impact local',
     description:
-      "Tu soutiens l’économie de Saint-Barth en faisant appel à un indépendant implanté ici.",
+      'Tu soutiens l’économie de Saint-Barth en faisant appel à un indépendant implanté ici.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +112,7 @@ const advantages: AdvantageItem[] = [
     ),
   },
   {
-    title: "Relation de confiance",
+    title: 'Relation de confiance',
     description:
       "Un partenaire qui connaît ton activité, tes enjeux, et t'accompagne dans la durée.",
     icon: (
@@ -131,7 +132,7 @@ const advantages: AdvantageItem[] = [
       </svg>
     ),
   },
-];
+]
 
 const WhySection = () => {
   return (
@@ -145,9 +146,8 @@ const WhySection = () => {
         </p>
         <p className="mt-6 text-lg leading-8 text-gray-600 text-center">
           Développeur web basé à Saint-Barthélemy, j’aide les entreprises des
-          Antilles françaises à créer leurs outils digitaux sur-mesure.
-          Disponibilité, compréhension du terrain et relation de confiance font
-          toute la différence.
+          Antilles françaises à créer leurs outils digitaux sur-mesure. Mon
+          approche combine proximité, rigueur juridique et logique métier.
         </p>
         <div className="mt-10 rounded-xl bg-sand-100 border-dashed border-2 border-sand-500 shadow-sm p-8">
           <ul className="grid gap-y-6 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -175,7 +175,7 @@ const WhySection = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default WhySection;
+export default WhySection

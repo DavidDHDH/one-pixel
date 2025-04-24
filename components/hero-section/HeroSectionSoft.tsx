@@ -2,6 +2,7 @@
 
 import { cn } from '@/lib/utils'
 import profile from '@/public/images/profil-2.webp'
+import RGPD from '@/public/images/rgpdgris.webp'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { PopupButton } from 'react-calendly'
@@ -56,12 +57,13 @@ export default function HeroSectionSoft() {
                 <p className="mt-4 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
                   📍 Basé à Saint-Barth. Disponible partout dans les Caraïbes.
                 </p>
-                <div className="mt-10 flex items-center gap-x-6">
+                <div className="mt-10 flex items-center justify-between gap-x-6">
                   {!rootElement && (
-                    <div className="rounded-md bg-sand-700 px-3.5 py-2.5 transition-all text-sm font-semibold text-white shadow-sm hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400">
+                    <div className="rounded-md text-center bg-sand-700 px-3.5 py-2.5 transition-all text-sm font-semibold text-white shadow-sm hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400">
                       Planifier un appel
                     </div>
                   )}
+
                   {rootElement && (
                     <PopupButton
                       url="https://calendly.com/david-heimfert/30min"
@@ -70,6 +72,13 @@ export default function HeroSectionSoft() {
                       className="rounded-md bg-sand-700 px-3.5 py-2.5 transition-all text-sm font-semibold text-white shadow-sm hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400"
                     />
                   )}
+                  <Image
+                    className="mr-8"
+                    src={RGPD}
+                    alt="Conforme RGPD St Barth"
+                    width={50}
+                    height={50}
+                  />
                 </div>
                 <div className="flex justify-center mt-10">
                   <TestimonialHero />

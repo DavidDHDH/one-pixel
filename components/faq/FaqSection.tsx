@@ -18,14 +18,21 @@ const defaultData = [
       'Je suis spécialisé dans les applications métier (outils internes, automatisation), les plateformes SaaS et les sites web sur mesure. Chaque projet est unique et conçu pour répondre à un besoin concret.',
   },
   {
+    id: 9,
+    question: 'Tu t’occupes de la conformité RGPD ?',
+    answer:
+      'Oui, je suis formé au Règlement Général sur la Protection des Données (RGPD) et je développe chaque projet dans le respect des obligations légales. Je t’accompagne aussi sur les bonnes pratiques à adopter : gestion des consentements, mentions légales, collecte minimale des données, etc.',
+  },
+  {
     id: 4,
     question: 'Est-ce que tu proposes le design aussi ?',
     answer:
       "Oui ! Je m'occupe de l'UX/UI design de ton projet, du wireframe à l'interface finale, en collaboration directe avec toi pour que chaque écran soit clair, utile et joli.",
   },
+
   {
     id: 2,
-    question: 'Et niveau SEO ?',
+    question: 'Et le référencement ?',
     answer:
       'Ton site ou application sera optimisé pour le référencement naturel (balises, vitesse, accessibilité, structure technique). Si tu vises une stratégie SEO long terme (contenus, backlinks…), nous travaillerons avec un spécialiste.',
   },
@@ -39,7 +46,7 @@ const defaultData = [
     id: 6,
     question: 'Tu peux vraiment tout faire ?',
     answer:
-      "Non, et heureusement. Mon expertise, c’est le développement sur mesure. Pour le reste (stratégie SEO, branding, photos …), je travaille avec d'autres pros. On monte une équipe adaptée à ton projet, sans les lourdeurs ni les coûts d’une agence.",
+      "Non, et heureusement. Mon expertise, c’est le développement sur mesure. Pour le reste (stratégie SEO, branding, photos …), je travaille avec d'autres pros. On monte une équipe adaptée à ton projet, sans les lourdeurs ni les coûts de structure d’une agence.",
   },
   {
     id: 7,

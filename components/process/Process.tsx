@@ -4,7 +4,7 @@ const features = [
   {
     name: 'Étude',
     description:
-      'Analyse de ton besoin métier, définition d’un MVP ciblé, cadrage du projet : on pose des bases solides pour un développement efficace.',
+      'Analyse de ton besoin métier, étude RGPD, définition d’un MVP ciblé, cadrage du projet : on pose des bases solides pour un développement efficace.',
     icon: 'search',
   },
   {
