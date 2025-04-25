@@ -29,11 +29,42 @@ export default function TestimonialsSection() {
                   itemType="https://schema.org/Review"
                   className="rounded-2xl bg-sand-100 p-8 text-sm leading-6"
                 >
-                  <meta itemProp="author" content={testimonial.author.name} />
-                  <meta itemProp="itemReviewed" content="One Pixel" />
-                  <meta itemProp="reviewRating" content="5" />
-                  <blockquote className="text-gray-600">
-                    <p>{`“${testimonial.body}”`}</p>
+                  <div
+                    itemProp="author"
+                    itemScope
+                    itemType="https://schema.org/Person"
+                  >
+                    <meta itemProp="name" content={testimonial.author.name} />
+                    <meta
+                      itemProp="brand"
+                      content={testimonial.author.company}
+                    />
+                  </div>
+
+                  <div
+                    itemProp="itemReviewed"
+                    itemScope
+                    itemType="https://schema.org/Organization"
+                  >
+                    <meta itemProp="name" content="One Pixel" />
+                    <meta
+                      itemProp="description"
+                      content="Agence de développement web aux Antilles, Saint Barthélemy"
+                    />
+                  </div>
+
+                  <div
+                    itemScope
+                    itemType="https://schema.org/Rating"
+                    itemProp="reviewRating"
+                  >
+                    <meta itemProp="ratingValue" content="5" />
+                    <meta itemProp="bestRating" content="5" />
+                    <meta itemProp="worstRating" content="1" />
+                  </div>
+
+                  <blockquote itemProp="reviewBody" className="text-gray-600">
+                    <p>{`"${testimonial.body}"`}</p>
                   </blockquote>
                   <figcaption className="mt-6 flex items-center gap-x-4">
                     <Image
