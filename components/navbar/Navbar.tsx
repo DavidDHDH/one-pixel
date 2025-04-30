@@ -7,10 +7,10 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 const navigation = [
-  { name: 'Portfolio', href: '#portfolio' },
-  { name: 'Testimonials', href: '#testimonials' },
-  { name: 'Services', href: '#services' },
-  { name: 'A propos de moi', href: '#aboutme' },
+  { name: 'Portfolio', href: '/#portfolio' },
+  { name: 'Testimonials', href: '/#testimonials' },
+  { name: 'Services', href: '/#services' },
+  { name: 'A propos de moi', href: '/#aboutme' },
 ]
 
 export default function Navbar() {
