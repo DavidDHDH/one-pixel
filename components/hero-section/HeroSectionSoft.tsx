@@ -41,16 +41,20 @@ export default function HeroSectionSoft() {
                   </div>
                 </div>
                 <h1 className="font-rubik text-pretty text-5xl font-semibold tracking-tight text-gray-900">
-                  Développeur web freelance à Saint-Barthélemy
+                  Développeur web à Saint-Barthélemy
                 </h1>
                 <h2 className="mt-6 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
-                  Création d&apos;applications web, logiciels métiers et sites
-                  internet pour les entreprises des Antilles.
+                  Je suis David, développeur à Saint-Barth. Je conçois des
+                  applications web, des outils métiers et des sites internet
+                  sur-mesure pour les entreprises des Antilles.
                 </h2>
                 <p className="mt-4 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
                   💡 Des solutions sur-mesure pour digitaliser ton activité,
-                  moderniser tes processus et booster ton business localement ou
-                  à distance.
+                  moderniser tes processus et booster ton business.
+                </p>
+                <p className="mt-4 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
+                  🔥 Ici, pas d&apos;usine à sites. Un seul projet à la fois :
+                  le tien.
                 </p>
                 <p className="mt-4 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
                   📍 Basé à Saint-Barth. Disponible partout dans les Caraïbes.
