@@ -13,7 +13,7 @@ const projectTypes = [
   'Dashboard interne',
   'Automatisation de tâches',
   'E-commerce',
-  '...',
+  'Site internet',
 ]
 
 export default function CTA() {
