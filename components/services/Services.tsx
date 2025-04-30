@@ -8,23 +8,22 @@ import { Icon } from '../shared/Icon'
 
 const services = [
   {
-    label: 'Applications métier personnalisées',
+    label: 'Applications web métier sur mesure',
     description:
-      'Pour automatiser les tâches internes, gagner du temps et améliorer ta productivité.',
-    icon: 'code',
+      'Interfaces de réservation, CRM, gestion… Je développe des solutions pensées pour automatiser, centraliser et faire gagner du temps.',
+    icon: 'application',
   },
   {
-    label: 'Plateformes SaaS évolutives',
+    label: 'Sites internet professionnels',
     description:
-      'Pour proposer à tes clients ou ton équipe une solution accessible, fluide et évolutive.',
-    icon: 'design',
+      'Site vitrine, portfolio, ou catalogue : design personnalisé, responsive, rapide et livré en 1 semaine.',
+    icon: 'website',
   },
-
   {
-    label: 'Fonctionnalités IA sur-mesure',
+    label: 'IA & automatisation intelligente',
     description:
-      'Pour enrichir tes outils avec de l’intelligence artificielle : automatisation, analyse, recommandations.',
-    icon: 'tool',
+      'Génération de contenu, recommandations, analyse métier… L’intelligence artificielle au service de ton activité.',
+    icon: 'ia',
   },
 ]
 

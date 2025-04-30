@@ -206,11 +206,11 @@ export const projects: Projects[] = [
   },
   {
     title: 'St Barth R Way',
-    type: 'Refonte UI pour agence de voyage de luxe',
+    type: 'Site internet - agence de voyage de luxe',
     industry: 'Voyage',
     isMainProject: false,
     description:
-      "Refonte UI premium pour St Barth R Way, agence de voyage spécialisée en VIP Service et vols privés. L'objectif était de moderniser le design, de le rendre plus en adéquation avec les standards de l'industrie du luxe et la qualité de service de l'agence.",
+      "Refonte UI pour St Barth R Way, agence de voyage spécialisée en VIP Service et vols privés. L'objectif était de moderniser le design du site, de le rendre plus en adéquation avec les standards de l'industrie du luxe et la qualité de service de l'agence.",
     mainImage: rwayMockup,
     location: 'Saint-Barthélemy',
     features: [],
@@ -221,13 +221,13 @@ export const projects: Projects[] = [
   },
   {
     title: 'SeaBarts Watersports',
-    type: 'Site vitrine multilangue – sports nautiques',
+    type: 'Site internet multilingue – sports nautiques',
     industry: 'Sports nautiques',
     isMainProject: false,
     seoCategory: 'WebSite',
     seoPlatform: 'Web',
     description:
-      'Site vitrine multilangue pour SeaBarts Watersports, spécialiste des seabobs et e-foils à Saint-Barthélemy. Une interface moderne et mobile-first pour présenter leurs activités nautiques haut de gamme.',
+      'Site vitrine multilingue pour SeaBarts Watersports, spécialiste des seabobs et e-foils à Saint-Barthélemy. Une interface moderne et mobile-first pour présenter leurs activités nautiques haut de gamme.',
     mainImage: SBmockup,
     location: 'Saint-Barthélemy',
     features: [],
@@ -236,7 +236,7 @@ export const projects: Projects[] = [
   },
   {
     title: 'Tile & Design Shop',
-    type: 'Site vitrine multilingue – showroom d’aménagement',
+    type: 'Site internet multilingue – showroom d’aménagement',
     industry: 'Aménagement',
     isMainProject: false,
     seoCategory: 'WebSite',

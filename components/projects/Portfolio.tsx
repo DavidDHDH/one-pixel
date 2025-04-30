@@ -12,12 +12,12 @@ const Portfolio = () => {
       aria-label="Portfolio de projets"
       className="min-h-screen"
     >
-      <div className="mx-auto max-w-3xl text-center px-6 lg:px-8">
+      <div className="mx-auto max-w-4xl text-center px-6 lg:px-8">
         <h2 className="text-lg font-semibold text-primaryText">
           Projets sur-mesure réalisés pour des entreprises locales.
         </h2>
         <p className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-          Des applications et sites web pensés pour les Antilles.
+          Des applications et sites internet pensés pour les Antilles.
         </p>
         <p className="mt-6 text-lg leading-8 text-gray-600">
           Découvre comment j’ai accompagné des entreprises à Saint-Barthélemy et

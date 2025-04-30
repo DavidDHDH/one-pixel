@@ -36,6 +36,7 @@ import {
   IconObjectScan,
   IconPackageExport,
   IconPlaneTilt,
+  IconRobot,
   IconRotateClockwise2,
   IconUsers,
   IconUsersGroup,
@@ -84,6 +85,8 @@ const iconOptions: {
   whatsapp: IconBrandWhatsapp,
   dashboard: IconLayoutDashboard,
   showroom: IconBuildingStore,
+  application: IconPlaneTilt,
+  ia: IconRobot,
 }
 
 export const Icon = ({
