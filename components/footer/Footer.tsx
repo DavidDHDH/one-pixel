@@ -1,33 +1,34 @@
-import { CONTACT_EMAIL, WHATSAPP_NUMBER } from "@/lib/const";
-import { Icon } from "../shared/Icon";
+import { CONTACT_EMAIL, WHATSAPP_NUMBER } from '@/lib/const'
+import Link from 'next/link'
+import { Icon } from '../shared/Icon'
 
 const navigation = [
   {
-    name: "email",
+    name: 'email',
     href: `mailto:${CONTACT_EMAIL}?subject=Demande d'information`,
-    icon: "mail",
+    icon: 'mail',
   },
   {
-    name: "Whatsapp",
+    name: 'Whatsapp',
     href: `https://wa.me/${WHATSAPP_NUMBER}`,
-    icon: "whatsapp",
+    icon: 'whatsapp',
   },
   {
-    name: "Linkedin",
-    href: "https://www.linkedin.com/in/david-heimfert-571960265/",
-    icon: "LinkedIn",
+    name: 'Linkedin',
+    href: 'https://www.linkedin.com/in/david-heimfert-571960265/',
+    icon: 'LinkedIn',
   },
   {
-    name: "GitHub",
-    href: "https://github.com/DavidDHDH",
-    icon: "Github",
+    name: 'GitHub',
+    href: 'https://github.com/DavidDHDH',
+    icon: 'Github',
   },
   {
-    name: "Instagram",
-    href: "https://www.instagram.com/monsieur__david/",
-    icon: "Instagram",
+    name: 'Instagram',
+    href: 'https://www.instagram.com/monsieur__david/',
+    icon: 'Instagram',
   },
-];
+]
 
 export default function Footer() {
   return (
@@ -48,9 +49,15 @@ export default function Footer() {
         </div>
         <p className="mt-8 text-center text-sm/6 text-gray-600 md:order-1 md:mt-0">
           &copy; {new Date().getFullYear()} One Pixel - David Heimfert, Tout
-          droit réservé.
+          droit réservé.{' '}
+          <Link
+            href="/legals"
+            className="text-gray-600 hover:text-gray-800 text-sm underline"
+          >
+            Mentions légales
+          </Link>
         </p>
       </div>
     </footer>
-  );
+  )
 }

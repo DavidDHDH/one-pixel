@@ -6,7 +6,6 @@ import RGPD from '@/public/images/rgpdgris.webp'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { PopupButton } from 'react-calendly'
-import Navbar from '../navbar/Navbar'
 import AnimatedShinyText from '../ui/animated-shiny-text'
 import TestimonialHero from './TestimonialHero'
 export default function HeroSectionSoft() {
@@ -16,7 +15,6 @@ export default function HeroSectionSoft() {
   }, [])
   return (
     <div id="calendly" className="">
-      <Navbar />
       <div className="relative">
         <div className="mx-auto max-w-6xl">
           <div className="relative z-10 pt-14 lg:w-full lg:max-w-2xl">

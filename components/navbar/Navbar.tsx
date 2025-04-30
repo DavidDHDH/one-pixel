@@ -1,18 +1,20 @@
-import logo from "@/public/images/logo.webp";
-import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
-import { useState } from "react";
+'use client'
+
+import logo from '@/public/images/logo.webp'
+import { Dialog, DialogPanel } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
+import { useState } from 'react'
 
 const navigation = [
-  { name: "Portfolio", href: "#portfolio" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "Services", href: "#services" },
-  { name: "A propos de moi", href: "#aboutme" },
-];
+  { name: 'Portfolio', href: '#portfolio' },
+  { name: 'Testimonials', href: '#testimonials' },
+  { name: 'Services', href: '#services' },
+  { name: 'A propos de moi', href: '#aboutme' },
+]
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
@@ -22,7 +24,7 @@ export default function Navbar() {
             aria-label="Global"
             className="flex items-center justify-between lg:justify-start"
           >
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">
                 Logo One Pixel, studio de développement web
               </span>
@@ -97,5 +99,5 @@ export default function Navbar() {
         </DialogPanel>
       </Dialog>
     </header>
-  );
+  )
 }

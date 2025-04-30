@@ -1,3 +1,5 @@
+import Footer from '@/components/footer/Footer'
+import Navbar from '@/components/navbar/Navbar'
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -16,7 +18,13 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth">
       <Analytics />
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body
+        className={`${inter.className} antialiased min-h-screen flex flex-col`}
+      >
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
     </html>
   )
 }
