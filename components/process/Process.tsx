@@ -4,25 +4,25 @@ const features = [
   {
     name: 'Étude',
     description:
-      'Analyse de ton besoin métier, étude RGPD, définition d’un MVP ciblé, cadrage du projet : on pose des bases solides pour un développement efficace.',
+      'On clarifie ensemble ton besoin métier et ta cible. Résultat : une vision précise du produit, conforme au RGPD, avec un MVP cadré et priorisé.',
     icon: 'search',
   },
   {
     name: 'UX/UI Design',
     description:
-      "Maquettes validées à chaque étape, interface fluide, logique métier respectée. On pense l'expérience utilisateur dès le départ.",
+      'Maquettes validées à chaque étape, logique métier respectée, navigation fluide. Ton futur outil est pensé pour être intuitif dès le départ.',
     icon: 'pixel',
   },
   {
     name: 'Développement',
     description:
-      'Avancement itératif, feedbacks réguliers, code robuste. Tu suis la progression pas à pas, jusqu’à un produit prêt à scaler.',
+      'Déploiement progressif, retours réguliers, code solide. Tu suis chaque étape, sans surprise, jusqu’à une application prête à évoluer.',
     icon: 'dev',
   },
   {
     name: 'Suivi',
     description:
-      'Une fois en ligne, je t’accompagne pour itérer : analyse des usages, roadmap, ajout de fonctionnalités, maintenance évolutive.',
+      'Une fois en ligne, on analyse les usages pour faire évoluer ton outil. Nouvelles features, roadmap claire, support continu.',
     icon: 'rotateArrow',
   },
 ]
@@ -39,9 +39,9 @@ export default function ProcessSection() {
             Rien n&apos;est laissé au hasard.
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            De l&apos;analyse à l&apos;évolution de ton application, chaque
-            étape est conçue pour livrer une solution sur-mesure, efficace et
-            évolutive.
+            Chaque étape est pensée pour sécuriser ton investissement : on part
+            d’un vrai besoin métier, on construit une UX sur-mesure, on
+            développe avec rigueur, et on t’accompagne dans la durée.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">

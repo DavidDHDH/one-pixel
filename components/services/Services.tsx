@@ -10,19 +10,19 @@ const services = [
   {
     label: 'Applications web métier sur mesure',
     description:
-      'Interfaces de réservation, CRM, gestion… Je développe des solutions pensées pour automatiser, centraliser et faire gagner du temps.',
+      'Gère tes réservations, plannings ou processus internes depuis une seule interface. Je conçois des applications web qui automatisent tes tâches et t’aident à mieux organiser ton activité au quotidien.',
     icon: 'application',
   },
   {
     label: 'Sites internet professionnels',
     description:
-      'Site vitrine, portfolio, ou catalogue : design personnalisé, responsive, rapide et livré en 1 semaine.',
+      'Un site vitrine unique, moderne et adapté aux mobiles, livré en une semaine. Idéal pour être visible localement, gagner en crédibilité et présenter ton offre avec clarté.',
     icon: 'website',
   },
   {
     label: 'IA & automatisation intelligente',
     description:
-      'Génération de contenu, recommandations, analyse métier… L’intelligence artificielle au service de ton activité.',
+      'Je t’aide à intégrer l’intelligence artificielle dans tes outils : génération de contenu, réponses automatiques, analyse de données… pour aller plus vite et mieux décider.',
     icon: 'ia',
   },
 ]

@@ -30,16 +30,16 @@ export default function CTA() {
           <div className="mx-auto backdrop-blur-md flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 border border-t-white/50 border-r-white/50 border-b-white/25 border-l-white/25 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-16 xl:gap-x-20 xl:px-16">
             <div className="w-full lg:w-1/2 flex-auto">
               <h2 className="text-pretty font-rubik text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                Une idée ? Un projet ? Discutons-en.
+                Une idée d’outil web ? Un besoin concret à digitaliser ?
               </h2>
               <p className="mt-6 text-pretty text-lg/8 text-white">
-                Application métier, plateforme SaaS ou outil interne ? On fait
-                le point sur ton besoin, et je t’aide à y voir clair pour
-                construire une solution utile, solide et évolutive.
+                On échange sur ton besoin, et je t’aide à poser les bases d’un
+                projet utile, réaliste et évolutif. Tu repars avec une vision
+                claire — même si on ne travaille pas ensemble.
               </p>
               <p className="mt-6 text-pretty text-lg/8 text-white">
-                Voici les types de projets sur lesquels j’interviens
-                régulièrement :
+                Voici les types de projets que je développe régulièrement pour
+                les entreprises des Antilles :
               </p>
               <ul
                 role="list"
@@ -56,8 +56,9 @@ export default function CTA() {
                 ))}
               </ul>
               <div className="flex flex-col gap-4 justify-end mt-8">
-                <p className="mt-4 text-sm text-white text-end">
-                  Ou si tu préfères, contacte-moi directement par mail :
+                <p className="mt-4 text-sm text-white text-end max-w-sm ml-auto">
+                  Tu préfères passer par email ? Contacte-moi directement, je
+                  réponds sous 24h.
                 </p>
                 <div className="flex justify-end">
                   <a

@@ -8,7 +8,7 @@ const advantages: AdvantageItem[] = [
   {
     title: 'Disponible rapidement',
     description:
-      "Réactivité en cas d'urgence, réunions en face à face : ton développeur est là, sur place.",
+      'Besoin urgent ou ajustement de dernière minute ? Je suis sur place pour réagir vite et organiser des réunions en face à face si besoin.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ const advantages: AdvantageItem[] = [
   {
     title: 'Expertise terrain',
     description:
-      'Je connais les spécificités de l’île, ses contraintes techniques, logistiques, humaines. C’est intégré dans la solution dès le départ.',
+      'Je connais les contraintes techniques, logistiques et humaines de l’île. Les spécificités locales sont intégrées dès la conception du projet.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ const advantages: AdvantageItem[] = [
   {
     title: 'Zéro décalage horaire',
     description:
-      'On parle la même langue, dans le même fuseau horaire. Moins d’aller-retours, plus d’efficacité.',
+      'Même fuseau, même langue, même contexte. Les échanges sont fluides, les décisions rapides, le projet avance.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ const advantages: AdvantageItem[] = [
   {
     title: 'Impact local',
     description:
-      'Tu soutiens l’économie de Saint-Barth en faisant appel à un indépendant implanté ici.',
+      'Tu soutiens l’économie locale en travaillant avec un indépendant implanté à Saint-Barthélemy. Un choix éthique et durable.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ const advantages: AdvantageItem[] = [
   {
     title: 'Relation de confiance',
     description:
-      "Un partenaire qui connaît ton activité, tes enjeux, et t'accompagne dans la durée.",
+      'Un interlocuteur unique, impliqué, qui comprend ton activité et t’accompagne sur le long terme. Pas une agence impersonnelle.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -145,9 +145,9 @@ const WhySection = () => {
           Un partenaire proche, un impact concret.
         </p>
         <p className="mt-6 text-lg leading-8 text-gray-600 text-center">
-          Développeur web basé à Saint-Barthélemy, j’aide les entreprises des
-          Antilles françaises à créer leurs outils digitaux sur-mesure. Mon
-          approche combine proximité, rigueur juridique et logique métier.
+          Basé à Saint-Barth, je développe des sites et applications web pour
+          les entreprises des Antilles. En travaillant avec un indépendant
+          local, tu gagnes en efficacité, en sécurité juridique et en sérénité.
         </p>
         <div className="mt-10 rounded-xl bg-sand-100 border-dashed border-2 border-sand-500 shadow-sm p-8">
           <ul className="grid gap-y-6 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">

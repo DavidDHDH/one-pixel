@@ -51,27 +51,28 @@ export default function AboutMe() {
           </div>
           <div className="col-span-1 mx-auto space-y-8 mt-4 text-gray-600 md:max-w-full text-start">
             <p>
-              Je développe des applications métier et des plateformes SaaS qui
-              s&apos;adaptent à toi — pas l&apos;inverse. Chaque projet est sur
-              mesure, pensé pour ton quotidien, ton activité… et ta
+              💪 Je développe des applications métier et des plateformes SaaS
+              qui s&apos;adaptent à toi — pas l&apos;inverse. Chaque projet est
+              sur mesure, pensé pour ton quotidien, ton activité… et ta
               productivité.
             </p>
 
             <p>
-              Basé à Saint-Barthélemy, je travaille en direct avec mes clients :
-              pas de sous-traitance, pas d&apos;intermédiaire. Juste toi et moi,
-              pour aller droit au but, avec une vraie compréhension de ton
-              contexte et de tes besoins.
+              📍 Basé à Saint-Barthélemy, je travaille en direct avec mes
+              clients, sans intermédiaire. Ça veut dire plus de fluidité, de
+              réactivité… et une vraie compréhension de ton contexte terrain.
             </p>
 
             <p>
-              Mon objectif : te faire gagner du temps, réduire les erreurs,
-              automatiser ce qui peut l&apos;être. Des outils solides, simples à
-              prendre en main, pensés pour évoluer avec ton business.
+              🎯 Mon objectif : te faire gagner du temps, réduire les erreurs,
+              automatiser ce qui peut l&apos;être. Résultat : des outils
+              solides, simples à prendre en main, et conçus pour évoluer avec
+              ton business.
             </p>
 
             <p>
-              Et mon kiff ? Trouver des solutions aux problèmes du quotidien.
+              ❤️ Et mon kiff ? Résoudre des problèmes concrets avec du code
+              utile. Je suis la pour te simplifier la vie.
             </p>
 
             <div className="flex gap-4 justify-evenly">

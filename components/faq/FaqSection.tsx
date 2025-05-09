@@ -12,16 +12,22 @@ const defaultData = [
       "En travaillant avec un freelance, tu gagnes en flexibilité, réactivité et proximité. Pas d'intermédiaire, pas de surcoûts d'agence : tu parles directement avec la personne qui conçoit et développe ton projet.",
   },
   {
+    id: 6,
+    question: 'Tu peux vraiment tout faire ?',
+    answer:
+      "Non, et heureusement. Mon expertise, c’est le développement et la productivité. Pour le reste (stratégie SEO, branding, photos …), je m'entoure d'autres experts. On monte une équipe légère et adaptée à ton projet, sans les coûts fixes d’une agence.",
+  },
+  {
     id: 3,
     question: 'Quels types de projets développes-tu ?',
     answer:
-      'Je suis spécialisé dans les applications métier (outils internes, automatisation), les plateformes SaaS et les sites web sur mesure. Chaque projet est unique et conçu pour répondre à un besoin concret.',
+      'Je développe des applications métier, des plateformes SaaS et des sites internet pour les pros des Antilles. Chaque projet est pensé pour résoudre un problème concret : automatiser une tâche, mieux communiquer ou gagner du temps.',
   },
   {
     id: 9,
     question: 'Tu t’occupes de la conformité RGPD ?',
     answer:
-      'Oui, je suis formé au Règlement Général sur la Protection des Données (RGPD) et je développe chaque projet dans le respect des obligations légales. Je t’accompagne aussi sur les bonnes pratiques à adopter : gestion des consentements, mentions légales, collecte minimale des données, etc.',
+      'Oui. Je suis formé au RGPD, et j’intègre les obligations légales dès la conception de ton site ou application. Consentement, mentions, sécurité : on fait les choses proprement, pour que tu sois tranquille, et je t’accompagne sur les bonnes pratiques à adopter.',
   },
   {
     id: 4,
@@ -40,14 +46,9 @@ const defaultData = [
     id: 5,
     question: 'Et après la mise en ligne ?',
     answer:
-      'Je propose un suivi personnalisé selon tes besoins : corrections, évolutions, nouvelles fonctionnalités. Ton app continue de grandir avec ton activité.',
+      'Je propose un suivi sur mesure : corrections, nouvelles fonctionnalités, itérations basées sur les retours utilisateurs. Ton outil évolue avec ton business — pas besoin de tout refaire dans 6 mois.',
   },
-  {
-    id: 6,
-    question: 'Tu peux vraiment tout faire ?',
-    answer:
-      "Non, et heureusement. Mon expertise, c’est le développement sur mesure. Pour le reste (stratégie SEO, branding, photos …), je travaille avec d'autres pros. On monte une équipe adaptée à ton projet, sans les lourdeurs ni les coûts de structure d’une agence.",
-  },
+
   {
     id: 7,
     question: 'Tu peux gérer plusieurs projets à la fois ?',
@@ -58,7 +59,7 @@ const defaultData = [
     id: 8,
     question: 'Je peux te parler de mon idée sans engagement ?',
     answer:
-      'Bien sûr. On peut en discuter ensemble, poser les bases, et voir si je suis la bonne personne pour t’accompagner, ou te diriger vers un autre expert. Aucun engagement tant qu’on n’a pas cadré un projet. Et bien sur, tout reste en nous.',
+      'Bien sûr. Tu peux m’exposer ton idée, tes objectifs, et on voit ensemble ce qui est réaliste, si je suis la bonne personne pour t’accompagner ou te diriger vers un autre expert. Pas de promesse vide, pas d’engagement tant qu’on n’a pas cadré ton projet.',
   },
 ]
 
@@ -80,9 +81,9 @@ export default function FaqSection() {
             Tu te poses peut-être l&apos;une de ces questions.
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Je réponds ici aux interrogations les plus courantes avant de
-            démarrer un projet. Si tu ne trouves pas ta réponse, n&apos;hésite
-            pas à me contacter directement.
+            Pas de question bête, je réponds ici aux interrogations les plus
+            courantes avant de démarrer un projet. Si tu ne trouves pas ta
+            réponse, n&apos;hésite pas à me contacter directement.
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
