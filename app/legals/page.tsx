@@ -22,7 +22,7 @@ export default function Legals() {
                 Auto-entrepreneur
               </p>
               <p>
-                <span className="font-medium">SIRET :</span> [à compléter]
+                <span className="font-medium">SIRET :</span> 920411824 00013
               </p>
               <p>
                 <span className="font-medium">
