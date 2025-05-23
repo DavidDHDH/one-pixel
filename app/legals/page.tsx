@@ -2,7 +2,7 @@ import { CONTACT_EMAIL } from '@/lib/const'
 
 export default function Legals() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+    <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8 text-gray-900">
       <div className="prose prose-lg prose-gray mx-auto">
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-12">
           ⚙️ Mentions légales
@@ -38,7 +38,7 @@ export default function Legals() {
                 <span className="font-medium">Email :</span>{' '}
                 <a
                   href={`mailto:${CONTACT_EMAIL}`}
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-blue-700 hover:underline"
                 >
                   {CONTACT_EMAIL}
                 </a>
@@ -65,7 +65,7 @@ export default function Legals() {
                   href="https://vercel.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-blue-700 hover:underline"
                 >
                   https://vercel.com
                 </a>
@@ -77,7 +77,7 @@ export default function Legals() {
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
               Propriété intellectuelle
             </h2>
-            <p className="text-gray-600">
+            <p>
               Le contenu de ce site (textes, images, graphismes, logo, etc.) est
               protégé par le droit d&apos;auteur. Toute reproduction ou
               utilisation non autorisée est interdite sans accord préalable.
@@ -89,22 +89,22 @@ export default function Legals() {
               Données personnelles
             </h2>
             <div className="space-y-4">
-              <p className="text-gray-600">
+              <p>
                 Ce site ne collecte aucune donnée personnelle directement. Un
                 outil de mesure de fréquentation respectueux de la vie privée
                 est utilisé <span className="font-semibold">sans cookie</span>{' '}
                 et <span className="font-semibold">sans suivi individuel</span>.
               </p>
-              <p className="text-gray-600">
+              <p>
                 Aucune donnée personnelle n&apos;est stockée ou partagée avec
                 des tiers.
               </p>
-              <p className="text-gray-600">
+              <p>
                 Pour toute question sur la confidentialité ou l&apos;usage du
                 site :{' '}
                 <a
                   href={`mailto:${CONTACT_EMAIL}`}
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-blue-700 hover:underline"
                 >
                   {CONTACT_EMAIL}
                 </a>
@@ -116,7 +116,7 @@ export default function Legals() {
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
               Cookies
             </h2>
-            <p className="text-gray-600">
+            <p>
               Ce site n&apos;utilise{' '}
               <span className="font-semibold">
                 aucun cookie nécessitant le consentement
