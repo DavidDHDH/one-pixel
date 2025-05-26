@@ -15,7 +15,7 @@ const navigation = [
   },
   {
     name: 'Linkedin',
-    href: 'https://www.linkedin.com/in/david-heimfert-571960265/',
+    href: 'https://www.linkedin.com/in/david-heimfert',
     icon: 'LinkedIn',
   },
   {

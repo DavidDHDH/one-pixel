@@ -14,7 +14,7 @@ const people = {
   role: 'Développeur Web - Next.JS',
   imageUrl: 'public/images/IMG_7289.webp',
   githubUrl: 'https://github.com/DavidDHDH',
-  linkedinUrl: 'https://www.linkedin.com/in/david-heimfert-571960265/',
+  linkedinUrl: 'https://www.linkedin.com/in/david-heimfert',
 }
 
 const pros = [
