@@ -41,7 +41,7 @@ const Profil = ({
       <Image
         alt="David Heimfert, Développeur Web - Next.JS"
         src={profilPic}
-        className="aspect-[1/1] w-full max-w-[500px] rounded-2xl object-cover"
+        className="aspect-[1/1] w-full max-w-[500px] rounded-2xl object-cover shadow-lg"
       />
       <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-primaryText">
         {people.name}

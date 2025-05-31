@@ -77,7 +77,7 @@ export default function Services() {
                 )}
               >
                 <div className="max-w-lg mx-auto lg:mr-auto xl:mx-auto">
-                  <div className="relative flex w-full px-8 py-6 shadow-xl bg-white rounded-3xl bg-dark-700 sm:px-10">
+                  <div className="relative flex w-full px-8 py-6 shadow-lg bg-white rounded-2xl bg-dark-700 sm:px-10">
                     <div className="text-center sm:flex sm:text-left">
                       <div className="w-full sm:w-1/6">
                         <div className="flex items-center justify-center sm:mx-0 from-dark-800 to-dark-900">
@@ -108,7 +108,7 @@ export default function Services() {
                 <Image
                   src={ipadPic}
                   alt="Prototype dâ€™application sur tablette"
-                  className="object-cover object-right w-full h-full rounded-3xl"
+                  className="object-cover object-right w-full h-full rounded-2xl"
                   sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
                 />
               </div>
@@ -116,7 +116,7 @@ export default function Services() {
                 <Image
                   src={designPic}
                   alt="Conception d'interface utilisateur"
-                  className="object-cover object-center w-full h-full rounded-3xl"
+                  className="object-cover object-center w-full h-full rounded-2xl"
                   sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
                 />
               </div>
@@ -124,7 +124,7 @@ export default function Services() {
                 <Image
                   src={me}
                   alt="Développeur web freelance à Saint-Barth"
-                  className="object-cover object-center w-full h-full rounded-3xl"
+                  className="object-cover object-center w-full h-full rounded-2xl"
                   sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
                 />
               </div>

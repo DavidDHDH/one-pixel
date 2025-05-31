@@ -7,9 +7,9 @@ import { FaqAccordion } from '../ui/faq-chat-accordion'
 const defaultData = [
   {
     id: 1,
-    question: "Pourquoi choisir un freelance plutôt qu'une agence ?",
+    question: "Pourquoi choisir un freelance plutôt qu'une grosse agence ?",
     answer:
-      "En travaillant avec un freelance, tu gagnes en flexibilité, réactivité et proximité. Pas d'intermédiaire, pas de surcoûts d'agence : tu parles directement avec la personne qui conçoit et développe ton projet.",
+      "En travaillant avec un freelance bien entouré, tu gagnes en flexibilité, réactivité et proximité. Pas d'intermédiaire, pas de surcoûts d'agence : tu parles directement avec la personne qui conçoit et développe ton projet.",
   },
   {
     id: 6,
@@ -93,7 +93,7 @@ export default function FaqSection() {
             answerClassName="bg-blue-500"
             timestamp={timestamp}
           />
-          <div className="relative aspect-[3/2] w-full rounded-2xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-[1.02]">
+          <div className="relative aspect-[3/2] w-full rounded-2xl overflow-hidden shadow-lg ">
             <Image
               alt="David Heimfert, Développeur web à Saint-Barthélemy"
               src={profilPic}

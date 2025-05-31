@@ -1,6 +1,7 @@
 // REMETTRE COLUMN000-3 A LA PLACE DE GRID
 
 import { testimonials } from '@/datas/testimonials'
+import { StarIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 
 export default function TestimonialsSection() {
@@ -24,10 +25,10 @@ export default function TestimonialsSection() {
                   index === 3 && 'col-start-2'
                 }`}
               >
-                <figure
+                <div
                   itemScope
                   itemType="https://schema.org/Review"
-                  className="rounded-2xl bg-sand-100 p-8 text-sm leading-6"
+                  className="relative bg-white/50 backdrop-blur-sm border border-gray-100/60 rounded-lg p-6 shadow-lg"
                 >
                   <div
                     itemProp="author"
@@ -63,23 +64,41 @@ export default function TestimonialsSection() {
                     <meta itemProp="worstRating" content="1" />
                   </div>
 
-                  <blockquote itemProp="reviewBody" className="text-gray-600">
-                    <p>{`"${testimonial.body}"`}</p>
-                  </blockquote>
-                  <figcaption className="mt-6 flex items-center gap-x-4">
-                    <Image
-                      alt={`Photo de ${testimonial.author.name}`}
-                      src={testimonial.author.image}
-                      className="h-10 w-10 rounded-full bg-gray-50"
-                    />
-                    <div>
-                      <div className="font-semibold text-gray-900">
-                        {testimonial.author.name}
-                      </div>
-                      <div className="text-gray-600">{`${testimonial.author.company}`}</div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mr-3 mt-1">
+                      <Image
+                        src={testimonial.author.image}
+                        alt={`Photo de ${testimonial.author.name}`}
+                        className="h-12 w-12 rounded-full object-cover ring-2 ring-gray-100"
+                      />
                     </div>
-                  </figcaption>
-                </figure>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center mb-1">
+                        <span className="text-sm font-semibold text-gray-700">
+                          {testimonial.author.name}
+                        </span>
+                        <span className="mx-1.5 text-gray-300">•</span>
+                        <span className="text-xs text-gray-500 truncate">
+                          {testimonial.author.company}
+                        </span>
+                      </div>
+                      <p
+                        itemProp="reviewBody"
+                        className="text-sm/5 text-gray-600"
+                      >
+                        {testimonial.body}
+                      </p>
+                      <div className="flex mt-1.5">
+                        {[...Array(5)].map((_, i) => (
+                          <StarIcon
+                            key={i}
+                            className="h-3 w-3 text-yellow-400"
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

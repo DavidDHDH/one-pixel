@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function TesimonialHero() {
   return (
-    <div className="mt-8 relative bg-white/50 backdrop-blur-sm border border-gray-100/60 rounded-lg px-4 py-3 shadow-sm max-w-md">
+    <div className="mt-8 relative bg-white/50 backdrop-blur-sm border border-gray-100/60 rounded-lg px-4 py-3 shadow-lg max-w-md">
       <div className="flex items-start">
         <div className="flex-shrink-0 mr-3 mt-1">
           <Image

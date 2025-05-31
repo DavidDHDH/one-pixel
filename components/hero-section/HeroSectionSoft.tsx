@@ -37,17 +37,17 @@ export default function HeroSectionSoft() {
                     )}
                   >
                     <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                      <span> One Pixel - Web & Dev Studio</span>
+                      <span>One Pixel - Web & Dev Studio</span>
                     </AnimatedShinyText>
                   </div>
                 </div>
-                <h1 className="font-rubik text-pretty text-5xl font-semibold tracking-tight text-gray-900">
-                  Développeur web à Saint-Barthélemy
+                <h1 className="font-rubik text-pretty text-5xl/tight font-semibold tracking-tight text-gray-900">
+                  Agence web et création de sites internet à Saint-Barthélemy
                 </h1>
                 <h2 className="mt-6 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
-                  Je suis David. J’aide les entreprises des Antilles à créer des
-                  sites web et des applications métier qui font gagner du temps,
-                  fluidifient leur organisation et boostent leur activité.
+                  J’accompagne les entreprises des Antilles dans la création de
+                  sites web et d’applications métier boosté à l&apos;IA, pour
+                  leur faire gagner du temps et des clients.
                 </h2>
                 <p className="mt-4 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
                   💡 Des solutions sur-mesure, pensées pour ton quotidien, pas

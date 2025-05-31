@@ -1,16 +1,23 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Développeur Web Freelance à Saint-Barthélemy - One Pixel',
+  title: 'Agence web et création de site internet à Saint-Barthélemy',
   description:
-    'Développeur web freelance basé à Saint-Barthélemy, je conçois des applications sur-mesure, sites et logiciels métier pour les entreprises des Antilles.',
+    "Agence web et création de site internet à Saint-Barthélemy, je conçois des applications sur-mesure, sites internet et logiciels métier booster à l'IA pour les entreprises des Antilles.",
   keywords: [
+    'agence web',
+    'création de site internet',
+    'développement web',
+    'développeur web',
     'développeur web freelance',
-    'Saint-Barthélemy',
+    'accompagnement IA',
+    'intelligence artificielle',
+    'développeur web à Saint-Barthélemy',
     'applications sur-mesure',
     'site internet professionnel',
     'SaaS',
     'logiciel métier',
+    'Saint-Barthélemy',
     'Antilles',
   ],
   authors: [{ name: 'David Heimfert', url: 'https://www.one-pixel.com' }],
@@ -26,9 +33,9 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Développeur Web Freelance à Saint-Barthélemy - One Pixel',
+    title: 'Agence web et création de site internet à Saint-Barthélemy',
     description:
-      'Développeur web freelance à Saint-Barthélemy. Création de sites internet, applications métiers, plateformes SaaS sur-mesure pour les entreprises locales.',
+      "Agence web et création de site internet à Saint-Barthélemy, je conçois des applications sur-mesure, sites internet et logiciels métier booster à l'IA pour les entreprises des Antilles.",
     url: 'https://www.one-pixel.com',
     siteName: 'One Pixel',
     locale: 'fr_FR',
@@ -37,9 +44,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Développeur Web Freelance à Saint-Barthélemy - One Pixel',
+    title: 'Agence web et création de site internet à Saint-Barthélemy',
     description:
-      'Applications sur-mesure, SaaS, sites web professionnels — développeur freelance à Saint-Barthélemy au service des Antilles.',
+      "Agence web et création de site internet à Saint-Barthélemy, je conçois des applications sur-mesure, sites internet et logiciels métier booster à l'IA pour les entreprises des Antilles.",
     // pas d’image tant que tu n’as pas de fichier
   },
   robots: {

@@ -19,7 +19,7 @@ const SecondaryProject = ({ project }: { project: ProjectType }) => {
       <meta itemProp="applicationCategory" content={project.type} />
       <meta itemProp="operatingSystem" content={project.seoPlatform || 'Web'} />
       <meta itemProp="description" content={project.description} />
-      <div className="rounded-xl shadow-2xl overflow-hidden bg-white h-[600px] flex flex-col text-gray-900 ">
+      <div className="rounded-xl shadow-lg overflow-hidden bg-white h-[600px] flex flex-col text-gray-900 ">
         <div className="h-[50%]">
           <Dialog>
             <DialogTrigger asChild>
