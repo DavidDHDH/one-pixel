@@ -1,0 +1,70 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
+      time: '07:00'
+      timezone: 'America/St_Barthelemy'
+    groups:
+      dev-dependencies:
+        patterns:
+          - '@types/*'
+          - 'eslint*'
+          - 'prettier*'
+          - 'typescript'
+          - 'jest*'
+          - '@testing-library/*'
+        update-types:
+          - 'minor'
+          - 'patch'
+      production-dependencies:
+        patterns:
+          - '*'
+        exclude-patterns:
+          - '@types/*'
+          - 'eslint*'
+          - 'prettier*'
+          - 'typescript'
+          - 'jest*'
+          - '@testing-library/*'
+        update-types:
+          - 'minor'
+          - 'patch'
+      security-patches:
+        update-types:
+          - 'minor'
+          - 'patch'
+    allow:
+      - dependency-type: 'all'
+    commit-message:
+      prefix: '[Dependabot]'
+      include: 'scope'
+      prefix-development: '[Dependabot-dev]'
+    open-pull-requests-limit: 10
+    versioning-strategy: auto
+    rebase-strategy: auto
+    ignore:
+      - dependency-name: 'next'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'react'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'react-dom'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '@types/react'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '@types/react-dom'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'typescript'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '*'
+        versions:
+          - alpha
+          - beta
+          - canary
+          - dev
+          - experimental
+          - legacy
+          - next
+          - nightly
+          - rc
