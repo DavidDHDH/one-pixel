@@ -1,4 +1,4 @@
-import { BentoGridLayout } from '@/components/project-page/BendoGridLayout'
+import { BentoGridLayout } from '@/components/project-page/BentoGridLayout'
 import { ProjectContext } from '@/components/project-page/ProjectContext'
 import { ProjectHero } from '@/components/project-page/ProjectHero'
 import { projects } from '@/datas/projects'
