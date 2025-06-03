@@ -1,5 +1,6 @@
 import { ProjectType } from '@/datas/projects'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Icon } from '../shared/Icon'
 import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog'
 import {
@@ -74,19 +75,31 @@ export default function MainProject({
                         </TooltipProvider>
                       ))}
                     </div>
-                    <div className="hidden xl:block">
-                      <TooltipProvider delayDuration={0}>
-                        <Tooltip>
-                          <TooltipTrigger>
-                            <p className="text-sm  leading-6 text-gray-400 cursor-default">
-                              Étude de cas <span aria-hidden="true">→</span>
-                            </p>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p>Bientôt disponible</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
+                    <div>
+                      {project.slug && (
+                        <Link
+                          href={`/projects/${project.slug}`}
+                          className="cursor-pointer"
+                        >
+                          <p className="text-sm leading-6 hover:underline">
+                            Étude de cas <span aria-hidden="true">→</span>
+                          </p>
+                        </Link>
+                      )}
+                      {!project.slug && (
+                        <TooltipProvider delayDuration={0}>
+                          <Tooltip>
+                            <TooltipTrigger>
+                              <p className="text-sm  leading-6 text-gray-400 cursor-default">
+                                Étude de cas <span aria-hidden="true">→</span>
+                              </p>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p>Bientôt disponible</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -167,19 +180,31 @@ export default function MainProject({
                         </TooltipProvider>
                       ))}
                     </div>
-                    <div className="hidden xl:block">
-                      <TooltipProvider delayDuration={0}>
-                        <Tooltip>
-                          <TooltipTrigger>
-                            <p className="text-sm  leading-6 text-gray-400 cursor-default">
-                              Étude de cas <span aria-hidden="true">→</span>
-                            </p>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p>Bientôt disponible</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
+                    <div>
+                      {project.slug && (
+                        <Link
+                          href={`/projects/${project.slug}`}
+                          className="cursor-pointer"
+                        >
+                          <p className="text-sm leading-6 hover:underline">
+                            Étude de cas <span aria-hidden="true">→</span>
+                          </p>
+                        </Link>
+                      )}
+                      {!project.slug && (
+                        <TooltipProvider delayDuration={0}>
+                          <Tooltip>
+                            <TooltipTrigger>
+                              <p className="text-sm leading-6 text-gray-400 cursor-default">
+                                Étude de cas <span aria-hidden="true">→</span>
+                              </p>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p>Bientôt disponible</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      )}
                     </div>
                   </div>
                 </div>

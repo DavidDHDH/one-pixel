@@ -6,6 +6,7 @@ import tileMockup from '@/public/projects/Tile-mockup.webp'
 import VCscreen from '@/public/projects/VC-screen.webp'
 import WIHscreen from '@/public/projects/WIH-screen.webp'
 import artiziaScreen from '@/public/projects/artizia-screen.webp'
+import { Icon123, Icon12Hours } from '@tabler/icons-react'
 import { StaticImageData } from 'next/image'
 
 type Projects = {
@@ -17,14 +18,21 @@ type Projects = {
   seoCategory: 'WebApplication' | 'WebSite' | 'UI/UX'
   seoPlatform: 'Web' | 'Mobile' | 'Desktop'
   industry: string
+  bentoItems?: React.ReactNode[]
   features: {
     name: string
     description: string
     icon: string
   }[]
   stack: string[]
-  location?: string
+  location: string
+  year: string
   slug?: string
+  context?: string
+  goals?: {
+    icon: React.ReactNode
+    description: string
+  }[]
 }
 
 export const projects: Projects[] = [
@@ -40,6 +48,32 @@ export const projects: Projects[] = [
 
     mainImage: VCscreen,
     location: 'Saint-Barthélemy',
+    bentoItems: [
+      <p key="1" className="h-full w-full">
+        teste
+      </p>,
+      <p key="2" className="h-full w-full">
+        test
+      </p>,
+      <p key="3" className="h-full w-full">
+        test
+      </p>,
+      <p key="4" className="h-full w-full">
+        testdfsf
+      </p>,
+      <p key="5" className="h-full w-full">
+        test 5
+      </p>,
+      <p key="6" className="h-full w-full">
+        test 6
+      </p>,
+      <div key="7" className="h-full w-full flex items-center justify-center">
+        <Icon123 size={100} />
+      </div>,
+      <p key="8" className="h-full w-full">
+        test 8
+      </p>,
+    ],
     features: [
       {
         name: 'Planning.',
@@ -74,7 +108,25 @@ export const projects: Projects[] = [
       'Supabase',
       'Typescript',
     ],
-    slug: 'villa-care',
+    slug: 'villa-care-management',
+    year: '2024',
+    context:
+      'Villa Care est une application SaaS de gestion locative pour villas à Saint-Barthélemy. Elle permet de gérer les réservations, les disponibilités, les travaux et les informations clients.',
+    goals: [
+      {
+        icon: <Icon12Hours />,
+        description:
+          'Simplifier la gestion des réservations et des disponibilités.',
+      },
+      {
+        icon: <Icon12Hours />,
+        description: 'Automatiser les tâches répétitives.',
+      },
+      {
+        icon: <Icon12Hours />,
+        description: 'Centraliser les informations clients.',
+      },
+    ],
   },
   {
     title: 'Frip West Indies',
@@ -113,7 +165,7 @@ export const projects: Projects[] = [
       },
     ],
     stack: ['React', 'NextJS', 'Typescript', 'TailwindCSS', 'Supabase'],
-    slug: 'frip-west-indies',
+    year: '2024',
   },
   {
     title: 'Artizia FWI',
@@ -153,7 +205,7 @@ export const projects: Projects[] = [
       },
     ],
     stack: ['React', 'NextJS', 'Typescript', 'TailwindCSS', 'Supabase'],
-    slug: 'artizia-fwi',
+    year: '2024',
   },
   {
     title: 'Compagnie XYZ',
@@ -188,6 +240,7 @@ export const projects: Projects[] = [
     ],
     stack: ['React', 'NextJS', 'TailwindCSS', 'API Platform', 'Typescript'],
     slug: 'compagnie-xyz',
+    year: '2024',
   },
   {
     title: 'Delifood Island',
@@ -203,6 +256,7 @@ export const projects: Projects[] = [
     slug: 'delifood-island',
     seoCategory: 'UI/UX',
     seoPlatform: 'Web',
+    year: '2024',
   },
   {
     title: 'St Barth R Way',
@@ -218,6 +272,7 @@ export const projects: Projects[] = [
     slug: 'st-barth-r-way',
     seoCategory: 'UI/UX',
     seoPlatform: 'Web',
+    year: '2024',
   },
   {
     title: 'SeaBarts Watersports',
@@ -233,6 +288,7 @@ export const projects: Projects[] = [
     features: [],
     stack: ['Figma', 'Gatsby', 'TailwindCSS'],
     slug: 'sea-barts-watersports',
+    year: '2024',
   },
   {
     title: 'Tile & Design Shop',
@@ -248,6 +304,7 @@ export const projects: Projects[] = [
     features: [],
     stack: ['Figma', 'Bootstrap'],
     slug: 'tile-and-design-shop',
+    year: '2024',
   },
 ]
 
