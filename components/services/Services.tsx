@@ -107,7 +107,7 @@ export default function Services() {
               <div className="relative row-span-2 shadow-xl rounded-3xl">
                 <Image
                   src={ipadPic}
-                  alt="Prototype dâ€™application sur tablette"
+                  alt="Design d'un site internet sur un ipad"
                   className="object-cover object-right w-full h-full rounded-2xl"
                   sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
                 />
@@ -115,7 +115,7 @@ export default function Services() {
               <div className="relative shadow-xl rounded-3xl">
                 <Image
                   src={designPic}
-                  alt="Conception d'interface utilisateur"
+                  alt="Conception d'interface utilisateur à St Barth"
                   className="object-cover object-center w-full h-full rounded-2xl"
                   sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
                 />
@@ -123,7 +123,7 @@ export default function Services() {
               <div className="relative shadow-xl rounded-3xl">
                 <Image
                   src={me}
-                  alt="Développeur web freelance à Saint-Barth"
+                  alt="Développeur agence web de création de site internet à St Barth"
                   className="object-cover object-center w-full h-full rounded-2xl"
                   sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
                 />
