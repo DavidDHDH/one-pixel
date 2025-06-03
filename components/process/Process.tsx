@@ -32,13 +32,13 @@ export default function ProcessSection() {
     <section id="process" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-lg font-semibold leading-7 text-primaryText">
+          <h2 className="sm:text-lg font-semibold leading-7 text-primaryText">
             Mon processus de création
           </h2>
-          <p className="font-rubik mt-2 text-pretty text-4xl font-semibold tracking-tight  sm:text-5xl lg:text-balance text-gray-900">
+          <p className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight  sm:text-4xl lg:text-balance text-gray-900">
             Rien n&apos;est laissé au hasard.
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 sm:text-lg leading-8 text-gray-600">
             Chaque étape est pensée pour sécuriser ton investissement : on part
             d’un vrai besoin métier, on construit une UX sur-mesure, on
             développe avec rigueur, et on t’accompagne dans la durée.

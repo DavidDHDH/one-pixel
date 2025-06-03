@@ -38,10 +38,10 @@ export default function MainProject({
                   <h3 className="text-base font-semibold leading-7 text-primaryText">
                     {project.type}
                   </h3>
-                  <p className="font-rubik mt-1 text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                  <p className="font-rubik mt-1 text-pretty text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
                     {project.title}
                   </p>
-                  <p className="mt-6 text-lg leading-8 text-gray-600">
+                  <p className="mt-6 sm:text-lg leading-8 text-gray-600">
                     {project.description}
                   </p>
                   <dl className="my-6 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none flex-grow">
@@ -131,10 +131,10 @@ export default function MainProject({
                   <p className="text-base font-semibold leading-7 text-primaryText">
                     {project.type}
                   </p>
-                  <h3 className="font-rubik mt-1 text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+                  <h3 className="font-rubik mt-1 text-pretty text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
                     {project.title}
                   </h3>
-                  <p className="mt-6 text-lg leading-8 text-gray-600">
+                  <p className="mt-6 sm:text-lg leading-8 text-gray-600">
                     {project.description}
                   </p>
                   <dl className="my-6 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none flex-grow">

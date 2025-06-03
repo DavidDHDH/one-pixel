@@ -32,7 +32,11 @@ export function FaqAccordion({
   const [openItem, setOpenItem] = React.useState<string | null>(null)
 
   return (
-    <div className={cn('p-4', className)}>
+    <div
+      className={cn('p-4', className)}
+      itemScope
+      itemType="https://schema.org/FAQPage"
+    >
       {timestamp && (
         <div className="mb-4 text-sm text-neutral-500 dark:text-neutral-400">
           {timestamp}
@@ -50,6 +54,8 @@ export function FaqAccordion({
             value={item.id.toString()}
             key={item.id}
             className="mb-2"
+            itemScope
+            itemType="https://schema.org/Question"
           >
             <Accordion.Header>
               <Accordion.Trigger className="flex w-full items-center justify-start gap-x-4">
@@ -78,7 +84,9 @@ export function FaqAccordion({
                       {item.icon}
                     </span>
                   )}
-                  <span className="font-medium text-left">{item.question}</span>
+                  <span className="font-medium text-left" itemProp="name">
+                    {item.question}
+                  </span>
                 </div>
 
                 <span
@@ -106,6 +114,9 @@ export function FaqAccordion({
                 }}
                 transition={{ duration: 0.4 }}
                 className="overflow-hidden"
+                itemScope
+                itemProp="acceptedAnswer"
+                itemType="https://schema.org/Answer"
               >
                 <div className="flex justify-end mt-1">
                   <div
@@ -113,6 +124,7 @@ export function FaqAccordion({
                       'relative max-w-xs rounded-2xl bg-neutral-900 px-4 py-2 text-neutral-50 dark:bg-neutral-50 dark:text-neutral-900',
                       answerClassName
                     )}
+                    itemProp="text"
                   >
                     {item.answer}
                   </div>

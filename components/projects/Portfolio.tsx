@@ -13,13 +13,13 @@ const Portfolio = () => {
       className="min-h-screen"
     >
       <div className="mx-auto max-w-4xl text-center px-6 lg:px-8">
-        <p className="text-lg font-semibold text-primaryText">
+        <p className="sm:text-lg font-semibold text-primaryText text-pretty">
           Projets sur-mesure réalisés pour des entreprises locales.
         </p>
-        <h2 className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+        <h2 className="font-rubik mt-2 text-balance text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
           Des applications et sites internet pensés pour les Antilles.
         </h2>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
+        <p className="mt-6 sm:text-lg leading-8 text-gray-600">
           J&apos;accompagne des entreprises à Saint-Barthélemy et dans les
           Caraïbes avec des solutions digitales adaptées : web apps, plateformes
           internes, marketplaces locales ou sites vitrines.

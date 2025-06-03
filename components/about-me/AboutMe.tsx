@@ -37,10 +37,10 @@ export default function AboutMe() {
     <section id="aboutme">
       <div className="mx-auto max-w-7xl px-6 md:text-center lg:px-8 pb-24">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="text-lg font-semibold leading-7 text-primaryText">
+          <p className="sm:text-lg font-semibold leading-7 text-primaryText">
             On ne s&apos;est pas présenté…
           </p>
-          <h2 className="font-rubik mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl lg:text-balance text-gray-900">
+          <h2 className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900">
             Je suis David Heimfert, développeur web à Saint-Barthélemy,
             passionné par le code, le design et l&apos;IA.
           </h2>
@@ -79,7 +79,7 @@ export default function AboutMe() {
               {pros.map((pro, i) => (
                 <div
                   key={i}
-                  className="flex flex-col items-center gap-2 border p-2 rounded-lg bg-gray-50 w-40 text-gray-900 text-center"
+                  className="flex flex-col items-center gap-2 border p-2 rounded-lg bg-gray-50 w-40 text-gray-900 text-center text-sm sm:text-base"
                 >
                   <Icon name={pro.icon} className="h-6 w-6 text-dark-900" />
                   <p>{pro.name}</p>

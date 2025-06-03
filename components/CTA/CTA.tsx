@@ -29,15 +29,15 @@ export default function CTA() {
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="mx-auto backdrop-blur-md flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 border border-t-white/50 border-r-white/50 border-b-white/25 border-l-white/25 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-16 xl:gap-x-20 xl:px-16">
             <div className="w-full lg:w-1/2 flex-auto">
-              <h2 className="text-pretty font-rubik text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+              <h2 className="text-pretty font-rubik text-3xl font-semibold tracking-tight text-white sm:text-4xl">
                 Une idée d’outil web ? Un besoin concret à digitaliser ?
               </h2>
-              <p className="mt-6 text-pretty text-lg/8 text-white">
+              <p className="mt-6 text-pretty text-base sm:text-lg/8 text-white">
                 On échange sur ton besoin, et je t’aide à poser les bases d’un
                 projet utile, réaliste et évolutif. Tu repars avec une vision
                 claire — même si on ne travaille pas ensemble.
               </p>
-              <p className="mt-6 text-pretty text-lg/8 text-white">
+              <p className="mt-6 text-pretty text-base sm:text-lg/8 text-white">
                 Voici les types de projets que je développe régulièrement pour
                 les entreprises des Antilles :
               </p>

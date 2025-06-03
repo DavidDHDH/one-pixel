@@ -138,13 +138,13 @@ const WhySection = () => {
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-lg font-semibold leading-7 text-primaryText text-center">
+        <h2 className="sm:text-lg font-semibold leading-7 text-primaryText text-center">
           Développeur local à Saint-Barthélemy : 6 bonnes raisons
         </h2>
-        <p className="font-rubik mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl lg:text-balance text-gray-900 text-center">
+        <p className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900 text-center">
           Un partenaire proche, un impact concret.
         </p>
-        <p className="mt-6 text-lg leading-8 text-gray-600 text-center">
+        <p className="mt-6 sm:text-lg leading-8 text-gray-600 text-center">
           Basé à Saint-Barth, je développe des sites et applications web pour
           les entreprises des Antilles. En travaillant avec un indépendant
           local, tu gagnes en efficacité, en sécurité juridique et en sérénité.
@@ -166,7 +166,7 @@ const WhySection = () => {
                 <h3 className="text-base font-semibold leading-7 text-gray-900">
                   {advantage.title}
                 </h3>
-                <p className="text-sm leading-6 text-gray-600">
+                <p className="text-base leading-6 text-gray-600">
                   {advantage.description}
                 </p>
               </li>

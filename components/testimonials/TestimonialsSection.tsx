@@ -9,10 +9,10 @@ export default function TestimonialsSection() {
     <section id="testimonials" className="bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-lg font-semibold leading-7 text-primaryText">
+          <h2 className="sm:text-lg font-semibold leading-7 text-primaryText">
             Avis & témoignages clients
           </h2>
-          <p className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+          <p className="font-rubik mt-2 text-balance text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
             La confiance est mutuelle.
           </p>
         </div>

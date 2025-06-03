@@ -9,7 +9,7 @@ const defaultData = [
     id: 1,
     question: "Pourquoi choisir un freelance plutôt qu'une grosse agence ?",
     answer:
-      "En travaillant avec un freelance bien entouré, tu gagnes en flexibilité, réactivité et proximité. Pas d'intermédiaire, pas de surcoûts d'agence : tu parles directement avec la personne qui conçoit et développe ton projet.",
+      "En travaillant avec un freelance, tu gagnes en flexibilité, réactivité et proximité. Pas d'intermédiaire, tu es l'unique priorité du freelance pendant le projet, pas de surcoûts d'agence : tu parles directement avec la personne qui conçoit et développe ton projet. Un freelance bien entouré te garantit une qualité de service optimale.",
   },
   {
     id: 6,
@@ -74,13 +74,13 @@ export default function FaqSection() {
     <section id="faq" className="py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="md:text-center mb-16 text-center">
-          <p className="text-lg font-semibold leading-7 text-primaryText">
+          <p className="sm:text-lg font-semibold leading-7 text-primaryText">
             Questions fréquentes.
           </p>
-          <h2 className="text-pretty text-4xl font-semibold tracking-tight sm:text-5xl lg:text-balance text-gray-900">
+          <h2 className="text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900">
             Tu te poses peut-être l&apos;une de ces questions.
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 sm:text-lg leading-8 text-gray-600">
             Pas de question bête, je réponds ici aux interrogations les plus
             courantes avant de démarrer un projet. Si tu ne trouves pas ta
             réponse, n&apos;hésite pas à me contacter directement.

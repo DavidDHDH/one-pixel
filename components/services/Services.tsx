@@ -8,7 +8,7 @@ import { Icon } from '../shared/Icon'
 
 const services = [
   {
-    label: 'Applications web métier sur mesure',
+    label: 'Applications métier sur mesure',
     description:
       'Gère tes réservations, plannings ou processus internes depuis une seule interface. Je conçois des applications web qui automatisent tes tâches et t’aident à mieux organiser ton activité au quotidien.',
     icon: 'application',
@@ -48,10 +48,10 @@ export default function Services() {
       <div className=" mx-auto max-w-7xl px-6 lg:px-8 z-10">
         {/* Section text */}
         <div>
-          <p className=" text-lg font-semibold leading-7 text-white z-10">
+          <p className=" sm:text-lg font-semibold leading-7 text-white z-10">
             Mes services.
           </p>
-          <h2 className="font-rubik mt-2 text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+          <h2 className="font-rubik mt-2 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
             Applications métier, SaaS et solutions web sur-mesure pour booster
             ton activité.
           </h2>

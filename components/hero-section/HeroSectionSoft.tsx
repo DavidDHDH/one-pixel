@@ -15,7 +15,7 @@ export default function HeroSectionSoft() {
     setRootElement(document.getElementById('calendly'))
   }, [])
   return (
-    <div id="calendly" className="">
+    <div id="calendly">
       <div className="relative">
         <div className="mx-auto max-w-6xl">
           <div className="relative z-10 pt-14 lg:w-full lg:max-w-2xl">
@@ -28,7 +28,7 @@ export default function HeroSectionSoft() {
               <polygon points="0,0 90,0 50,100 0,100" />
             </svg>
 
-            <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-44 lg:pr-0">
+            <div className="relative px-6 py-20 sm:py-40 lg:px-8 lg:py-32 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0">
                 <div className="hidden z-10 mb-10 sm:flex items-center justify-start">
                   <div
@@ -41,23 +41,26 @@ export default function HeroSectionSoft() {
                     </AnimatedShinyText>
                   </div>
                 </div>
-                <h1 className="font-rubik text-pretty text-5xl/tight font-semibold tracking-tight text-gray-900">
+                <h1 className="font-rubik text-pretty text-center sm:text-left text-4xl sm:text-5xl/tight font-semibold tracking-tight text-gray-900">
                   Agence web et création de sites internet à Saint-Barthélemy
                 </h1>
-                <h2 className="mt-6 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
-                  J’accompagne les entreprises des Antilles dans la création de
-                  sites web et d’applications métier boosté à l&apos;IA, pour
-                  leur faire gagner du temps et des clients.
+                <h2 className="mt-6 text-pretty text-gray-600 sm:text-lg/8">
+                  J’accompagne les entreprises des Antilles dans la création de{' '}
+                  <span className="font-semibold">sites web</span> et{' '}
+                  <span className="font-semibold">
+                    applications métier boostées à l&apos;IA
+                  </span>
+                  .
                 </h2>
-                <p className="mt-4 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
-                  💡 Des solutions sur-mesure, pensées pour ton quotidien, pas
-                  pour cocher des cases techniques.
+                <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
+                  💡 Des solutions sur-mesure, pensées pour ton quotidien, pour
+                  te faire gagner du temps et des clients.
                 </p>
-                <p className="mt-4 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
+                <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
                   🔥 Ici, pas d&apos;usine à sites. Un seul projet à la fois :
                   le tien.
                 </p>
-                <p className="mt-4 text-pretty text-lg font-medium text-gray-600 sm:text-lg/8">
+                <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
                   📍 Basé à Saint-Barth. Disponible partout dans les Caraïbes.
                 </p>
                 <div className="mt-10 flex items-center justify-between gap-x-6">
