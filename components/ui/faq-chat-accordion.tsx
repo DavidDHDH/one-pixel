@@ -56,6 +56,7 @@ export function FaqAccordion({
             className="mb-2"
             itemScope
             itemType="https://schema.org/Question"
+            itemProp="mainEntity"
           >
             <Accordion.Header>
               <Accordion.Trigger className="flex w-full items-center justify-start gap-x-4">
