@@ -1,3 +1,5 @@
+import { TimelineEntry } from '@/components/project-page/ProcessTimeline'
+import { StackItem } from '@/components/stack/StackWithDescription'
 import DLmockup from '@/public/projects/DI-mockup.webp'
 import FWIscreen from '@/public/projects/FWI-screen.webp'
 import rwayMockup from '@/public/projects/Rway-mockup.webp'
@@ -8,12 +10,14 @@ import WIHscreen from '@/public/projects/WIH-screen.webp'
 import artiziaScreen from '@/public/projects/artizia-screen.webp'
 import { Icon123, Icon12Hours } from '@tabler/icons-react'
 import { StaticImageData } from 'next/image'
+import { Testimonial, testimonials } from './testimonials'
 
 type Projects = {
   title: string
   type: string
   isMainProject: boolean
   mainImage: StaticImageData
+  carouselImages?: StaticImageData[]
   description: string
   seoCategory: 'WebApplication' | 'WebSite' | 'UI/UX'
   seoPlatform: 'Web' | 'Mobile' | 'Desktop'
@@ -24,7 +28,7 @@ type Projects = {
     description: string
     icon: string
   }[]
-  stack: string[]
+  stack: StackItem[]
   location: string
   year: string
   slug?: string
@@ -33,6 +37,11 @@ type Projects = {
     icon: React.ReactNode
     description: string
   }[]
+  process?: TimelineEntry[]
+  results?: {
+    paragraph: React.ReactNode
+    testimonials: Testimonial
+  }
 }
 
 export const projects: Projects[] = [
@@ -47,10 +56,11 @@ export const projects: Projects[] = [
       'Villa Care révolutionne la gestion locative haut de gamme à Saint-Barthélemy et dans les Caraïbes. Cette application SaaS tout-en-un centralise réservations, plannings, travaux et infos clients. Les tâches répétitives sont automatisées, les gestionnaires gagnent en efficacité.',
 
     mainImage: VCscreen,
+    carouselImages: [VCscreen, FWIscreen, VCscreen, FWIscreen, VCscreen],
     location: 'Saint-Barthélemy',
     bentoItems: [
       <p key="1" className="h-full w-full">
-        teste
+        teste 515645
       </p>,
       <p key="2" className="h-full w-full">
         test
@@ -101,14 +111,43 @@ export const projects: Projects[] = [
       },
     ],
     stack: [
-      'Figma',
-      'React',
-      'NextJS',
-      'TailwindCSS',
-      'Supabase',
-      'Typescript',
+      {
+        name: 'Figma',
+        description: 'Figma est un outil de design graphique.',
+        icon: 'Figma',
+      },
+      {
+        name: 'React',
+        description:
+          "React est un framework JavaScript pour la création d'interfaces utilisateur.",
+        icon: 'React',
+      },
+      {
+        name: 'NextJS',
+        description:
+          "NextJS est un framework JavaScript pour la création d'interfaces utilisateur.",
+        icon: 'NextJS',
+      },
+      {
+        name: 'TailwindCSS',
+        description:
+          "TailwindCSS est un framework CSS pour la création d'interfaces utilisateur.",
+        icon: 'TailwindCSS',
+      },
+      {
+        name: 'Supabase',
+        description:
+          "Supabase est un outil de base de données pour la création d'interfaces utilisateur.",
+        icon: 'Supabase',
+      },
+      {
+        name: 'Typescript',
+        description:
+          "Typescript est un langage de programmation pour la création d'interfaces utilisateur.",
+        icon: 'Typescript',
+      },
     ],
-    slug: 'villa-care-management',
+    // slug: 'villa-care-management',
     year: '2024',
     context:
       'Villa Care est une application SaaS de gestion locative pour villas à Saint-Barthélemy. Elle permet de gérer les réservations, les disponibilités, les travaux et les informations clients.',
@@ -127,6 +166,61 @@ export const projects: Projects[] = [
         description: 'Centraliser les informations clients.',
       },
     ],
+    process: [
+      {
+        title: 'Phase 1',
+        content: <p>Phase 1 de la réalisation du projet</p>,
+      },
+      {
+        title: 'Phase 2',
+        content: <p>Phase 2 de la réalisation du projet</p>,
+      },
+      {
+        title: 'Phase 3',
+        content: <p>Phase 3 de la réalisation du projet</p>,
+      },
+      {
+        title: 'Phase 4',
+        content: <p>Phase 4 de la réalisation du projet</p>,
+      },
+      {
+        title: 'Phase 5',
+        content: <p>Phase 5 de la réalisation du projet</p>,
+      },
+      {
+        title: 'Phase 6',
+        content: <p>Phase 6 de la réalisation du projet</p>,
+      },
+      {
+        title: 'Phase 7',
+        content: <p>Phase 7 de la réalisation du projet</p>,
+      },
+    ],
+    results: {
+      paragraph: (
+        <div>
+          <p>
+            <span className="font-semibold">
+              Villa Care a transformé la gestion locative
+            </span>
+            , en permettant une augmentation de{' '}
+            <span className="font-semibold">40% des réservations</span> sur la
+            première année. La plateforme a automatisé plus de{' '}
+            <span className="font-semibold">
+              80% des tâches administratives
+            </span>
+            , libérant ainsi du temps précieux pour les propriétaires.
+          </p>
+          <p>
+            Les retours clients sont exceptionnels, avec une satisfaction de{' '}
+            <span className="font-semibold">4.8/5</span> sur plus de 200 avis.
+          </p>
+        </div>
+      ),
+      testimonials: testimonials.find(
+        (testimonial) => testimonial.author.company === 'Villa Care'
+      )!,
+    },
   },
   {
     title: 'Frip West Indies',
@@ -164,7 +258,38 @@ export const projects: Projects[] = [
         icon: 'search',
       },
     ],
-    stack: ['React', 'NextJS', 'Typescript', 'TailwindCSS', 'Supabase'],
+    stack: [
+      {
+        name: 'React',
+        description:
+          "React est un framework JavaScript pour la création d'interfaces utilisateur.",
+        icon: 'React',
+      },
+      {
+        name: 'NextJS',
+        description:
+          "NextJS est un framework JavaScript pour la création d'interfaces utilisateur.",
+        icon: 'NextJS',
+      },
+      {
+        name: 'Typescript',
+        description:
+          "Typescript est un langage de programmation pour la création d'interfaces utilisateur.",
+        icon: 'Typescript',
+      },
+      {
+        name: 'TailwindCSS',
+        description:
+          "TailwindCSS est un framework CSS pour la création d'interfaces utilisateur.",
+        icon: 'TailwindCSS',
+      },
+      {
+        name: 'Supabase',
+        description:
+          "Supabase est un outil de base de données pour la création d'interfaces utilisateur.",
+        icon: 'Supabase',
+      },
+    ],
     year: '2024',
   },
   {
@@ -204,7 +329,38 @@ export const projects: Projects[] = [
         icon: 'dashboard',
       },
     ],
-    stack: ['React', 'NextJS', 'Typescript', 'TailwindCSS', 'Supabase'],
+    stack: [
+      {
+        name: 'React',
+        description:
+          "React est un framework JavaScript pour la création d'interfaces utilisateur.",
+        icon: 'React',
+      },
+      {
+        name: 'NextJS',
+        description:
+          "NextJS est un framework JavaScript pour la création d'interfaces utilisateur.",
+        icon: 'NextJS',
+      },
+      {
+        name: 'Typescript',
+        description:
+          "Typescript est un langage de programmation pour la création d'interfaces utilisateur.",
+        icon: 'Typescript',
+      },
+      {
+        name: 'TailwindCSS',
+        description:
+          "TailwindCSS est un framework CSS pour la création d'interfaces utilisateur.",
+        icon: 'TailwindCSS',
+      },
+      {
+        name: 'Supabase',
+        description:
+          "Supabase est un outil de base de données pour la création d'interfaces utilisateur.",
+        icon: 'Supabase',
+      },
+    ],
     year: '2024',
   },
   {
@@ -238,8 +394,38 @@ export const projects: Projects[] = [
         icon: 'creditcard',
       },
     ],
-    stack: ['React', 'NextJS', 'TailwindCSS', 'API Platform', 'Typescript'],
-    slug: 'compagnie-xyz',
+    stack: [
+      {
+        name: 'React',
+        description:
+          "React est un framework JavaScript pour la création d'interfaces utilisateur.",
+        icon: 'React',
+      },
+      {
+        name: 'NextJS',
+        description:
+          "NextJS est un framework JavaScript pour la création d'interfaces utilisateur.",
+        icon: 'NextJS',
+      },
+      {
+        name: 'TailwindCSS',
+        description:
+          "TailwindCSS est un framework CSS pour la création d'interfaces utilisateur.",
+        icon: 'TailwindCSS',
+      },
+      {
+        name: 'API Platform',
+        description: "API Platform est un framework pour la création d'API.",
+        icon: 'API Platform',
+      },
+      {
+        name: 'Typescript',
+        description:
+          "Typescript est un langage de programmation pour la création d'interfaces utilisateur.",
+        icon: 'Typescript',
+      },
+    ],
+    // slug: 'compagnie-xyz',
     year: '2024',
   },
   {
@@ -252,7 +438,18 @@ export const projects: Projects[] = [
     mainImage: DLmockup,
     location: 'Saint-Barthélemy',
     features: [],
-    stack: ['Figma', 'Trello'],
+    stack: [
+      {
+        name: 'Figma',
+        description: 'Figma est un outil de design graphique.',
+        icon: 'Figma',
+      },
+      {
+        name: 'Trello',
+        description: 'Trello est un outil de gestion de projet.',
+        icon: 'Trello',
+      },
+    ],
     slug: 'delifood-island',
     seoCategory: 'UI/UX',
     seoPlatform: 'Web',
@@ -268,7 +465,25 @@ export const projects: Projects[] = [
     mainImage: rwayMockup,
     location: 'Saint-Barthélemy',
     features: [],
-    stack: ['Figma'],
+    stack: [
+      {
+        name: 'Figma',
+        description: 'Figma est un outil de design graphique.',
+        icon: 'Figma',
+      },
+      {
+        name: 'Gatsby',
+        description:
+          'Gatsby est un framework pour la création de sites statiques.',
+        icon: 'Gatsby',
+      },
+      {
+        name: 'TailwindCSS',
+        description:
+          "TailwindCSS est un framework CSS pour la création d'interfaces utilisateur.",
+        icon: 'TailwindCSS',
+      },
+    ],
     slug: 'st-barth-r-way',
     seoCategory: 'UI/UX',
     seoPlatform: 'Web',
@@ -286,7 +501,25 @@ export const projects: Projects[] = [
     mainImage: SBmockup,
     location: 'Saint-Barthélemy',
     features: [],
-    stack: ['Figma', 'Gatsby', 'TailwindCSS'],
+    stack: [
+      {
+        name: 'Figma',
+        description: 'Figma est un outil de design graphique.',
+        icon: 'Figma',
+      },
+      {
+        name: 'Gatsby',
+        description:
+          'Gatsby est un framework pour la création de sites statiques.',
+        icon: 'Gatsby',
+      },
+      {
+        name: 'TailwindCSS',
+        description:
+          "TailwindCSS est un framework CSS pour la création d'interfaces utilisateur.",
+        icon: 'TailwindCSS',
+      },
+    ],
     slug: 'sea-barts-watersports',
     year: '2024',
   },
@@ -302,7 +535,19 @@ export const projects: Projects[] = [
     mainImage: tileMockup,
     location: 'Saint-Barthélemy',
     features: [],
-    stack: ['Figma', 'Bootstrap'],
+    stack: [
+      {
+        name: 'Figma',
+        description: 'Figma est un outil de design graphique.',
+        icon: 'Figma',
+      },
+      {
+        name: 'Bootstrap',
+        description:
+          "Bootstrap est un framework CSS pour la création d'interfaces utilisateur.",
+        icon: 'Bootstrap',
+      },
+    ],
     slug: 'tile-and-design-shop',
     year: '2024',
   },

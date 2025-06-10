@@ -9,7 +9,7 @@ import {
 } from '../ui/accordion'
 import Profil from './Profil'
 
-const people = {
+export const DavidHeimfert = {
   name: 'David Heimfert',
   role: 'Développeur Web - Next.JS',
   imageUrl: 'public/images/IMG_7289.webp',
@@ -47,7 +47,7 @@ export default function AboutMe() {
         </div>
         <div className="md:grid md:grid-cols-2 gap-10 pt-10 items-center">
           <div className="col-span-1 mx-auto">
-            <Profil people={people} />
+            <Profil people={DavidHeimfert} />
           </div>
           <div className="col-span-1 mx-auto space-y-8 mt-4 text-gray-600 md:max-w-full text-start">
             <p>

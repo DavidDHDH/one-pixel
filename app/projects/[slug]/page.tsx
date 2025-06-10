@@ -1,6 +1,11 @@
-import { BentoGridLayout } from '@/components/project-page/BentoGridLayout'
+import { ProjectAboutMe } from '@/components/about-me/ProjectAboutMe'
+import { FeaturesSection } from '@/components/project-page/FeaturesSection'
+import { ProcessSection } from '@/components/project-page/ProcessSection'
+import { ProjectCarousel } from '@/components/project-page/ProjectCarousel'
 import { ProjectContext } from '@/components/project-page/ProjectContext'
 import { ProjectHero } from '@/components/project-page/ProjectHero'
+import { ProjectStackSection } from '@/components/project-page/ProjectStackSection'
+import { ResultsSection } from '@/components/project-page/ResultsSection'
 import { projects } from '@/datas/projects'
 
 const ProjectPage = ({ params }: { params: { slug: string } }) => {
@@ -11,7 +16,7 @@ const ProjectPage = ({ params }: { params: { slug: string } }) => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col justify-center px-6 lg:px-8 mt-32">
+    <div className="min-h-screen flex flex-col justify-center px-6 lg:px-8 mt-32 ">
       <ProjectHero
         title={project.title}
         subtitle={project.type}
@@ -24,7 +29,16 @@ const ProjectPage = ({ params }: { params: { slug: string } }) => {
         context={project.context || ''}
         goals={project.goals || []}
       />
-      <BentoGridLayout items={project.bentoItems || []} />
+      <FeaturesSection items={project.bentoItems || []} />
+
+      <ProcessSection data={project.process || []} />
+      <ResultsSection results={project.results} />
+      <ProjectStackSection stack={project.stack || []} />
+      <ProjectCarousel
+        projectImages={project.carouselImages || []}
+        projectTitle={project.title}
+      />
+      <ProjectAboutMe />
     </div>
   )
 }

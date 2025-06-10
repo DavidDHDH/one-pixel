@@ -1,19 +1,26 @@
 'use client'
 
+import { testimonials } from '@/datas/testimonials'
 import { cn } from '@/lib/utils'
-import profile from '@/public/images/profil-2.webp'
+import profile from '@/public/images/IMG_0620.webp'
 import RGPD from '@/public/images/rgpdgris.webp'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { PopupButton } from 'react-calendly'
 import AnimatedShinyText from '../ui/animated-shiny-text'
-import TestimonialHero from './TestimonialHero'
+import TestimonialCard from './TestimonialCard'
 
 export default function HeroSectionSoft() {
   const [rootElement, setRootElement] = useState<HTMLElement | null>(null)
   useEffect(() => {
     setRootElement(document.getElementById('calendly'))
   }, [])
+
+  const testimonial =
+    testimonials.find(
+      (testimonial) => testimonial.author.name === 'Mélina S.'
+    ) || testimonials[0]
+
   return (
     <div id="calendly">
       <div className="relative">
@@ -87,7 +94,7 @@ export default function HeroSectionSoft() {
                   />
                 </div>
                 <div className="flex justify-center mt-10">
-                  <TestimonialHero />
+                  <TestimonialCard testimonial={testimonial} />
                 </div>
               </div>
             </div>

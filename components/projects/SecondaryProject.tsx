@@ -55,10 +55,10 @@ const SecondaryProject = ({ project }: { project: ProjectType }) => {
               <TooltipProvider delayDuration={100} key={i}>
                 <Tooltip>
                   <TooltipTrigger>
-                    <Icon name={s} />
+                    <Icon name={s.name} />
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>{s}</p>
+                    <p>{s.name}</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>

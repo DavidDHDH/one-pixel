@@ -1,6 +1,6 @@
 import logoFigma from '@/public/stack/logo-figma.png'
-import logoFirebase from '@/public/stack/logo-firebase.png'
 import logoNextJS from '@/public/stack/logo-nextjs.png'
+import logoNode from '@/public/stack/logo-nodejs.png'
 import logoPrisma from '@/public/stack/logo-prisma.png'
 import logoReact from '@/public/stack/logo-react.png'
 import logoSentry from '@/public/stack/logo-sentry.png'
@@ -25,10 +25,6 @@ const stack = [
     icon: logoNextJS,
   },
   {
-    name: 'TypeScript',
-    icon: logoTypeScript,
-  },
-  {
     name: 'Prisma',
     icon: logoPrisma,
   },
@@ -37,8 +33,12 @@ const stack = [
     icon: logoSupabase,
   },
   {
-    name: 'Firebase',
-    icon: logoFirebase,
+    name: 'NodeJS',
+    icon: logoNode,
+  },
+  {
+    name: 'TypeScript',
+    icon: logoTypeScript,
   },
   {
     name: 'TailwindCSS',

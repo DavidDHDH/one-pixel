@@ -9,7 +9,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '../ui/tooltip'
-// import Link from "next/link"
 
 export default function MainProject({
   index,
@@ -66,10 +65,10 @@ export default function MainProject({
                         <TooltipProvider delayDuration={100} key={i}>
                           <Tooltip>
                             <TooltipTrigger>
-                              <Icon name={s} />
+                              <Icon name={s.name} />
                             </TooltipTrigger>
                             <TooltipContent>
-                              <p>{s}</p>
+                              <p>{s.name}</p>
                             </TooltipContent>
                           </Tooltip>
                         </TooltipProvider>
@@ -77,10 +76,7 @@ export default function MainProject({
                     </div>
                     <div>
                       {project.slug && (
-                        <Link
-                          href={`/projects/${project.slug}`}
-                          className="cursor-pointer"
-                        >
+                        <Link href={`/projects/${project.slug}`}>
                           <p className="text-sm leading-6 hover:underline">
                             Étude de cas <span aria-hidden="true">→</span>
                           </p>
@@ -171,10 +167,10 @@ export default function MainProject({
                         <TooltipProvider delayDuration={100} key={i}>
                           <Tooltip>
                             <TooltipTrigger>
-                              <Icon name={s} />
+                              <Icon name={s.name} />
                             </TooltipTrigger>
                             <TooltipContent>
-                              <p>{s}</p>
+                              <p>{s.name}</p>
                             </TooltipContent>
                           </Tooltip>
                         </TooltipProvider>
