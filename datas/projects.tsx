@@ -1,22 +1,25 @@
 import { TimelineEntry } from '@/components/project-page/ProcessTimeline'
 import { StackItem } from '@/components/stack/StackWithDescription'
-import DLmockup from '@/public/projects/DI-mockup.webp'
-import FWIscreen from '@/public/projects/FWI-screen.webp'
-import rwayMockup from '@/public/projects/Rway-mockup.webp'
-import SBmockup from '@/public/projects/SB-mockup.webp'
-import tileMockup from '@/public/projects/Tile-mockup.webp'
-import VCscreen from '@/public/projects/VC-screen.webp'
-import WIHscreen from '@/public/projects/WIH-screen.webp'
-import artiziaScreen from '@/public/projects/artizia-screen.webp'
 import { Icon123, Icon12Hours } from '@tabler/icons-react'
 import { StaticImageData } from 'next/image'
 import { Testimonial, testimonials } from './testimonials'
+
+import artiziaMainScreen from '@/public/projects/artizia/artizia-fwi-main-screen.webp'
+import FWImainScreen from '@/public/projects/fwi/frip-west-indies-main-screen.webp'
+import VCmainScreen from '@/public/projects/villacare/villa-care-main-screen.webp'
+
+import DLmockup from '@/public/projects/DI-mockup.webp'
+import rwayMockup from '@/public/projects/Rway-mockup.webp'
+import SBmockup from '@/public/projects/SB-mockup.webp'
+import tileMockup from '@/public/projects/Tile-mockup.webp'
+import WIHscreen from '@/public/projects/WIH-screen.webp'
 
 type Projects = {
   title: string
   type: string
   isMainProject: boolean
   mainImage: StaticImageData
+  mainMockup?: StaticImageData
   carouselImages?: StaticImageData[]
   description: string
   seoCategory: 'WebApplication' | 'WebSite' | 'UI/UX'
@@ -55,8 +58,14 @@ export const projects: Projects[] = [
     description:
       'Villa Care révolutionne la gestion locative haut de gamme à Saint-Barthélemy et dans les Caraïbes. Cette application SaaS tout-en-un centralise réservations, plannings, travaux et infos clients. Les tâches répétitives sont automatisées, les gestionnaires gagnent en efficacité.',
 
-    mainImage: VCscreen,
-    carouselImages: [VCscreen, FWIscreen, VCscreen, FWIscreen, VCscreen],
+    mainImage: VCmainScreen,
+    carouselImages: [
+      VCmainScreen,
+      VCmainScreen,
+      VCmainScreen,
+      VCmainScreen,
+      VCmainScreen,
+    ],
     location: 'Saint-Barthélemy',
     bentoItems: [
       <p key="1" className="h-full w-full">
@@ -147,7 +156,7 @@ export const projects: Projects[] = [
         icon: 'Typescript',
       },
     ],
-    // slug: 'villa-care-management',
+    slug: 'villa-care-management',
     year: '2024',
     context:
       'Villa Care est une application SaaS de gestion locative pour villas à Saint-Barthélemy. Elle permet de gérer les réservations, les disponibilités, les travaux et les informations clients.',
@@ -231,7 +240,7 @@ export const projects: Projects[] = [
     seoPlatform: 'Web',
     description:
       "Marketplace d’occasion pensée pour les Antilles Françaises, Frip West Indies connecte les vendeurs et acheteurs locaux via un système de paiement sécurisé et des livraisons Colissimo intégrées. Une plateforme simple et fiable pour acheter et vendre en toute confiance d'une île à l'autre.",
-    mainImage: FWIscreen,
+    mainImage: FWImainScreen,
     location: 'Saint-Barthélemy, Saint-Martin, Guadeloupe, Martinique',
     features: [
       {
@@ -301,7 +310,7 @@ export const projects: Projects[] = [
     seoPlatform: 'Web',
     description:
       'Artizia FWI est une solution de mise en relation pensée pour les créateurs et prestataires de services des Antilles. Chacun peut créer son showroom en ligne pour exposer son activité, toucher les locaux et touristes, et recevoir des demandes de contact. L’inscription est gratuite, la création du showroom se fait via un abonnement mensuel.',
-    mainImage: artiziaScreen,
+    mainImage: artiziaMainScreen,
     location: 'Saint-Barthélemy, Saint-Martin',
     features: [
       {

@@ -39,7 +39,7 @@ const ProjectHero = ({
       <Image
         src={image}
         alt={`Mockup du projet ${title}`}
-        className="rounded-xl shadow-lg max-w-full h-auto object-contain"
+        className="rounded-xl max-w-full h-auto object-contain "
         priority
       />
     </div>

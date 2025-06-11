@@ -67,14 +67,14 @@ export const ProjectCarousel = ({
               className="cursor-pointer group"
               onClick={() => openDialog(index)}
             >
-              <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-[1.02]">
+              <div className="relative overflow-hidden rounded-lg  hover:shadow-xl transition-all duration-300 group-hover:scale-[1.02]">
                 <Image
                   src={image}
                   alt={`Image ${index + 1} de ${projectTitle}`}
                   className="w-full h-64 object-cover"
                   placeholder="blur"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <svg
                       className="w-12 h-12 text-white"

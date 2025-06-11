@@ -104,6 +104,14 @@ export default function Services() {
           {/* Image collage */}
           <div className="flex items-center justify-center max-w-screen-md lg:max-w-full">
             <div className="grid w-full h-full grid-cols-2 gap-4">
+              <div className="relative shadow-xl rounded-3xl col-span-2">
+                <Image
+                  src={designPic}
+                  alt="Développeur agence web de création de site internet à St Barth"
+                  className="object-cover object-center w-full h-full rounded-2xl aspect-[2/1]"
+                  sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
+                />
+              </div>{' '}
               <div className="relative shadow-xl rounded-3xl">
                 <Image
                   src={me}
@@ -120,14 +128,6 @@ export default function Services() {
                   sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
                 />
               </div>
-              <div className="relative shadow-xl rounded-3xl col-span-2">
-                <Image
-                  src={designPic}
-                  alt="Développeur agence web de création de site internet à St Barth"
-                  className="object-cover object-center w-full h-full rounded-2xl aspect-[2/1]"
-                  sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
-                />
-              </div>{' '}
             </div>
           </div>
         </div>
