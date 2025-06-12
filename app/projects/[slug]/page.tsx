@@ -23,7 +23,7 @@ const ProjectPage = ({ params }: { params: { slug: string } }) => {
         location={project.location}
         year={project.year}
         description={project.description}
-        image={project.mainImage}
+        image={project.mainProjectImage || project.mainImage}
       />
       <ProjectContext
         context={project.context || ''}

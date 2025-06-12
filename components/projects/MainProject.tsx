@@ -132,7 +132,7 @@ export default function MainProject({
                       src={project.mainImage}
                       width={2432}
                       height={1442}
-                      className="w-[48rem] max-w-none rounded-xl sm:w-[57rem]"
+                      className="w-[48rem] max-w-none rounded-xl shadow-lg sm:w-[57rem]"
                     />
                   </div>
                 </DialogTrigger>

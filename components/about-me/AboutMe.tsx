@@ -11,7 +11,7 @@ import Profil from './Profil'
 
 export const DavidHeimfert = {
   name: 'David Heimfert',
-  role: 'Développeur Web - Next.JS',
+  role: 'Développeur Web - IA',
   imageUrl: 'public/images/IMG_7289.webp',
   githubUrl: 'https://github.com/DavidDHDH',
   linkedinUrl: 'https://www.linkedin.com/in/david-heimfert',

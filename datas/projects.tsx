@@ -6,7 +6,11 @@ import { Testimonial, testimonials } from './testimonials'
 
 import artiziaMainScreen from '@/public/projects/artizia/artizia-fwi-main-screen.webp'
 import FWImainScreen from '@/public/projects/fwi/frip-west-indies-main-screen.webp'
-import VCmainScreen from '@/public/projects/villacare/villa-care-main-screen.webp'
+import VCmainProject from '@/public/projects/villacare/main-project-villa-care.webp'
+import VCmainScreen from '@/public/projects/villacare/main-screen-villa-care.webp'
+import VC1 from '@/public/projects/villacare/villa-care-1.webp'
+import VC2 from '@/public/projects/villacare/villa-care-2.webp'
+import VC6 from '@/public/projects/villacare/villa-care-6.webp'
 
 import DLmockup from '@/public/projects/DI-mockup.webp'
 import rwayMockup from '@/public/projects/Rway-mockup.webp'
@@ -19,7 +23,7 @@ type Projects = {
   type: string
   isMainProject: boolean
   mainImage: StaticImageData
-  mainMockup?: StaticImageData
+  mainProjectImage?: StaticImageData
   carouselImages?: StaticImageData[]
   description: string
   seoCategory: 'WebApplication' | 'WebSite' | 'UI/UX'
@@ -59,13 +63,8 @@ export const projects: Projects[] = [
       'Villa Care révolutionne la gestion locative haut de gamme à Saint-Barthélemy et dans les Caraïbes. Cette application SaaS tout-en-un centralise réservations, plannings, travaux et infos clients. Les tâches répétitives sont automatisées, les gestionnaires gagnent en efficacité.',
 
     mainImage: VCmainScreen,
-    carouselImages: [
-      VCmainScreen,
-      VCmainScreen,
-      VCmainScreen,
-      VCmainScreen,
-      VCmainScreen,
-    ],
+    mainProjectImage: VCmainProject,
+    carouselImages: [VC1, VC2, VC6],
     location: 'Saint-Barthélemy',
     bentoItems: [
       <p key="1" className="h-full w-full">

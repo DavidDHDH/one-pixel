@@ -58,9 +58,9 @@ export default function TestimonialCard({
               {testimonial.author.company}
             </span>
           </div>
-          <p itemProp="reviewBody" className="text-sm/5 text-gray-600">
+          <div itemProp="reviewBody" className="text-sm/5 text-gray-600">
             {testimonial.body}
-          </p>
+          </div>
           <div className="flex mt-1.5">
             {[...Array(5)].map((_, i) => (
               <StarIcon key={i} className="h-3 w-3 text-yellow-400" />
