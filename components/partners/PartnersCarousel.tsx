@@ -78,9 +78,9 @@ const PartnerCard = ({
     <Image
       alt={alt}
       src={image}
-      width={100}
-      height={50}
-      className="col-span-2 max-h-28 w-full object-contain lg:col-span-1 px-2 opacity-75 hover:opacity-100 transition duration-300 hover:scale-105"
+      width={120}
+      height={90}
+      className="col-span-2 w-full object-contain lg:col-span-1 px-2 opacity-75 hover:opacity-100 transition duration-300 hover:scale-105"
     />
   )
 }
@@ -93,11 +93,6 @@ export function PartnersCarousel() {
           <PartnerCard key={partner.name} {...partner} />
         ))}
       </Marquee>
-      {/* <Marquee reverse pauseOnHover className="[--duration:30s]">
-        {secondRow.map((partner) => (
-          <PartnerCard key={partner.name} {...partner} />
-        ))}
-      </Marquee> */}
       <div className="pointer-events-none absolute inset-y-0 left-0 w-1/5 bg-gradient-to-r from-white dark:from-background"></div>
       <div className="pointer-events-none absolute inset-y-0 right-0 w-1/5 bg-gradient-to-l from-white dark:from-background"></div>
     </div>

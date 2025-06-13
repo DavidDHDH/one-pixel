@@ -1,10 +1,10 @@
 'use client'
-import { CheckCircleIcon } from '@heroicons/react/20/solid'
-
 import { CONTACT_EMAIL } from '@/lib/const'
-import beach3 from '@/public/images/beach-scene-3.webp'
+import background from '@/public/images/CTA.webp'
+import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import { InlineWidget } from 'react-calendly'
+import { GlowingEffect } from '../project-page/GlowingEffect'
 import { Icon } from '../shared/Icon'
 
 const projectTypes = [
@@ -21,13 +21,21 @@ export default function CTA() {
     <section className="relative">
       <Image
         alt="beach in pixel art background"
-        src={beach3}
+        src={background}
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
 
       <div className="relative isolate">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="mx-auto backdrop-blur-md flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 border border-t-white/50 border-r-white/50 border-b-white/25 border-l-white/25 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-16 xl:gap-x-20 xl:px-16">
+          <div className="mx-auto backdrop-blur-sm flex max-w-2xl flex-col gap-16 bg-white/10 px-6 py-16 border border-t-white/50 border-r-white/50 border-b-white/25 border-l-white/25 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-16 xl:gap-x-20 xl:px-16">
+            <GlowingEffect
+              spread={40}
+              glow={true}
+              disabled={false}
+              proximity={64}
+              inactiveZone={0.01}
+              variant="white"
+            />
             <div className="w-full lg:w-1/2 flex-auto">
               <h2 className="text-pretty font-rubik text-3xl font-semibold tracking-tight text-white sm:text-4xl">
                 Une idée d’outil web ? Un besoin concret à digitaliser ?

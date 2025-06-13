@@ -1,6 +1,6 @@
 import designPic from '@/public/images/design.webp'
-import me from '@/public/images/desk-1.webp'
 import ipadPic from '@/public/images/ipad.webp'
+import me from '@/public/images/terrasse.webp'
 import { ShaderGradient, ShaderGradientCanvas } from '@shadergradient/react'
 import clsx from 'clsx'
 import Image from 'next/image'
@@ -16,13 +16,13 @@ const services = [
   {
     label: 'Sites internet professionnels',
     description:
-      'Un site vitrine unique, moderne et adapté aux mobiles, livré en une semaine. Idéal pour être visible localement, gagner en crédibilité et présenter ton offre avec clarté.',
+      'Un site internet sur mesure, moderne et rapide à déployer, optimisé pour les mobiles et le référencement local.',
     icon: 'website',
   },
   {
     label: 'IA & automatisation intelligente',
     description:
-      'Je t’aide à intégrer l’intelligence artificielle dans tes outils : génération de contenu, réponses automatiques, analyse de données… pour aller plus vite et mieux décider.',
+      'Je t’aide à intégrer l’intelligence artificielle dans tes outils : génération de contenu, réponses automatiques, chatbots connaissant ton business, analyse de données, agents IA… pour aller plus vite et mieux décider.',
     icon: 'ia',
   },
 ]
@@ -52,8 +52,8 @@ export default function Services() {
             Mes services.
           </p>
           <h2 className="font-rubik mt-2 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Applications métier, SaaS et solutions web sur-mesure pour booster
-            ton activité.
+            Applications métier, sites internet et solutions web sur-mesure pour
+            booster ton activité.
           </h2>
           <p className="sr-only">
             Développeur web freelance aux Antilles, je crée des logiciels
@@ -103,28 +103,28 @@ export default function Services() {
           </div>
           {/* Image collage */}
           <div className="flex items-center justify-center max-w-screen-md lg:max-w-full">
-            <div className="grid w-full h-full grid-flow-col grid-rows-2 gap-4">
-              <div className="relative row-span-2 shadow-xl rounded-3xl">
-                <Image
-                  src={ipadPic}
-                  alt="Design d'un site internet sur un ipad"
-                  className="object-cover object-right w-full h-full rounded-2xl"
-                  sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
-                />
-              </div>
-              <div className="relative shadow-xl rounded-3xl">
+            <div className="grid w-full h-full grid-cols-2 gap-4">
+              <div className="relative shadow-xl rounded-3xl col-span-2">
                 <Image
                   src={designPic}
-                  alt="Conception d'interface utilisateur à St Barth"
-                  className="object-cover object-center w-full h-full rounded-2xl"
+                  alt="Développeur agence web de création de site internet à St Barth"
+                  className="object-cover object-center w-full h-full rounded-2xl aspect-[2/1]"
                   sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
                 />
-              </div>
+              </div>{' '}
               <div className="relative shadow-xl rounded-3xl">
                 <Image
                   src={me}
-                  alt="Développeur agence web de création de site internet à St Barth"
-                  className="object-cover object-center w-full h-full rounded-2xl"
+                  alt="Conception d'interface utilisateur à St Barth"
+                  className="object-cover object-center w-full h-full rounded-2xl aspect-square"
+                  sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
+                />
+              </div>
+              <div className="relative shadow-xl rounded-3xl">
+                <Image
+                  src={ipadPic}
+                  alt="Conception d'interface utilisateur à St Barth"
+                  className="object-cover object-center w-full h-full rounded-2xl aspect-square"
                   sizes="(min-width: 1280px) 19rem, (min-width: 1024px) 25vw, (min-width: 768px) 23.5rem, 50vw"
                 />
               </div>

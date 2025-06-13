@@ -14,7 +14,7 @@ const advantages: AdvantageItem[] = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1.5}
+        strokeWidth={2}
         stroke="currentColor"
         className="w-6 h-6 text-primaryText"
       >
@@ -35,7 +35,7 @@ const advantages: AdvantageItem[] = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1.5}
+        strokeWidth={2}
         stroke="currentColor"
         className="w-6 h-6 text-primaryText"
       >
@@ -56,7 +56,7 @@ const advantages: AdvantageItem[] = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1.5}
+        strokeWidth={2}
         stroke="currentColor"
         className="w-6 h-6 text-primaryText"
       >
@@ -72,20 +72,19 @@ const advantages: AdvantageItem[] = [
     title: 'Sécurité juridique & données protégées',
     description:
       'Contrats conformes aux lois françaises et européennes, et projets développés dans le respect du RGPD. Tu travailles avec un pro local, en toute confiance.',
-
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1.5}
+        strokeWidth={2}
         stroke="currentColor"
         className="w-6 h-6 text-primaryText"
       >
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+          d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-271-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
         />
       </svg>
     ),
@@ -99,7 +98,7 @@ const advantages: AdvantageItem[] = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1.5}
+        strokeWidth={2}
         stroke="currentColor"
         className="w-6 h-6 text-primaryText"
       >
@@ -120,7 +119,7 @@ const advantages: AdvantageItem[] = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1.5}
+        strokeWidth={2}
         stroke="currentColor"
         className="w-6 h-6 text-primaryText"
       >
@@ -136,20 +135,21 @@ const advantages: AdvantageItem[] = [
 
 const WhySection = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-[url('/images/sunset-island.jpg')] bg-cover bg-center bg-black/20 bg-blend-overlay">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="sm:text-lg font-semibold leading-7 text-primaryText text-center">
-          Développeur local à Saint-Barthélemy : 6 bonnes raisons
+        <h2 className="sm:text-lg font-semibold leading-7 text-white text-center">
+          Agence web local à Saint-Barthélemy : 6 bonnes raisons
         </h2>
-        <p className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900 text-center">
+        <p className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-white text-center">
           Un partenaire proche, un impact concret.
         </p>
-        <p className="mt-6 sm:text-lg leading-8 text-gray-600 text-center">
-          Basé à Saint-Barth, je développe des sites et applications web pour
-          les entreprises des Antilles. En travaillant avec un indépendant
-          local, tu gagnes en efficacité, en sécurité juridique et en sérénité.
+        <p className="mt-6 sm:text-lg leading-8 text-white text-center max-w-4xl mx-auto">
+          Basé à Saint-Barth, je développe des sites internet et des
+          applications web pour les entreprises des Antilles. En travaillant
+          avec un indépendant local, tu gagnes en efficacité, en sécurité
+          juridique et en sérénité.
         </p>
-        <div className="mt-10 rounded-xl bg-sand-100 border-dashed border-2 border-sand-500 shadow-sm p-8">
+        <div className="mt-10 rounded-xl bg-[radial-gradient(circle_at_40%_25%,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.06)_70%,rgba(255,255,255,0.02)_100%)] backdrop-blur-sm border border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 shadow-lg p-8">
           <ul className="grid gap-y-6 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
             {advantages.map((advantage, index) => (
               <li
@@ -163,10 +163,10 @@ const WhySection = () => {
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
                   {advantage.icon}
                 </div>
-                <h3 className="text-base font-semibold leading-7 text-gray-900">
+                <h3 className="text-base font-semibold leading-7 text-white">
                   {advantage.title}
                 </h3>
-                <p className="text-base leading-6 text-gray-600">
+                <p className="text-base leading-6 text-white">
                   {advantage.description}
                 </p>
               </li>

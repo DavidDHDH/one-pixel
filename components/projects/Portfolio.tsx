@@ -20,9 +20,10 @@ const Portfolio = () => {
           Des applications et sites internet pensés pour les Antilles.
         </h2>
         <p className="mt-6 sm:text-lg leading-8 text-gray-600">
-          J&apos;accompagne des entreprises à Saint-Barthélemy et dans les
-          Caraïbes avec des solutions digitales adaptées : web apps, plateformes
-          internes, marketplaces locales ou sites vitrines.
+          Je développe pour les entreprises de Saint-Barthélemy, de Saint-Martin
+          et de toutes les Antilles françaises des solutions digitales
+          sur-mesure : sites internet, logiciels métiers personnalisés,
+          applications intelligentes intégrant de l’IA.
         </p>
       </div>
       {mainProjects.map((project, index) => (

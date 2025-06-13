@@ -1,5 +1,5 @@
 import { CONTACT_EMAIL, WHATSAPP_NUMBER } from '@/lib/const'
-import profilPic from '@/public/images/profil_pic_TI.webp'
+import profilPic2 from '@/public/images/feuille-2.webp'
 import Image from 'next/image'
 import { Icon } from '../shared/Icon'
 
@@ -40,7 +40,7 @@ const Profil = ({
     <div className="flex justify-center flex-col items-center">
       <Image
         alt="David Heimfert, Développeur Web - Next.JS"
-        src={profilPic}
+        src={profilPic2}
         className="aspect-[1/1] w-full max-w-[500px] rounded-2xl object-cover shadow-lg"
       />
       <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-primaryText">
