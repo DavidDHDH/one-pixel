@@ -22,7 +22,7 @@ const features = [
   {
     name: 'Suivi',
     description:
-      'Une fois en ligne, on analyse les usages pour faire évoluer ton outil. Nouvelles features, roadmap claire, support continu.',
+      'Une fois en ligne, on analyse les usages pour faire évoluer ton outil. Nouvelles fonctionnalités, roadmap claire, support continu.',
     icon: 'rotateArrow',
   },
 ]

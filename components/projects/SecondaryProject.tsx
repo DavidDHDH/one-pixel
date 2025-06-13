@@ -23,11 +23,11 @@ const SecondaryProject = ({ project }: { project: ProjectType }) => {
         <div className="h-[50%]">
           <Dialog>
             <DialogTrigger asChild>
-              <div className="cursor-pointer h-full">
+              <div className="cursor-pointer h-full overflow-hidden">
                 <Image
                   src={project.mainImage}
                   alt={`${project.title} mockup`}
-                  className="object-cover object-center h-full"
+                  className="object-cover object-center h-full hover:scale-105 transition-all duration-500"
                 />
               </div>
             </DialogTrigger>

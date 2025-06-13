@@ -1,7 +1,9 @@
+import emailIcon from '@/assets/icons/email.png'
+import realtimeIcon from '@/assets/icons/real-time-icon.svg'
 import { TimelineEntry } from '@/components/project-page/ProcessTimeline'
 import { StackItem } from '@/components/stack/StackWithDescription'
-import { Icon123, Icon12Hours } from '@tabler/icons-react'
-import { StaticImageData } from 'next/image'
+import { Icon12Hours } from '@tabler/icons-react'
+import Image, { StaticImageData } from 'next/image'
 import { Testimonial, testimonials } from './testimonials'
 
 import artiziaMainScreen from '@/public/projects/artizia/artizia-fwi-main-screen.webp'
@@ -12,6 +14,8 @@ import VC1 from '@/public/projects/villacare/villa-care-1.webp'
 import VC2 from '@/public/projects/villacare/villa-care-2.webp'
 import VC6 from '@/public/projects/villacare/villa-care-6.webp'
 
+import { DarkModeCard } from '@/components/bento/DarkModeCard'
+import { LanguageCard } from '@/components/bento/LanguageCard'
 import DLmockup from '@/public/projects/DI-mockup.webp'
 import rwayMockup from '@/public/projects/Rway-mockup.webp'
 import SBmockup from '@/public/projects/SB-mockup.webp'
@@ -67,30 +71,110 @@ export const projects: Projects[] = [
     carouselImages: [VC1, VC2, VC6],
     location: 'Saint-Barthélemy',
     bentoItems: [
-      <p key="1" className="h-full w-full">
-        teste 515645
-      </p>,
-      <p key="2" className="h-full w-full">
-        test
-      </p>,
-      <p key="3" className="h-full w-full">
-        test
-      </p>,
-      <p key="4" className="h-full w-full">
-        testdfsf
-      </p>,
-      <p key="5" className="h-full w-full">
-        test 5
-      </p>,
-      <p key="6" className="h-full w-full">
-        test 6
-      </p>,
-      <div key="7" className="h-full w-full flex items-center justify-center">
-        <Icon123 size={100} />
+      <div key="1" className="h-full w-full flex flex-col gap-4">
+        <div className="flex items-center justify-center">
+          <Image
+            src={realtimeIcon}
+            alt="Planning partagé"
+            className="w-16 h-16"
+          />
+        </div>
+        <h3 className="text-center text-xl font-bold">
+          Planning partagé et sécurisé
+        </h3>
+
+        <p>Un calendrier centralisé, mis à jour en temps réel, qui affiche :</p>
+        <ul className="list-disc list-inside">
+          <li>les demandes d&apos;options,</li>
+          <li>les options en cours,</li>
+          <li>les réservations confirmées,</li>
+          <li>les séjours propriétaires,</li>
+        </ul>
+        <p>
+          Chaque utilisateur accède uniquement aux informations qui le
+          concernent, selon son rôle (manager, agence, propriétaire…).
+        </p>
+        <p>
+          💡 Plus besoin d’Excel partagé : tout le monde a la bonne info, au bon
+          moment.
+        </p>
       </div>,
-      <p key="8" className="h-full w-full">
-        test 8
+      <div key="2" className="h-full w-full flex flex-col gap-4">
+        <h3 className="text-center text-xl font-bold">
+          🧑‍🤝‍🧑 Espaces de travail adaptés à chaque rôle
+        </h3>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="flex flex-col gap-4">
+            <h4 className="text-center text-lg font-bold">Manager</h4>
+            <p>
+              Accès aux plannings, aux options, aux réservations, aux clients.
+            </p>
+          </div>
+          <div className="flex flex-col gap-4">
+            <h4 className="text-center text-lg font-bold">Agence</h4>
+            <p>
+              Accès aux plannings, aux options, aux réservations, aux clients.
+            </p>
+          </div>
+        </div>
+      </div>,
+      <div key="3" className="h-full w-full flex flex-col gap-4">
+        <h3 className="text-center text-xl font-bold">
+          Automatisations pour gagner du temps
+        </h3>
+        <p>
+          Fini les relances manuelles et les oublis : les tâches répétitives
+          sont automatisées, pour un suivi fluide et sans erreur.
+        </p>
+        <p>Des emails sont envoyés automatiquement pour :</p>
+        <ul className="list-disc list-inside">
+          <li>partager les plannings,</li>
+          <li>confirmer les réservations,</li>
+          <li>notifier une nouvelle demande,</li>
+          <li>relancer lorsqu&apos;une information manque…</li>
+        </ul>
+        <p>
+          💡 Un gain de temps quotidien, et une meilleure réactivité avec les
+          partenaires.
+        </p>
+        <div className="flex items-center justify-center">
+          <Image
+            src={emailIcon}
+            alt="Envois automatiques"
+            className="w-16 h-16"
+          />
+        </div>
+      </div>,
+      <p key="4" className="h-full w-full flex flex-col gap-4">
+        <h3 className="text-center text-xl font-bold ">
+          Gestion centralisée des documents
+        </h3>
+        <p>
+          Tous les fichiers liés aux villas sont stockés dans l’app : mandats,
+          contrats, inventaires, photos…
+        </p>
+        <p>🔐 Fini les documents éparpillés entre mails et Drive.</p>
       </p>,
+      <LanguageCard key="5" />,
+      <DarkModeCard
+        key="6"
+        illustration="/projects/villacare/mobile-villacare.webp"
+      />,
+      <div key="7" className="h-full w-full flex flex-col gap-4">
+        <h3 className="text-center text-xl font-bold">
+          Statistiques & pilotage
+        </h3>
+        <p>L’application génère des tableaux de bord simples pour suivre :</p>
+        <ul className="list-disc list-inside">
+          <li>le taux d’occupation,</li>
+          <li>les revenus par villa,</li>
+          <li>les prévisions par période.</li>
+        </ul>
+        <p>
+          🎯 Une base solide pour prendre des décisions éclairées, et optimiser
+          les revenus.
+        </p>
+      </div>,
     ],
     features: [
       {

@@ -67,7 +67,7 @@ export const ProjectCarousel = ({
               className="cursor-pointer group"
               onClick={() => openDialog(index)}
             >
-              <div className="relative overflow-hidden rounded-lg  hover:shadow-xl transition-all duration-300 group-hover:scale-[1.02]">
+              <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-[1.02]">
                 <Image
                   src={image}
                   alt={`Image ${index + 1} de ${projectTitle}`}

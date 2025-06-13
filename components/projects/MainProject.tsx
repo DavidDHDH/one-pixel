@@ -97,7 +97,7 @@ export default function MainProject({
                         className={!isEven ? 'cursor-pointer' : ''}
                       >
                         <p className="text-sm leading-6 hover:underline">
-                          Étude de cas <span aria-hidden="true">→</span>
+                          Découvrir le projet <span aria-hidden="true">→</span>
                         </p>
                       </Link>
                     )}
@@ -106,7 +106,8 @@ export default function MainProject({
                         <Tooltip>
                           <TooltipTrigger>
                             <p className="text-sm leading-6 text-gray-400 cursor-default">
-                              Étude de cas <span aria-hidden="true">→</span>
+                              Découvrir le projet{' '}
+                              <span aria-hidden="true">→</span>
                             </p>
                           </TooltipTrigger>
                           <TooltipContent>
@@ -126,7 +127,7 @@ export default function MainProject({
             >
               <Dialog>
                 <DialogTrigger asChild>
-                  <div className="cursor-pointer">
+                  <div className="cursor-pointer hover:scale-105 transition-all duration-500">
                     <Image
                       alt={`${project.title} mockup`}
                       src={project.mainImage}
