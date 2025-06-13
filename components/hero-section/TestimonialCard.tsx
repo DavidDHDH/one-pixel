@@ -21,12 +21,20 @@ export default function TestimonialCard({
       <div
         itemProp="itemReviewed"
         itemScope
-        itemType="https://schema.org/Organization"
+        itemType="https://schema.org/Service"
       >
-        <meta itemProp="name" content="One Pixel" />
         <meta
-          itemProp="description"
-          content="Agence de développement web aux Antilles, Saint Barthélemy"
+          itemProp="name"
+          content="Création de sites internet et solutions IA sur-mesure"
+        />
+        <meta itemProp="provider" content="One Pixel" />
+        <meta
+          itemProp="areaServed"
+          content="Saint-Barthélemy, Saint Martin, Antilles françaises"
+        />
+        <meta
+          itemProp="serviceType"
+          content="Développement web, intégration IA, SaaS sur-mesure"
         />
       </div>
 

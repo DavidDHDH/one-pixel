@@ -41,8 +41,9 @@ export default function AboutMe({ withStack }: { withStack?: boolean }) {
             On ne s&apos;est pas présenté…
           </p>
           <h2 className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900">
-            Je suis David Heimfert, développeur web à Saint-Barthélemy,
-            passionné par le code, le design et l&apos;IA.
+            Je suis David Heimfert, développeur web passionné par le code, le
+            design, et les nouvelles possibilités offertes par l’intelligence
+            artificielle
           </h2>
         </div>
         <div className="md:grid md:grid-cols-2 gap-10 pt-10 items-center">
@@ -51,24 +52,23 @@ export default function AboutMe({ withStack }: { withStack?: boolean }) {
           </div>
           <div className="col-span-1 mx-auto space-y-8 mt-4 text-gray-600 md:max-w-full text-start">
             <p>
-              💪 Je développe des applications métier et des sites internet,
-              avec ou sans IA, qui s&apos;adaptent à toi — pas l&apos;inverse.
-              Chaque projet est sur mesure : pensé pour ton quotidien, ton
-              activité et ta productivité.
-            </p>
-            <p>
-              📍 Basé à Saint-Barthélemy, je travaille en direct avec mes
-              clients, sans intermédiaire. Ça veut dire plus de réactivité et
-              une vraie compréhension de ton contexte terrain.
+              👨🏼‍💻 Je conçois des applications, des logiciels personnalisés et des
+              sites internet pensés pour ton quotidien. Sur-mesure, fiables, et
+              enrichis d’IA quand ça apporte une vraie valeur.
             </p>
             <p>
               🎯 Mon objectif : te faire gagner du temps, réduire les erreurs,
-              automatiser ce qui peut l&apos;être, et améliorer ta présence en
-              ligne.
+              déléguer à l’IA ce qui a du sens, sans jamais perdre la main.
             </p>
             <p>
-              ❤️ Et mon kiff ? Résoudre des problèmes concrets avec du code
-              utile. Je suis là pour te simplifier la vie.
+              🤝 Je travaille en direct avec mes clients, sans intermédiaire. Ça
+              veut dire plus de réactivité et une vraie compréhension de ton
+              contexte terrain.
+            </p>
+            <p>
+              ❤️ Et mon kiff ? Trouver des solutions à des problèmes concrets.
+              Je suis là pour te simplifier durablement, avec des outils qui
+              bossent vraiment pour toi.
             </p>
 
             <div className="flex gap-4 justify-evenly">

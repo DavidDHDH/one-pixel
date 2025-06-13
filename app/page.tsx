@@ -10,20 +10,52 @@ import Portfolio from '@/components/projects/Portfolio'
 import Services from '@/components/services/Services'
 import TestimonialsSection from '@/components/testimonials/TestimonialsSection'
 import WhySection from '@/components/why-section/WhySection'
+import Script from 'next/script'
 
 export default function Home() {
   return (
-    <main>
-      <HeroSectionSoft />
-      <Partners />
-      <Portfolio />
-      <TestimonialsSection />
-      <Services />
-      <ProcessSection />
-      <WhySection />
-      <AboutMe withStack /> 
-      <FaqSection />
-      <CTA />
-    </main>
+    <>
+      <main>
+        <HeroSectionSoft />
+        <Partners />
+        <Portfolio />
+        <TestimonialsSection />
+        <Services />
+        <ProcessSection />
+        <WhySection />
+        <AboutMe withStack /> 
+        <FaqSection />
+        <CTA />
+      </main>
+      <Script
+        id="ld-json-org"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'One Pixel',
+            url: 'https://www.one-pixel.com',
+            logo: 'https://www.one-pixel.com/images/logo.webp',
+            description:
+              'Agence web à Saint-Barthélemy spécialisée dans la création de sites internet et applications métiers boostées à l’IA.',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Saint-Barthélemy',
+              addressCountry: 'FR',
+            },
+            contactPoint: {
+              '@type': 'ContactPoint',
+              email: 'hello@one-pixel.com',
+              contactType: 'customer support',
+            },
+            sameAs: [
+              'https://www.linkedin.com/in/david-heimfert',
+              'https://github.com/DavidDHDH',
+            ],
+          }),
+        }}
+      />
+    </>
   )
 }

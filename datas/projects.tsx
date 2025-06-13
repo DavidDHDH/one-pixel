@@ -244,7 +244,7 @@ export const projects: Projects[] = [
         icon: 'Typescript',
       },
     ],
-    slug: 'villa-care-management',
+    // slug: 'villa-care-management',
     year: '2024',
     context:
       'Villa Care est une application SaaS de gestion locative pour villas à Saint-Barthélemy. Elle permet de gérer les réservations, les disponibilités, les travaux et les informations clients.',
@@ -531,7 +531,7 @@ export const projects: Projects[] = [
     isMainProject: false,
     industry: 'Restauration',
     description:
-      'Refonte UX/UI de l’app Delifood Island, service de livraison à Saint-Barthélemy. Nouveau parcours utilisateur, design modernisé, et intégration du Click and Collect pour améliorer l’expérience client.',
+      'Refonte érgonomique et design de l’app Delifood Island, service de livraison à Saint-Barthélemy. Nouveau parcours utilisateur, design modernisé, et intégration du Click and Collect pour améliorer l’expérience client.',
     mainImage: DLmockup,
     location: 'Saint-Barthélemy',
     features: [],
@@ -558,7 +558,7 @@ export const projects: Projects[] = [
     industry: 'Voyage',
     isMainProject: false,
     description:
-      "Refonte UI pour St Barth R Way, agence de voyage spécialisée en VIP Service et vols privés. L'objectif était de moderniser le design du site, de le rendre plus en adéquation avec les standards de l'industrie du luxe et la qualité de service de l'agence.",
+      "Refonte UI du site internet de St Barth R Way, agence de voyage spécialisée en VIP Service et vols privés. L'objectif était de moderniser le design du site, de le rendre plus en adéquation avec les standards de l'industrie du luxe et la qualité de service de l'agence.",
     mainImage: rwayMockup,
     location: 'Saint-Barthélemy',
     features: [],
@@ -594,7 +594,7 @@ export const projects: Projects[] = [
     seoCategory: 'WebSite',
     seoPlatform: 'Web',
     description:
-      'Site vitrine multilingue pour SeaBarts Watersports, spécialiste des seabobs et e-foils à Saint-Barthélemy. Une interface moderne et mobile-first pour présenter leurs activités nautiques haut de gamme.',
+      'Création du site internet de SeaBarts, spécialiste de la location de bateaux à la journée et watersports à Saint-Barthélemy. Une interface moderne et mobile-first pour présenter leurs activités nautiques haut de gamme.',
     mainImage: SBmockup,
     location: 'Saint-Barthélemy',
     features: [],
@@ -628,7 +628,7 @@ export const projects: Projects[] = [
     seoCategory: 'WebSite',
     seoPlatform: 'Web',
     description:
-      'Site vitrine multilingue pour Tile & Design Shop, showroom de décoration à Saint-Barthélemy. Présentation de leurs collections, réalisations et services, avec une visite 3D immersive du showroom.',
+      'Design et développement du site internet de Tile & Design Shop, showroom de décoration à Saint-Barthélemy. Présentation de leurs collections, réalisations et services, avec une visite 3D immersive du showroom.',
     mainImage: tileMockup,
     location: 'Saint-Barthélemy',
     features: [],

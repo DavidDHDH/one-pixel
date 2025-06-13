@@ -149,7 +149,7 @@ const WhySection = () => {
           avec un indépendant local, tu gagnes en efficacité, en sécurité
           juridique et en sérénité.
         </p>
-        <div className="mt-10 rounded-xl bg-white/10 backdrop-blur-sm border  border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 shadow-lg p-8">
+        <div className="mt-10 rounded-xl bg-[radial-gradient(circle_at_40%_25%,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.06)_70%,rgba(255,255,255,0.02)_100%)] backdrop-blur-sm border border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 shadow-lg p-8">
           <ul className="grid gap-y-6 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
             {advantages.map((advantage, index) => (
               <li

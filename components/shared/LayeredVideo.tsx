@@ -123,6 +123,7 @@ const LayeredVideo: React.FC<LayeredVideoProps> = ({
           loop={layer.loop}
           muted
           playsInline
+          aria-label="Illustration de l'agence web One Pixel, un développeur web et IA à son bureau sur la plage"
         >
           <source src={layer.webm} type="video/webm; codecs=vp9" />
           <source src={layer.mp4} type="video/mp4; codecs=hevc" />

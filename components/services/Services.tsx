@@ -16,13 +16,13 @@ const services = [
   {
     label: 'Sites internet professionnels',
     description:
-      'Un site vitrine unique, moderne et adapté aux mobiles, livré en une semaine. Idéal pour être visible localement, gagner en crédibilité et présenter ton offre avec clarté.',
+      'Un site internet sur mesure, moderne et rapide à déployer, optimisé pour les mobiles et le référencement local.',
     icon: 'website',
   },
   {
     label: 'IA & automatisation intelligente',
     description:
-      'Je t’aide à intégrer l’intelligence artificielle dans tes outils : génération de contenu, réponses automatiques, analyse de données… pour aller plus vite et mieux décider.',
+      'Je t’aide à intégrer l’intelligence artificielle dans tes outils : génération de contenu, réponses automatiques, chatbots connaissant ton business, analyse de données, agents IA… pour aller plus vite et mieux décider.',
     icon: 'ia',
   },
 ]

@@ -2,9 +2,9 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title:
-    'Agence web et création de site internet à Saint-Barthélemy - One Pixel',
+    'Agence web spécialisée IA & création de sites internet à Saint-Barthélemy – One Pixel',
   description:
-    "Agence web et création de site internet à Saint-Barthélemy, je conçois des applications sur-mesure, sites internet et logiciels métier booster à l'IA pour les entreprises des Antilles.",
+    'Agence web à Saint-Barthélemy, spécialisée dans la création de sites internet, applications sur-mesure et logiciels métier boostés à l’IA pour les entreprises des Antilles.',
   keywords: [
     'agence web',
     'création de site internet',
@@ -34,9 +34,10 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Agence web et création de site internet à Saint-Barthélemy',
+    title:
+      'Agence web à Saint-Barthélemy – IA & création de sites internet sur-mesure | One Pixel',
     description:
-      "Agence web et création de site internet à Saint-Barthélemy, je conçois des applications sur-mesure, sites internet et logiciels métier booster à l'IA pour les entreprises des Antilles.",
+      'Agence web à Saint-Barthélemy, spécialisée dans la création de sites internet, applications sur-mesure et logiciels métier boostés à l’IA pour les entreprises des Antilles.',
     url: 'https://www.one-pixel.com',
     siteName: 'One Pixel',
     locale: 'fr_FR',
@@ -45,9 +46,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Agence web et création de site internet à Saint-Barthélemy',
+    title:
+      'Agence web à Saint-Barthélemy – IA & création de sites internet sur-mesure | One Pixel',
     description:
-      "Agence web et création de site internet à Saint-Barthélemy, je conçois des applications sur-mesure, sites internet et logiciels métier booster à l'IA pour les entreprises des Antilles.",
+      'Agence web à Saint-Barthélemy, spécialisée dans la création de sites internet, applications sur-mesure et logiciels métier boostés à l’IA pour les entreprises des Antilles.',
     // pas d’image tant que tu n’as pas de fichier
   },
   robots: {

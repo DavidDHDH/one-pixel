@@ -16,13 +16,13 @@ const features = [
   {
     name: 'Développement',
     description:
-      'Déploiement progressif, retours réguliers, code solide. Tu suis chaque étape, sans surprise, jusqu’à une application prête à évoluer.',
+      'Déploiement progressif, retours réguliers, code solide. Tu suis chaque étape, sans surprise, jusqu’à une application prête à être mise en production.',
     icon: 'dev',
   },
   {
     name: 'Suivi',
     description:
-      'Une fois en ligne, on analyse les usages pour faire évoluer ton outil. Nouvelles fonctionnalités, roadmap claire, support continu.',
+      "Une fois en ligne, on analyse les usages pour faire évoluer ton outil, on s'adapte aux nouveautés IA. Nouvelles fonctionnalités, roadmap claire, support continu.",
     icon: 'rotateArrow',
   },
 ]
@@ -31,17 +31,19 @@ export default function ProcessSection() {
   return (
     <section id="process" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-3xl text-center">
           <h2 className="sm:text-lg font-semibold leading-7 text-primaryText">
-            Mon processus de création
+            Mon approche pour créer des outils web sur-mesure
           </h2>
           <p className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight  sm:text-4xl lg:text-balance text-gray-900">
             Rien n&apos;est laissé au hasard.
           </p>
           <p className="mt-6 sm:text-lg leading-8 text-gray-600">
-            Chaque étape est pensée pour sécuriser ton investissement : on part
-            d’un vrai besoin métier, on construit une UX sur-mesure, on
-            développe avec rigueur, et on t’accompagne dans la durée.
+            On part d’un besoin métier réel, on structure une interface
+            intuitive, on développe avec rigueur, et on intègre l&apos;IA dès
+            qu&apos;elle apporte un gain réel d&apos;efficacité ou
+            d&apos;automatisation. A la fin, on a un outil moderne, efficace, et
+            prêt pour durer.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
