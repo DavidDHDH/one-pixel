@@ -9,6 +9,23 @@ import { ProjectStackSection } from '@/components/project-page/ProjectStackSecti
 import { ResultsSection } from '@/components/project-page/ResultsSection'
 import { projects } from '@/datas/projects'
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string }
+}) {
+  const project = projects.find((project) => project.slug === params.slug)
+  return {
+    title: `${project?.title} - ${project?.seoType} créée par One Pixel, agence web et création de site internet à Saint-Barthélemy`,
+    description: project?.description,
+    openGraph: {
+      title: `${project?.title} - ${project?.seoType} créée par One Pixel, agence web et création de site internet à Saint-Barthélemy`,
+      description: project?.description,
+      images: [project?.mainProjectImage || project?.mainImage],
+    },
+  }
+}
+
 const ProjectPage = ({ params }: { params: { slug: string } }) => {
   const project = projects.find((project) => project.slug === params.slug)
 

@@ -1,7 +1,8 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Agence web et création de site internet à Saint-Barthélemy',
+  title:
+    'Agence web et création de site internet à Saint-Barthélemy - One Pixel',
   description:
     "Agence web et création de site internet à Saint-Barthélemy, je conçois des applications sur-mesure, sites internet et logiciels métier booster à l'IA pour les entreprises des Antilles.",
   keywords: [

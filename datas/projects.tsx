@@ -30,8 +30,10 @@ type Projects = {
   mainProjectImage?: StaticImageData
   carouselImages?: StaticImageData[]
   description: string
+  seoType?: 'Application SaaS' | 'Marketplace' | 'WebSite' | 'UI/UX'
   seoCategory: 'WebApplication' | 'WebSite' | 'UI/UX'
   seoPlatform: 'Web' | 'Mobile' | 'Desktop'
+  seoDescription?: string
   industry: string
   bentoItems?: React.ReactNode[]
   features: {
@@ -61,8 +63,11 @@ export const projects: Projects[] = [
     type: 'Application SaaS de gestion locative pour villas à Saint-Barthélemy',
     isMainProject: true,
     industry: 'Immobilier de luxe',
+    seoType: 'Application SaaS',
     seoCategory: 'WebApplication',
     seoPlatform: 'Web',
+    seoDescription:
+      'Développé à Saint-Barthélemy, Villa Care est une application SaaS de management de villas. Elle permet de gérer les réservations, les travaux, les inventaires, et automatiser les tâches répétitives comme les envois de plannings ou les relances.',
     description:
       'Villa Care révolutionne la gestion locative haut de gamme à Saint-Barthélemy et dans les Caraïbes. Cette application SaaS tout-en-un centralise réservations, plannings, travaux et infos clients. Les tâches répétitives sont automatisées, les gestionnaires gagnent en efficacité.',
 
