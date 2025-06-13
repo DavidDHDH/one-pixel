@@ -138,15 +138,16 @@ const WhySection = () => {
     <section className="bg-[url('/images/sunset-island.jpg')] bg-cover bg-center bg-black/20 bg-blend-overlay">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="sm:text-lg font-semibold leading-7 text-white text-center">
-          Développeur local à Saint-Barthélemy : 6 bonnes raisons
+          Agence web local à Saint-Barthélemy : 6 bonnes raisons
         </h2>
         <p className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-white text-center">
           Un partenaire proche, un impact concret.
         </p>
         <p className="mt-6 sm:text-lg leading-8 text-white text-center max-w-4xl mx-auto">
-          Basé à Saint-Barth, je développe des sites et applications web pour
-          les entreprises des Antilles. En travaillant avec un indépendant
-          local, tu gagnes en efficacité, en sécurité juridique et en sérénité.
+          Basé à Saint-Barth, je développe des sites internet et des
+          applications web pour les entreprises des Antilles. En travaillant
+          avec un indépendant local, tu gagnes en efficacité, en sécurité
+          juridique et en sérénité.
         </p>
         <div className="mt-10 rounded-xl bg-white/10 backdrop-blur-sm border  border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 shadow-lg p-8">
           <ul className="grid gap-y-6 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">

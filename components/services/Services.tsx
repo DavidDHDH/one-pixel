@@ -52,8 +52,8 @@ export default function Services() {
             Mes services.
           </p>
           <h2 className="font-rubik mt-2 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Applications métier, SaaS et solutions web sur-mesure pour booster
-            ton activité.
+            Applications métier, sites internet et solutions web sur-mesure pour
+            booster ton activité.
           </h2>
           <p className="sr-only">
             Développeur web freelance aux Antilles, je crée des logiciels

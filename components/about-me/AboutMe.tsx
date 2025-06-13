@@ -51,7 +51,7 @@ export default function AboutMe({ withStack }: { withStack?: boolean }) {
           </div>
           <div className="col-span-1 mx-auto space-y-8 mt-4 text-gray-600 md:max-w-full text-start">
             <p>
-              💪 Je développe des applications métier et des plateformes SaaS,
+              💪 Je développe des applications métier et des sites internet,
               avec ou sans IA, qui s&apos;adaptent à toi — pas l&apos;inverse.
               Chaque projet est sur mesure : pensé pour ton quotidien, ton
               activité et ta productivité.
@@ -63,7 +63,8 @@ export default function AboutMe({ withStack }: { withStack?: boolean }) {
             </p>
             <p>
               🎯 Mon objectif : te faire gagner du temps, réduire les erreurs,
-              automatiser ce qui peut l&apos;être.
+              automatiser ce qui peut l&apos;être, et améliorer ta présence en
+              ligne.
             </p>
             <p>
               ❤️ Et mon kiff ? Résoudre des problèmes concrets avec du code

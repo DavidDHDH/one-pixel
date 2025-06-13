@@ -73,12 +73,12 @@ export default function FaqSection() {
     <section id="faq" className="py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="md:text-center mb-16 text-center">
-          <p className="sm:text-lg font-semibold leading-7 text-primaryText">
+          <h2 className="sm:text-lg font-semibold leading-7 text-primaryText">
             Questions fréquentes.
-          </p>
-          <h2 className="text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900">
-            Tu te poses peut-être l&apos;une de ces questions.
           </h2>
+          <p className="text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900">
+            Tu te poses peut-être l&apos;une de ces questions.
+          </p>
           <p className="mt-6 sm:text-lg leading-8 text-gray-600">
             Pas de question bête, je réponds ici aux interrogations les plus
             courantes avant de démarrer un projet. Si tu ne trouves pas ta
