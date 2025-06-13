@@ -23,7 +23,7 @@ export default function Home() {
         <Services />
         <ProcessSection />
         <WhySection />
-        <AboutMe withStack /> 
+        <AboutMe withStack />
         <FaqSection />
         <CTA />
       </main>

@@ -127,13 +127,13 @@ export default function MainProject({
             >
               <Dialog>
                 <DialogTrigger asChild>
-                  <div className="cursor-pointer hover:scale-105 transition-all duration-500">
+                  <div className="cursor-pointer">
                     <Image
                       alt={`${project.title} mockup`}
                       src={project.mainImage}
                       width={2432}
                       height={1442}
-                      className="w-[48rem] max-w-none rounded-xl shadow-lg sm:w-[57rem]"
+                      className="w-[48rem] max-w-none rounded-xl shadow-lg sm:w-[57rem] hover:scale-105 transition-all duration-500 hover:shadow-xl"
                     />
                   </div>
                 </DialogTrigger>

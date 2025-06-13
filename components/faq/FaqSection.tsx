@@ -6,59 +6,59 @@ import { FaqAccordion } from '../ui/faq-chat-accordion'
 const defaultData = [
   {
     id: 1,
-    question: "Pourquoi choisir un freelance plutot qu'une grosse agence ?",
+    question: "Pourquoi choisir un freelance plutôt qu'une grosse agence ?",
     answer:
-      "En travaillant avec un freelance, tu gagnes en flexibilite, reactivite et proximite. Pas d'intermediaire, tu es l'unique priorite du freelance pendant le projet, pas de surcouts d'agence : tu parles directement avec la personne qui conçoit et developpe ton projet. Un freelance bien entoure te garantit une qualite de service optimale.",
+      "En travaillant avec un freelance, tu gagnes en flexibilité, réactivité et proximité. Pas d'intermédiaire, tu es l'unique priorité du freelance pendant le projet, pas de surcoûts d'agence : tu parles directement avec la personne qui conçoit et développe ton projet. Un freelance bien entouré te garantit une qualité de service optimale.",
   },
   {
     id: 6,
     question: 'Tu peux vraiment tout faire ?',
     answer:
-      "Non, et heureusement. Mon expertise, c'est le developpement et la productivite. Pour le reste (strategie SEO, branding, photos ...), je m'entoure d'autres experts. On monte une equipe legere et adaptee a ton projet, sans les couts fixes d'une agence.",
+      "Non, et heureusement. Mon expertise, c'est le développement et la productivité. Pour le reste (stratégie SEO, branding, photos ...), je m'entoure d'autres experts. On monte une équipe légère et adaptée à ton projet, sans les coûts fixes d'une agence.",
   },
   {
     id: 3,
-    question: 'Quels types de projets developpes-tu ?',
+    question: 'Quels types de projets développes-tu ?',
     answer:
-      'Je developpe des applications metier, des plateformes SaaS et des sites internet pour les pros des Antilles. Chaque projet est pense pour resoudre un probleme concret : automatiser une tache, mieux communiquer ou gagner du temps.',
+      'Je développe des applications métier, des plateformes SaaS et des sites internet pour les pros des Antilles. Chaque projet est pensé pour résoudre un problème concret : automatiser une tâche, mieux communiquer ou gagner du temps.',
   },
   {
     id: 9,
-    question: "Tu t'occupes de la conformite RGPD ?",
+    question: "Tu t'occupes de la conformité RGPD ?",
     answer:
-      "Oui. Je suis forme au RGPD, et j'integre les obligations legales des la conception de ton site ou application. Consentement, mentions, securite : on fait les choses proprement, pour que tu sois tranquille, et je t'accompagne sur les bonnes pratiques a adopter.",
+      "Oui. Je suis formé au RGPD, et j'intègre les obligations légales dès la conception de ton site ou application. Consentement, mentions, sécurité : on fait les choses proprement, pour que tu sois tranquille, et je t'accompagne sur les bonnes pratiques à adopter.",
   },
   {
     id: 4,
     question: 'Est-ce que tu proposes le design aussi ?',
     answer:
-      "Oui ! Je m'occupe de l'UX/UI design de ton projet, du wireframe a l'interface finale, en collaboration directe avec toi pour que chaque ecran soit clair, utile et joli.",
+      "Oui ! Je m'occupe de l'UX/UI design de ton projet, du wireframe à l'interface finale, en collaboration directe avec toi pour que chaque écran soit clair, utile et joli.",
   },
 
   {
     id: 2,
-    question: 'Et le referencement ?',
+    question: 'Et le référencement ?',
     answer:
-      'Ton site ou application sera optimise pour le referencement naturel (balises, vitesse, accessibilite, structure technique). Si tu vises une strategie SEO long terme (contenus, backlinks…), nous travaillerons avec un specialiste.',
+      'Ton site ou application sera optimisé pour le référencement naturel (balises, vitesse, accessibilité, structure technique). Si tu vises une stratégie SEO long terme (contenus, backlinks…), nous travaillerons avec un spécialiste.',
   },
   {
     id: 5,
-    question: 'Et apres la mise en ligne ?',
+    question: 'Et après la mise en ligne ?',
     answer:
-      'Je propose un suivi sur mesure : corrections, nouvelles fonctionnalites, iterations basees sur les retours utilisateurs. Ton outil evolue avec ton business — pas besoin de tout refaire dans 6 mois.',
+      'Je propose un suivi sur mesure : corrections, nouvelles fonctionnalités, itérations basées sur les retours utilisateurs. Ton outil évolue avec ton business — pas besoin de tout refaire dans 6 mois.',
   },
 
   {
     id: 7,
-    question: 'Tu peux gerer plusieurs projets a la fois ?',
+    question: 'Tu peux gérer plusieurs projets à la fois ?',
     answer:
-      'Oui, mais je ne prends pas tout le monde en meme temps. Quand je dis oui a un projet, il devient prioritaire. Je prefere avancer peu mais bien, et etre vraiment dispo pour toi.',
+      'Oui, mais je ne prends pas tout le monde en même temps. Quand je dis oui à un projet, il devient prioritaire. Je préfère avancer peu mais bien, et être vraiment dispo pour toi.',
   },
   {
     id: 8,
-    question: 'Je peux te parler de mon idee sans engagement ?',
+    question: 'Je peux te parler de mon idée sans engagement ?',
     answer:
-      "Bien sur. Tu peux m'exposer ton idee, tes objectifs, et on voit ensemble ce qui est realiste, si je suis la bonne personne pour t'accompagner ou te diriger vers un autre expert. Pas de promesse vide, pas d'engagement tant qu'on n'a pas cadre ton projet.",
+      "Bien sûr. Tu peux m'exposer ton idée, tes objectifs, et on voit ensemble ce qui est réaliste, si je suis la bonne personne pour t'accompagner ou te diriger vers un autre expert. Pas de promesse vide, pas d'engagement tant qu'on n'a pas cadré ton projet.",
   },
 ]
 

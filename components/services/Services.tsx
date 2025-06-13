@@ -16,7 +16,7 @@ const services = [
   {
     label: 'Sites internet professionnels',
     description:
-      'Un site internet sur mesure, moderne et rapide à déployer, optimisé pour les mobiles et le référencement local.',
+      'Un site internet sur mesure, moderne, rapide à déployer, optimisé pour les mobiles et le référencement local, livré en 1 à 2 semaines.',
     icon: 'website',
   },
   {
