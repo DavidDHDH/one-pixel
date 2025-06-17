@@ -1,5 +1,3 @@
-// REMETTRE COLUMN000-3 A LA PLACE DE GRID
-
 import { testimonials } from '@/datas/testimonials'
 import { CONTACT_EMAIL } from '@/lib/const'
 import TestimonialCard from '../hero-section/TestimonialCard'
@@ -41,7 +39,10 @@ export default function TestimonialsSection() {
                     index === 3 && 'col-start-2'
                   }`}
                 >
-                  <TestimonialCard testimonial={testimonial} />
+                  <TestimonialCard
+                    testimonial={testimonial}
+                    includeItemReviewed={false}
+                  />
                 </div>
               ))}
             </div>
