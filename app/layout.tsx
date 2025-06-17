@@ -1,5 +1,6 @@
 import Footer from '@/components/footer/Footer'
 import Navbar from '@/components/navbar/Navbar'
+import WidgetCalendly from '@/components/widget-calendly/WidgetCalendly'
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <WidgetCalendly />
       </body>
     </html>
   )

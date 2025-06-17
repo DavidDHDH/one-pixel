@@ -27,6 +27,7 @@ export default function Home() {
         <FaqSection />
         <CTA />
       </main>
+
       <Script
         id="ld-json-org"
         type="application/ld+json"
