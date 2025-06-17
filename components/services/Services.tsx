@@ -71,8 +71,16 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={`service-${index}`}
+              itemScope
+              itemType="https://schema.org/Service"
+              itemProp="service"
               className="flex flex-col items-center rounded-2xl shadow-lg px-8 py-6 text-center h-full border border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 bg-[radial-gradient(circle_at_40%_25%,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.06)_70%,rgba(255,255,255,0.02)_100%)] backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:shadow-xl hover:backdrop-blur-md"
             >
+              <meta itemProp="name" content={service.label} />
+              <meta itemProp="description" content={service.description} />
+              {service.examples.map((ex) => (
+                <meta key={`type-${ex}`} itemProp="serviceType" content={ex} />
+              ))}
               <div className="flex flex-col justify-center items-center">
                 <Icon
                   name={service.icon}

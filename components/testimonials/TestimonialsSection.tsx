@@ -67,7 +67,7 @@ export default function TestimonialsSection() {
           <h3 className="text-center text-xl font-semibold text-gray-900">
             Un projet web en tête ?{' '}
           </h3>
-          <p className="mt-4 sm:text-lg leading-8 text-gray-600">
+          <p className="mt-4 sm:text-lg leading-8 text-gray-600 text-center">
             Je t&apos;aide à y voir plus clair, et je te propose des solutions
             concrètes, sans aucun engagement.
           </p>
