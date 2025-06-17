@@ -5,7 +5,7 @@ const features = [
   {
     name: 'Étude',
     description:
-      'On clarifie ensemble ton besoin métier et ta cible. Résultat : une vision précise du produit, conforme au RGPD, avec un MVP cadré et priorisé.',
+      'On clarifie ensemble ton besoin métier et ta cible. Résultat : une vision précise du produit, conforme au RGPD, avec une première version cadrée et priorisée.',
     icon: 'search',
   },
   {
@@ -34,7 +34,7 @@ export default function ProcessSection() {
       <div className="mx-auto my-auto max-w-7xl px-6 lg:px-8 ">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="sm:text-lg font-semibold leading-7 text-primaryText">
-            Mon approche pour créer des outils web sur-mesure
+            Mon approche pour créer des outils web et IA sur-mesure
           </h2>
           <p className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight  sm:text-4xl lg:text-balance text-gray-900">
             Rien n&apos;est laissé au hasard.
