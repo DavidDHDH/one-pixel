@@ -28,6 +28,7 @@ import {
   IconCalendarMonth,
   IconChartDotsFilled,
   IconCodeCircle2,
+  IconCoffee,
   IconCreditCard,
   IconFiles,
   IconLayoutDashboard,
@@ -87,6 +88,7 @@ const iconOptions: {
   showroom: IconBuildingStore,
   application: IconPlaneTilt,
   ia: IconRobot,
+  coffee: IconCoffee,
 }
 
 export const Icon = ({

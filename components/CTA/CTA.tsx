@@ -4,7 +4,6 @@ import background from '@/public/images/CTA.webp'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import { InlineWidget } from 'react-calendly'
-import { GlowingEffect } from '../project-page/GlowingEffect'
 import { Icon } from '../shared/Icon'
 
 const projectTypes = [
@@ -27,23 +26,15 @@ export default function CTA() {
 
       <div className="relative isolate">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="mx-auto backdrop-blur-sm flex max-w-2xl flex-col gap-16 bg-white/10 px-6 py-16 border border-t-white/50 border-r-white/50 border-b-white/25 border-l-white/25 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-16 xl:gap-x-20 xl:px-16">
-            <GlowingEffect
-              spread={40}
-              glow={true}
-              disabled={false}
-              proximity={64}
-              inactiveZone={0.01}
-              variant="white"
-            />
+          <div className="mx-auto backdrop-blur-sm flex max-w-2xl flex-col gap-16 bg-[radial-gradient(circle_at_80%_25%,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.06)_70%,rgba(255,255,255,0.02)_100%)] px-6 py-16 border border-t-white/50 border-r-white/50 border-b-white/25 border-l-white/25 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-16 xl:gap-x-20 xl:px-16">
             <div className="w-full lg:w-1/2 flex-auto">
               <h2 className="text-pretty font-rubik text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                Une idée d’outil web ? Un besoin concret à digitaliser ?
+                Une idée d&apos;outil web ? Un besoin concret à digitaliser ?
               </h2>
               <p className="mt-6 text-pretty text-base sm:text-lg/8 text-white">
-                On échange sur ton besoin, et je t’aide à poser les bases d’un
-                projet utile, réaliste et évolutif. Tu repars avec une vision
-                claire — même si on ne travaille pas ensemble.
+                On échange sur ton besoin, et je t&apos;aide à poser les bases
+                d&apos;un projet utile, réaliste et évolutif. Tu repars avec une
+                vision claire — même si on ne travaille pas ensemble.
               </p>
               <p className="mt-6 text-pretty text-base sm:text-lg/8 text-white">
                 Voici les types de projets que je développe régulièrement pour

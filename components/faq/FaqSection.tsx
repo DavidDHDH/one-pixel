@@ -11,6 +11,12 @@ const defaultData = [
       "En travaillant avec un freelance, tu gagnes en flexibilité, réactivité et proximité. Pas d'intermédiaire, tu es l'unique priorité du freelance pendant le projet, pas de surcoûts d'agence : tu parles directement avec la personne qui conçoit et développe ton projet. Un freelance bien entouré te garantit une qualité de service optimale.",
   },
   {
+    id: 10,
+    question: "Et l'intelligence artificielle ?",
+    answer:
+      "Oui, je développe des applications métier intelligentes boostées à l'intelligence artificielle. Je suis spécialisé dans l'IA pour les entreprises des Antilles, et je peux t'aider à intégrer cette technologie dans ton quotidien.",
+  },
+  {
     id: 6,
     question: 'Tu peux vraiment tout faire ?',
     answer:
