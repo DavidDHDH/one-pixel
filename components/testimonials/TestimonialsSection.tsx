@@ -48,9 +48,13 @@ export default function TestimonialsSection() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center mt-24 gap-4">
-          <h3 className="font-semibold text-gray-900">
+          <h3 className="text-center text-xl font-semibold text-gray-900">
             Un projet web en tête ?{' '}
           </h3>
+          <p className=" text-center">
+            Je t&apos;aide à y voir plus clair, et je te propose des solutions
+            concrètes, sans aucun engagement.
+          </p>
           <a href={`mailto:${CONTACT_EMAIL}?subject=Demande d'information`}>
             <div className="rounded-md flex items-center gap-2 bg-sand-700 px-3.5 py-2.5 transition-all text-sm font-semibold text-white shadow-sm hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400">
               <span>
