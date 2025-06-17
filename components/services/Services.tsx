@@ -141,7 +141,7 @@ export default function Services() {
         >
           <div className="rounded-md flex items-center gap-2 bg-sand-700 px-3.5 py-2.5 transition-all text-sm font-semibold text-white shadow-sm hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400">
             <Icon name="mail" />
-            Planifier un appel découverte
+            Réserve ton appel découverte gratuit
           </div>
         </a>
       </div>

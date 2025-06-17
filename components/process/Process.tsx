@@ -1,4 +1,3 @@
-import { CONTACT_EMAIL } from '@/lib/const'
 import { Icon } from '../shared/Icon'
 
 const features = [
@@ -30,7 +29,7 @@ const features = [
 
 export default function ProcessSection() {
   return (
-    <section id="process" className="bg-white py-24 sm:py-32 min-h-[90vh]">
+    <section id="process" className="bg-white py-24 sm:py-32 min-h-[80vh]">
       <div className="mx-auto my-auto max-w-7xl px-6 lg:px-8 ">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="sm:text-lg font-semibold leading-7 text-primaryText">
@@ -72,20 +71,6 @@ export default function ProcessSection() {
             ))}
           </dl>
         </div>
-      </div>
-      <div className="flex justify-center">
-        <a
-          href={`mailto:${CONTACT_EMAIL}?subject=Demande d'information`}
-          className="mt-16"
-        >
-          <div className="rounded-md flex items-center gap-2 bg-sand-700 px-3.5 py-2.5 transition-all text-sm font-semibold text-white shadow-sm hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400">
-            <span>
-              <Icon name="mail" />
-            </span>{' '}
-            Planifions ton projet autour d&apos;un
-            <Icon name="coffee" />
-          </div>
-        </a>
       </div>
     </section>
   )
