@@ -49,13 +49,15 @@ export default function HeroSectionSoft() {
                   </div>
                 </div>
                 <h1 className="font-rubik text-pretty text-center sm:text-left text-4xl sm:text-5xl/tight font-semibold tracking-tight text-gray-900">
-                  Agence web IA & création de sites internet à Saint-Barthélémy
+                  Agence web & création de sites internet à Saint-Barthélémy
                 </h1>
                 <h2 className="mt-6 text-pretty text-gray-600 sm:text-lg/8">
-                  Développeur web, j’aide les entreprises des Antilles à créer
-                  des <strong>sites web professionnels</strong> et des{' '}
+                  Développeur web spécialisé IA, j’aide les entreprises des
+                  Antilles à créer des <strong>sites web professionnels</strong>{' '}
+                  et des{' '}
                   <strong>
-                    applications métier intelligentes boostées à l’IA
+                    applications métier intelligentes boostées à l’intelligence
+                    artificielle
                   </strong>
                   .
                 </h2>

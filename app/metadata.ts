@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title:
     'Agence web spécialisée IA & création de sites internet à Saint-Barthélemy – One Pixel',
   description:
-    'Agence web à Saint-Barthélemy, spécialisée dans la création de sites internet, applications sur-mesure et logiciels métier boostés à l’IA pour les entreprises des Antilles.',
+    'Agence web & IA à Saint-Barthélemy, spécialisée dans la création de sites internet, applications sur-mesure et logiciels métier boostés à l’IA pour les entreprises des Antilles.',
   keywords: [
     'agence web',
     'création de site internet',

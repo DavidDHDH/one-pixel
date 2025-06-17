@@ -11,22 +11,12 @@ export default function TestimonialCard({
     <div
       itemScope
       itemType="https://schema.org/Review"
+      itemProp="review"
       className="relative bg-white/50 backdrop-blur-sm border border-gray-100/60 rounded-lg p-6 shadow-lg max-w-md"
     >
       <div itemProp="author" itemScope itemType="https://schema.org/Person">
         <meta itemProp="name" content={testimonial.author.name} />
         <meta itemProp="brand" content={testimonial.author.company} />
-      </div>
-
-      <div
-        itemProp="itemReviewed"
-        itemScope
-        itemType="https://schema.org/Product"
-      >
-        <meta
-          itemProp="name"
-          content="Création de sites internet et solutions IA sur‑mesure"
-        />
       </div>
 
       <div
