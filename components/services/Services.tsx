@@ -73,11 +73,40 @@ export default function Services() {
               key={`service-${index}`}
               itemScope
               itemType="https://schema.org/Service"
-              itemProp="service"
               className="flex flex-col items-center rounded-2xl shadow-lg px-8 py-6 text-center h-full border border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 bg-[radial-gradient(circle_at_40%_25%,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.06)_70%,rgba(255,255,255,0.02)_100%)] backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:shadow-xl hover:backdrop-blur-md"
             >
               <meta itemProp="name" content={service.label} />
               <meta itemProp="description" content={service.description} />
+              <div
+                itemProp="provider"
+                itemScope
+                itemType="https://schema.org/Organization"
+              >
+                <meta itemProp="name" content="One Pixel" />
+                <meta itemProp="url" content="https://www.one-pixel.com" />
+                <meta
+                  itemProp="logo"
+                  content="https://www.one-pixel.com/images/logo.webp"
+                />
+                <meta itemProp="email" content="hello@one-pixel.com" />
+                <div
+                  itemProp="address"
+                  itemScope
+                  itemType="https://schema.org/PostalAddress"
+                >
+                  <meta itemProp="addressCountry" content="FR" />
+                  <meta itemProp="addressRegion" content="Saint-Barthélemy" />
+                  <meta itemProp="postalCode" content="97133" />
+                  <meta
+                    itemProp="streetAddress"
+                    content="Quartier de Lorient"
+                  />
+                </div>
+              </div>
+              <meta
+                itemProp="areaServed"
+                content="Saint-Barthélemy, Antilles françaises"
+              />
               {service.examples.map((ex) => (
                 <meta key={`type-${ex}`} itemProp="serviceType" content={ex} />
               ))}
