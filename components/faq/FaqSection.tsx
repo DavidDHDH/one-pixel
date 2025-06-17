@@ -5,40 +5,28 @@ import { FaqAccordion } from '../ui/faq-chat-accordion'
 
 const defaultData = [
   {
-    id: 1,
-    question: "Pourquoi choisir un freelance plutôt qu'une grosse agence ?",
+    id: 3,
+    question: 'Quels types de projets développes-tu ?',
     answer:
-      "En travaillant avec un freelance, tu gagnes en flexibilité, réactivité et proximité. Pas d'intermédiaire, tu es l'unique priorité du freelance pendant le projet, pas de surcoûts d'agence : tu parles directement avec la personne qui conçoit et développe ton projet. Un freelance bien entouré te garantit une qualité de service optimale.",
+      'Je développe des applications métier, des plateformes SaaS et des sites internet pour les entreprises des Antilles. Chaque projet est pensé pour résoudre un problème concret : automatiser une tâche, mieux communiquer ou gagner du temps.',
+  },
+  {
+    id: 6,
+    question: 'Tu travailles seul ?',
+    answer:
+      "Tout dépend de ton projet. Mon expertise, c'est le développement et l'IA. Pour le reste (stratégie SEO, branding, photos ...), je suis entouré d'autres experts. Si besoin, on monte une équipe légère et adaptée à ton projet.",
   },
   {
     id: 10,
     question: "Et l'intelligence artificielle ?",
     answer:
-      "Oui, je développe des applications métier intelligentes boostées à l'intelligence artificielle. Je suis spécialisé dans l'IA pour les entreprises des Antilles, et je peux t'aider à intégrer cette technologie dans ton quotidien.",
-  },
-  {
-    id: 6,
-    question: 'Tu peux vraiment tout faire ?',
-    answer:
-      "Non, et heureusement. Mon expertise, c'est le développement et la productivité. Pour le reste (stratégie SEO, branding, photos ...), je m'entoure d'autres experts. On monte une équipe légère et adaptée à ton projet, sans les coûts fixes d'une agence.",
-  },
-  {
-    id: 3,
-    question: 'Quels types de projets développes-tu ?',
-    answer:
-      'Je développe des applications métier, des plateformes SaaS et des sites internet pour les pros des Antilles. Chaque projet est pensé pour résoudre un problème concret : automatiser une tâche, mieux communiquer ou gagner du temps.',
+      "Quand ca à un intérêt, je peux t'aider à intégrer l'IA dans ton quotidien. Aujourd'hui, on fait déjà beaucoup de choses avec l'IA, et ça ne cesse de progresser.",
   },
   {
     id: 9,
     question: "Tu t'occupes de la conformité RGPD ?",
     answer:
-      "Oui. Je suis formé au RGPD, et j'intègre les obligations légales dès la conception de ton site ou application. Consentement, mentions, sécurité : on fait les choses proprement, pour que tu sois tranquille, et je t'accompagne sur les bonnes pratiques à adopter.",
-  },
-  {
-    id: 4,
-    question: 'Est-ce que tu proposes le design aussi ?',
-    answer:
-      "Oui ! Je m'occupe de l'UX/UI design de ton projet, du wireframe à l'interface finale, en collaboration directe avec toi pour que chaque écran soit clair, utile et joli.",
+      "Oui. Je suis formé au RGPD, et j'intègre les obligations légales dès la conception de ton site ou application. Consentement, mentions, sécurité : on fait les choses proprement, et je t'accompagne sur les bonnes pratiques à adopter.",
   },
 
   {
@@ -53,10 +41,9 @@ const defaultData = [
     answer:
       'Je propose un suivi sur mesure : corrections, nouvelles fonctionnalités, itérations basées sur les retours utilisateurs. Ton outil évolue avec ton business — pas besoin de tout refaire dans 6 mois.',
   },
-
   {
     id: 7,
-    question: 'Tu peux gérer plusieurs projets à la fois ?',
+    question: 'Mais tu peux gérer plusieurs projets à la fois ?',
     answer:
       'Oui, mais je ne prends pas tout le monde en même temps. Quand je dis oui à un projet, il devient prioritaire. Je préfère avancer peu mais bien, et être vraiment dispo pour toi.',
   },
@@ -66,6 +53,18 @@ const defaultData = [
     answer:
       "Bien sûr. Tu peux m'exposer ton idée, tes objectifs, et on voit ensemble ce qui est réaliste, si je suis la bonne personne pour t'accompagner ou te diriger vers un autre expert. Pas de promesse vide, pas d'engagement tant qu'on n'a pas cadré ton projet.",
   },
+  // {
+  //   id: 1,
+  //   question: "Pourquoi choisir un freelance plutôt qu'une grosse agence ?",
+  //   answer:
+  //     "En travaillant avec un freelance, tu gagnes en flexibilité, réactivité et proximité. Pas d'intermédiaire, tu es l'unique priorité du freelance pendant le projet, pas de surcoûts d'agence : tu parles directement avec la personne qui conçoit et développe ton projet. Un freelance bien entouré te garantit une qualité de service optimale.",
+  // },
+  // {
+  //   id: 4,
+  //   question: 'Est-ce que tu proposes le design aussi ?',
+  //   answer:
+  //     "Oui ! Je m'occupe de l'UX/UI design de ton projet, du wireframe à l'interface finale, en collaboration directe avec toi pour que chaque écran soit clair, utile et joli.",
+  // },
 ]
 
 export default function FaqSection() {

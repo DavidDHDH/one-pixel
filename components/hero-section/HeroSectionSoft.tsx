@@ -44,55 +44,73 @@ export default function HeroSectionSoft() {
                     )}
                   >
                     <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                      <span>One Pixel - Web & Dev Studio</span>
+                      <span>One Pixel - Agence web & IA</span>
                     </AnimatedShinyText>
                   </div>
                 </div>
-                <h1 className="font-rubik text-pretty text-center sm:text-left text-4xl sm:text-5xl/tight font-semibold tracking-tight text-gray-900">
-                  Agence web & création de sites internet à Saint-Barthélémy
+                <h1 className="font-rubik text-pretty text-center sm:text-left text-4xl sm:text-[2.75rem] sm:leading-[3rem] font-semibold tracking-tight text-gray-900">
+                  Agence web à Saint-Barthélemy :{' '}
+                  <span className="text-sand-700">
+                    création de sites internet et applications métier
+                    intelligentes
+                  </span>
                 </h1>
                 <h2 className="mt-6 text-pretty text-gray-600 sm:text-lg/8">
-                  Développeur web spécialisé IA, j’aide les entreprises des
-                  Antilles à créer des <strong>sites web professionnels</strong>{' '}
-                  et des{' '}
-                  <strong>
-                    applications métier intelligentes boostées à l’intelligence
-                    artificielle
-                  </strong>
-                  .
+                  Je suis David, développeur web spécialisé en intelligence
+                  artificielle pour booster ta productivité.
                 </h2>
                 <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
-                  💡 Des solutions web sur-mesure (sites, applications,
-                  logiciels métier), pensées pour ton quotidien, pour te faire
-                  gagner du temps et des clients.
+                  J&apos;accompagne les entreprises des{' '}
+                  <span className="font-semibold">Antilles</span> dans leur
+                  transformation digitale avec des{' '}
+                  <span className="font-semibold">applications métier</span>,
+                  des{' '}
+                  <span className="font-semibold">outils IA personnalisés</span>{' '}
+                  et des{' '}
+                  <span className="font-semibold">
+                    sites web professionnels
+                  </span>{' '}
+                  qui te font gagner du temps <span className="italic">et</span>{' '}
+                  attirent plus de clients.
                 </p>
                 <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
                   🔥 Ici, pas d&apos;usine à sites. Un seul projet à la fois :
-                  le tien.
+                  le tien, sur mesure.
                 </p>
                 <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
                   📍 Basé à Saint-Barth. Disponible partout dans les Caraïbes.
                 </p>
                 <div className="mt-10 flex items-center justify-between gap-x-6">
-                  <div className="flex items-center gap-x-6">
-                    <a href="#portfolio">
-                      <div className="rounded-md text-center bg-sand-700 px-3.5 py-2.5 transition-all text-sm font-semibold text-white shadow-sm hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400">
-                        Découvrir mes projets
-                      </div>
-                    </a>
-                    {!rootElement && (
-                      <div className="rounded-md border border-sand-700 bg-white px-3.5 py-2.5 transition-all text-sm font-semibold text-sand-700 shadow-sm hover:bg-sand-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400">
-                        Planifier un appel
-                      </div>
-                    )}
-                    {rootElement && (
-                      <PopupButton
-                        url="https://calendly.com/david-heimfert/30min"
-                        rootElement={rootElement}
-                        text="Planifier un appel"
-                        className="rounded-md border border-sand-700 bg-white px-3.5 py-2.5 transition-all text-sm font-semibold text-sand-700 shadow-sm hover:bg-sand-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400"
-                      />
-                    )}
+                  <div>
+                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                      {/* CTA primaire – Audit IA */}
+                      {rootElement ? (
+                        <PopupButton
+                          url="https://calendly.com/david-heimfert/30min"
+                          rootElement={rootElement}
+                          text="Obtenir ton audit&nbsp;IA gratuit"
+                          aria-label="Planifier un appel pour un diagnostic IA gratuit"
+                          className="rounded-md bg-sand-700 px-4 py-3 text-center text-sm font-semibold text-white shadow hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400 transition-all"
+                        />
+                      ) : (
+                        <a
+                          href="mailto:contact@one-pixel.com?subject=Diagnostic%20IA"
+                          aria-label="Envoyer un mail pour planifier un diagnostic IA"
+                          className="rounded-md bg-sand-700 px-4 py-3 text-center text-sm font-semibold text-white shadow hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400 transition-all"
+                        >
+                          Obtenir ton audit&nbsp;IA gratuit
+                        </a>
+                      )}
+
+                      {/* CTA secondaire – Portfolio */}
+                      <a
+                        href="#portfolio"
+                        aria-label="Découvrir mes projets réalisés"
+                        className="rounded-md border border-sand-700 bg-white px-4 py-3 text-center text-sm font-semibold text-sand-700 shadow hover:bg-sand-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400 transition-all"
+                      >
+                        Voir mes projets
+                      </a>
+                    </div>
                   </div>
                   <Image
                     className="mr-8"
@@ -116,7 +134,7 @@ export default function HeroSectionSoft() {
           <Image
             src={profile}
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-            alt="David Heimfert – Développeur web freelance spécialisé IA et création de sites internet à Saint-Barthélemy"
+            alt="David Heimfert – développeur web IA à Saint-Barthélemy créateur de sites internet"
           />
         </div>
       </div>

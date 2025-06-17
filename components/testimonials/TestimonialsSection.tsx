@@ -63,11 +63,11 @@ export default function TestimonialsSection() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center mt-24 gap-4">
+        <div className="flex flex-col items-center justify-center mt-24 gap-4 my-4">
           <h3 className="text-center text-xl font-semibold text-gray-900">
             Un projet web en tête ?{' '}
           </h3>
-          <p className=" text-center">
+          <p className="mt-4 sm:text-lg leading-8 text-gray-600">
             Je t&apos;aide à y voir plus clair, et je te propose des solutions
             concrètes, sans aucun engagement.
           </p>

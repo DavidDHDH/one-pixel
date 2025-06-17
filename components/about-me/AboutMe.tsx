@@ -40,34 +40,37 @@ export default function AboutMe({ withStack }: { withStack?: boolean }) {
             On ne s&apos;est pas présenté…
           </p>
           <h2 className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900">
-            Je suis David Heimfert, développeur web passionné par le code, le
-            design, et les nouvelles possibilités offertes par l’intelligence
-            artificielle
+            Je suis David, développeur passionné par le code, le design, et les
+            nouvelles possibilités offertes par l’intelligence artificielle
           </h2>
         </div>
         <div className="md:grid md:grid-cols-2 gap-10 pt-10 items-center">
           <div className="col-span-1 mx-auto">
             <Profil people={DavidHeimfert} />
           </div>
-          <div className="col-span-1 mx-auto space-y-8 mt-4 text-gray-600 md:max-w-full text-start">
+          <div className="col-span-1 mx-auto space-y-8 mt-4 text-gray-600 md:max-w-full text-start sm:text-lg leading-8">
             <p>
-              👨🏼‍💻 Je conçois des applications, des logiciels personnalisés et des
-              sites internet pensés pour ton quotidien. Sur-mesure, fiables, et
-              enrichis d’IA quand ça apporte une vraie valeur.
+              👨🏼‍💻 Je conçois des <strong>applications</strong>, des{' '}
+              <strong>logiciels</strong> personnalisés et des{' '}
+              <strong>sites internet</strong> sur-mesure, fiables, et{' '}
+              <strong>enrichis d’IA</strong> quand ça apporte une vraie valeur.
             </p>
             <p>
-              🎯 Mon objectif : te faire gagner du temps, réduire les erreurs,
-              déléguer à l’IA ce qui a du sens, sans jamais perdre la main.
+              🎯 Mon objectif : <strong>gagner du temps</strong>,{' '}
+              <strong>réduire les erreurs</strong>, et{' '}
+              <strong>déléguer à l’IA</strong> ce qui a du sens, sans jamais
+              perdre la main.
             </p>
             <p>
-              🤝 Je travaille en direct avec mes clients, sans intermédiaire. Ça
-              veut dire plus de réactivité et une vraie compréhension de ton
-              contexte terrain.
+              🤝 Je travaille <strong>en direct avec mes clients</strong>, sans
+              intermédiaire. Ça veut dire plus de <strong>réactivité</strong> et
+              une vraie <strong>compréhension</strong> de ton contexte terrain.
             </p>
             <p>
-              ❤️ Et mon kiff ? Trouver des solutions à des problèmes concrets.
-              Je suis là pour te simplifier durablement, avec des outils qui
-              bossent vraiment pour toi.
+              ❤️ Et mon kiff ? <strong>Trouver des solutions</strong> à des{' '}
+              <strong>problèmes concrets</strong>. Je suis là pour te simplifier
+              durablement, avec{' '}
+              <strong>des outils qui bossent vraiment pour toi</strong>.
             </p>
 
             <div className="flex gap-4 justify-evenly">

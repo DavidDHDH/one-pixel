@@ -160,7 +160,7 @@ const WhySection = () => {
               >
                 <meta itemProp="name" content={advantage.title} />
                 <meta itemProp="description" content={advantage.description} />
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg">
                   {advantage.icon}
                 </div>
                 <h3 className="text-base font-semibold leading-7 text-white">
