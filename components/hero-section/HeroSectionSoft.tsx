@@ -103,7 +103,10 @@ export default function HeroSectionSoft() {
                   />
                 </div>
                 <div className="flex justify-center mt-10">
-                  <TestimonialCard testimonial={testimonial} />
+                  <TestimonialCard
+                    testimonial={testimonial}
+                    includeItemReviewed
+                  />
                 </div>
               </div>
             </div>

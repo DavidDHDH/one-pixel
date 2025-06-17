@@ -44,6 +44,8 @@ export default function Home() {
               '@type': 'PostalAddress',
               addressLocality: 'Saint-Barthélemy',
               addressCountry: 'FR',
+              postalCode: '97133',
+              streetAddress: 'Quartier de Lorient',
             },
             contactPoint: {
               '@type': 'ContactPoint',

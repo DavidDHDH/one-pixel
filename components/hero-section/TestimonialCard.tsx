@@ -4,8 +4,10 @@ import Image from 'next/image'
 
 export default function TestimonialCard({
   testimonial,
+  includeItemReviewed = false,
 }: {
   testimonial: Testimonial
+  includeItemReviewed?: boolean
 }) {
   return (
     <div
@@ -18,6 +20,19 @@ export default function TestimonialCard({
         <meta itemProp="name" content={testimonial.author.name} />
         <meta itemProp="brand" content={testimonial.author.company} />
       </div>
+
+      {includeItemReviewed && (
+        <div
+          itemProp="itemReviewed"
+          itemScope
+          itemType="https://schema.org/Product"
+        >
+          <meta
+            itemProp="name"
+            content="Création de sites internet et solutions IA sur‑mesure"
+          />
+        </div>
+      )}
 
       <div
         itemScope
