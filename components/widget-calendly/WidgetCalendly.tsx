@@ -38,8 +38,8 @@ export default function WidgetCalendly() {
 
       {/* Texte sur deux lignes */}
       <div className="text-xs text-center leading-tight">
-        <div className="font-semibold">Bloque ton créneau</div>
-        <div className="opacity-90">dans mon agenda</div>
+        <div className="font-semibold">Réserve ton appel</div>
+        <div className="opacity-90">découverte gratuit</div>
       </div>
     </button>
   )

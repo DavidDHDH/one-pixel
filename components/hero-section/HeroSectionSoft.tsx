@@ -88,7 +88,7 @@ export default function HeroSectionSoft() {
                         <PopupButton
                           url="https://calendly.com/david-heimfert/30min"
                           rootElement={rootElement}
-                          text="Obtenir ton audit&nbsp;IA gratuit"
+                          text="Réserve ton diagnostic IA offert"
                           aria-label="Planifier un appel pour un diagnostic IA gratuit"
                           className="rounded-md bg-sand-700 px-4 py-3 text-center text-sm font-semibold text-white shadow hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400 transition-all"
                         />
@@ -98,7 +98,7 @@ export default function HeroSectionSoft() {
                           aria-label="Envoyer un mail pour planifier un diagnostic IA"
                           className="rounded-md bg-sand-700 px-4 py-3 text-center text-sm font-semibold text-white shadow hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400 transition-all"
                         >
-                          Obtenir ton audit&nbsp;IA gratuit
+                          Réserve ton diagnostic IA offert
                         </a>
                       )}
 
@@ -108,7 +108,7 @@ export default function HeroSectionSoft() {
                         aria-label="Découvrir mes projets réalisés"
                         className="rounded-md border border-sand-700 bg-white px-4 py-3 text-center text-sm font-semibold text-sand-700 shadow hover:bg-sand-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400 transition-all"
                       >
-                        Voir mes projets
+                        Découvrir les cas clients
                       </a>
                     </div>
                   </div>

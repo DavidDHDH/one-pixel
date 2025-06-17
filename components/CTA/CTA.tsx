@@ -67,7 +67,7 @@ export default function CTA() {
                       <span>
                         <Icon name="mail" />
                       </span>{' '}
-                      Me Contacter
+                      Contacte-moi
                     </div>
                   </a>
                 </div>
