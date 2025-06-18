@@ -13,11 +13,14 @@ const Portfolio = () => {
       className="min-h-screen"
     >
       <div className="mx-auto max-w-4xl text-center px-6 lg:px-8">
-        <p className="sm:text-lg font-semibold text-primaryText text-pretty">
-          Projets sur-mesure réalisés pour des entreprises locales.
+        <p className="sm:text-lg text-primaryText text-pretty">
+          <strong>
+            Projets sur-mesure réalisés pour des entreprises locales.
+          </strong>
         </p>
-        <h2 className="font-rubik mt-2 text-balance text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-          Des applications et sites internet pensés pour les Antilles.
+        <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
+          Des <strong>applications et sites internet</strong> pensés pour les{' '}
+          <strong>Antilles</strong>.
         </h2>
         <p className="mt-6 sm:text-lg leading-8 text-gray-600">
           Je développe pour les entreprises de Saint-Barthélemy, de Saint-Martin
