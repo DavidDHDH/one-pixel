@@ -48,12 +48,14 @@ export default function HeroSectionSoft() {
                     </AnimatedShinyText>
                   </div>
                 </div>
-                <h1 className="font-rubik text-pretty text-center sm:text-left text-4xl sm:text-[2.75rem] sm:leading-[3rem] font-semibold tracking-tight text-gray-900">
-                  Agence web à Saint-Barthélemy :{' '}
-                  <span className="text-sand-700">
-                    création de sites internet et applications métier
-                    intelligentes
-                  </span>
+                <h1 className="font-rubik text-pretty text-center sm:text-left text-4xl sm:text-[2.75rem] sm:leading-[3rem] tracking-tight text-gray-900">
+                  <strong>
+                    Agence web à Saint-Barthélemy :{' '}
+                    <span className="text-sand-700">
+                      création de sites internet et applications métier
+                      intelligentes
+                    </span>
+                  </strong>
                 </h1>
                 <h2 className="mt-6 text-pretty text-gray-600 sm:text-lg/8">
                   Je suis David, développeur web spécialisé en intelligence
@@ -61,17 +63,12 @@ export default function HeroSectionSoft() {
                 </h2>
                 <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
                   J&apos;accompagne les entreprises des{' '}
-                  <span className="font-semibold">Antilles</span> dans leur
-                  transformation digitale avec des{' '}
-                  <span className="font-semibold">applications métier</span>,
-                  des{' '}
-                  <span className="font-semibold">outils IA personnalisés</span>{' '}
-                  et des{' '}
-                  <span className="font-semibold">
-                    sites web professionnels
-                  </span>{' '}
-                  qui te font gagner du temps <span className="italic">et</span>{' '}
-                  attirent plus de clients.
+                  <strong>Antilles</strong> dans leur transformation digitale
+                  avec des <strong>applications métier</strong>, des{' '}
+                  <strong>outils IA personnalisés</strong> et des{' '}
+                  <strong>sites web professionnels</strong> qui te font gagner
+                  du temps <span className="italic">et</span> attirent plus de
+                  clients.
                 </p>
                 <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
                   🔥 Ici, pas d&apos;usine à sites. Un seul projet à la fois :
