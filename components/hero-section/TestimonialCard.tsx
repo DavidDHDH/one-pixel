@@ -5,9 +5,11 @@ import Image from 'next/image'
 export default function TestimonialCard({
   testimonial,
   includeItemReviewed = false,
+  variant = 'light',
 }: {
   testimonial: Testimonial
   includeItemReviewed?: boolean
+  variant?: 'light' | 'dark'
 }) {
   if (includeItemReviewed) {
     return (
@@ -20,7 +22,11 @@ export default function TestimonialCard({
           itemScope
           itemType="https://schema.org/Review"
           itemProp="review"
-          className="relative bg-white/50 backdrop-blur-sm border border-gray-100/60 rounded-lg p-6 shadow-lg max-w-md"
+          className={`relative rounded-lg p-6 shadow-lg max-w-md border border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 bg-[radial-gradient(circle_at_40%_25%,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.06)_70%,rgba(255,255,255,0.02)_100%)] backdrop-blur-md lg:backdrop-blur-sm transition-all duration-500 ${
+            variant === 'dark'
+              ? 'hover:border-white/60'
+              : 'hover:border-gray-200/60'
+          }`}
         >
           <div itemProp="author" itemScope itemType="https://schema.org/Person">
             <meta itemProp="name" content={testimonial.author.name} />
@@ -47,15 +53,34 @@ export default function TestimonialCard({
             </div>
             <div className="flex-1 min-w-0">
               <div className="flex items-center mb-1">
-                <span className="text-sm font-semibold text-gray-700">
+                <span
+                  className={`text-sm font-semibold ${
+                    variant === 'dark' ? 'text-white' : 'text-gray-700'
+                  }`}
+                >
                   {testimonial.author.name}
                 </span>
-                <span className="mx-1.5 text-gray-300">•</span>
-                <span className="text-xs text-gray-500 truncate">
+                <span
+                  className={`mx-1.5 ${
+                    variant === 'dark' ? 'text-white/60' : 'text-gray-300'
+                  }`}
+                >
+                  •
+                </span>
+                <span
+                  className={`text-xs truncate ${
+                    variant === 'dark' ? 'text-white/80' : 'text-gray-500'
+                  }`}
+                >
                   {testimonial.author.company}
                 </span>
               </div>
-              <div itemProp="reviewBody" className="text-sm/5 text-gray-600">
+              <div
+                itemProp="reviewBody"
+                className={`text-sm/5 ${
+                  variant === 'dark' ? 'text-white/90' : 'text-gray-600'
+                }`}
+              >
                 {testimonial.body}
               </div>
               <div className="flex mt-1.5">
@@ -75,7 +100,11 @@ export default function TestimonialCard({
       itemScope
       itemType="https://schema.org/Review"
       itemProp="review"
-      className="relative bg-white/50 backdrop-blur-sm border border-gray-100/60 rounded-lg p-6 shadow-lg max-w-md"
+      className={`relative rounded-lg p-6 shadow-lg max-w-md border border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 bg-[radial-gradient(circle_at_40%_25%,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.06)_70%,rgba(255,255,255,0.02)_100%)] backdrop-blur-sm transition-all duration-500 hover:backdrop-blur-md ${
+        variant === 'dark'
+          ? 'hover:border-white/60'
+          : 'hover:border-gray-200/60'
+      }`}
     >
       <div itemProp="author" itemScope itemType="https://schema.org/Person">
         <meta itemProp="name" content={testimonial.author.name} />
@@ -102,15 +131,34 @@ export default function TestimonialCard({
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center mb-1">
-            <span className="text-sm font-semibold text-gray-700">
+            <span
+              className={`text-sm font-semibold ${
+                variant === 'dark' ? 'text-white' : 'text-gray-700'
+              }`}
+            >
               {testimonial.author.name}
             </span>
-            <span className="mx-1.5 text-gray-300">•</span>
-            <span className="text-xs text-gray-500 truncate">
+            <span
+              className={`mx-1.5 ${
+                variant === 'dark' ? 'text-white/60' : 'text-gray-300'
+              }`}
+            >
+              •
+            </span>
+            <span
+              className={`text-xs truncate ${
+                variant === 'dark' ? 'text-white/80' : 'text-gray-500'
+              }`}
+            >
               {testimonial.author.company}
             </span>
           </div>
-          <div itemProp="reviewBody" className="text-sm/5 text-gray-600">
+          <div
+            itemProp="reviewBody"
+            className={`text-sm/5 ${
+              variant === 'dark' ? 'text-white/90' : 'text-gray-600'
+            }`}
+          >
             {testimonial.body}
           </div>
           <div className="flex mt-1.5">
