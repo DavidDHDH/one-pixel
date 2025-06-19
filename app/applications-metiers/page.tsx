@@ -1,5 +1,6 @@
 import AboutMe from '@/components/about-me/AboutMe'
 import BusinessAppSection from '@/components/business-app/BusinessAppSection'
+import CTASectionBusinessApp from '@/components/business-app/CTASectionBusinessApp'
 import FAQSectionBusinessApp from '@/components/business-app/FAQSectionBusinessApp'
 import HeroSectionBusinessApp from '@/components/business-app/HeroSectionBusinessApp'
 import WhyCustomSection from '@/components/business-app/WhyCustomSection'
@@ -34,6 +35,7 @@ export default function ApplicationsMetiersPage() {
       <HeroSectionBusinessApp />
       <BusinessAppSection />
       <WhyCustomSection />
+      <CTASectionBusinessApp />
       <FAQSectionBusinessApp />
       <AboutMe />
     </div>

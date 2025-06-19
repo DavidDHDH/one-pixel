@@ -1,6 +1,6 @@
 import { Icon } from '@/components/shared/Icon'
 
-export default function CTASection() {
+export default function CTASectionBusinessApp() {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -12,39 +12,41 @@ export default function CTASection() {
             {/* Badge premium */}
             <div className="inline-flex items-center gap-2 rounded-full bg-sand-700 px-4 py-2 text-sm font-medium text-white mb-6">
               <Icon name="sparkles" className="w-4 h-4" />
-              Site web professionnel
+              Application sur mesure
             </div>
 
             <h2 className="text-2xl font-bold text-white mb-4 lg:text-3xl">
-              Ton site peut-il vraiment{' '}
-              <span className="bg-gradient-to-r from-sand-500 to-sand-600 bg-clip-text text-transparent">
-                attirer plus de clients
+              Ton entreprise peut-elle{' '}
+              <span className="bg-gradient-to-r from-sand-400 to-sand-300 bg-clip-text text-transparent">
+                automatiser ses processus
               </span>{' '}
-              et booster tes ventes ?
+              et gagner des heures chaque jour ?
             </h2>
 
             <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-              En 30 minutes, on analyse ensemble ton{' '}
-              <strong className="text-white">positionnement digital</strong> et
-              on identifie comment créer un site qui{' '}
-              <strong className="text-white">convertit vraiment</strong>. Même
-              si on ne travaille pas ensemble, tu repars avec une stratégie
-              claire.
+              En 30 minutes, on identifie ensemble les{' '}
+              <strong className="text-white">tâches répétitives</strong> de ton
+              quotidien et on définit comment créer l&apos;application qui va{' '}
+              <strong className="text-white">
+                révolutionner ton organisation
+              </strong>
+              . Même si on ne travaille pas ensemble, tu repars avec un plan
+              d&apos;optimisation concret.
             </p>
 
             {/* Stats impressionnantes */}
             <div className="grid grid-cols-3 gap-6 mb-8 max-w-xl mx-auto">
               <div className="text-center">
-                <div className="text-2xl font-bold text-sand-400">1-2</div>
+                <div className="text-2xl font-bold text-sand-400">4-8</div>
                 <div className="text-sm text-gray-400">semaines</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-sand-400">100%</div>
-                <div className="text-sm text-gray-400">sur mesure</div>
+                <div className="text-sm text-gray-400">personnalisé</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-sand-400">0€</div>
-                <div className="text-sm text-gray-400">consultation</div>
+                <div className="text-sm text-gray-400">audit</div>
               </div>
             </div>
 
@@ -60,11 +62,11 @@ export default function CTASection() {
                   name="calendarMonth"
                   className="w-5 h-5 group-hover:rotate-12 transition-transform"
                 />
-                Réserver ma consultation gratuite
+                Réserver mon audit processus gratuit
               </a>
 
               <a
-                href="https://wa.me/590690771911?text=Salut David ! Je souhaiterais discuter d'un projet de site internet pour mon entreprise à Saint-Barth"
+                href="https://wa.me/590690771911?text=Salut David ! Je souhaiterais discuter d'une application métier sur mesure pour mon entreprise à Saint-Barth"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-6 py-3 font-medium text-white hover:bg-white/20 transition-all duration-300"
@@ -78,7 +80,7 @@ export default function CTASection() {
             <div className="mt-8 flex items-center justify-center gap-2 text-sm text-gray-400">
               <Icon name="shieldCheck" className="w-5 h-5 text-green-400" />
               <span>
-                Aucun engagement • Conseil personnalisé • 100% confidentiel
+                Aucun engagement • Analyse personnalisée • 100% confidentiel
               </span>
             </div>
           </div>

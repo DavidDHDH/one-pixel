@@ -47,6 +47,8 @@ import {
   IconRobot,
   IconRotateClockwise2,
   IconShield,
+  IconShieldCheck,
+  IconSparkles,
   IconUsers,
   IconUsersGroup,
   IconWand,
@@ -106,6 +108,8 @@ const iconOptions: {
   economics: IconCurrencyDollar,
   support: IconHeadset,
   lightbulb: IconBulb,
+  shieldCheck: IconShieldCheck,
+  sparkles: IconSparkles,
 }
 
 export const Icon = ({

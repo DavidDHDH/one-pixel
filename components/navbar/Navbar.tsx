@@ -4,19 +4,13 @@ import logo from '@/public/images/logo.webp'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
-
-const navigation = [
-  { name: 'Portfolio', href: '/#portfolio' },
-  { name: 'Sites internet', href: '/creation-site-internet' },
-  { name: 'Applications métier', href: '/applications-metiers' },
-  { name: 'Expertise IA', href: '/expertise-ia' },
-  { name: 'A propos', href: '/#aboutme' },
-]
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +21,22 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  // Fonction pour générer le lien "A propos" dynamique
+  const getAboutLink = () => {
+    if (pathname === '/') {
+      return '/#aboutme'
+    }
+    return '#aboutme'
+  }
+
+  const navigation = [
+    { name: 'Portfolio', href: '/#portfolio' },
+    { name: 'Sites internet', href: '/creation-site-internet' },
+    { name: 'Applications métier', href: '/applications-metiers' },
+    { name: 'Expertise IA', href: '/expertise-ia' },
+    { name: 'A propos', href: getAboutLink() },
+  ]
 
   return (
     <>

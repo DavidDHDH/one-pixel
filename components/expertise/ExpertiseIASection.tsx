@@ -211,23 +211,85 @@ export default function ExpertiseIASection() {
           ))}
         </div>
 
-        {/* Call to action */}
-        <div className="mt-20 text-center">
-          <div className="rounded-2xl bg-gradient-to-r from-sand-500 to-sand-600 p-8 text-white shadow-xl">
-            <h3 className="text-2xl font-semibold mb-4">
-              Prêt à intégrer l&apos;IA dans ton entreprise ?
-            </h3>
-            <p className="text-sand-100 mb-6 max-w-2xl mx-auto">
-              Chaque projet IA est unique. Discutons de tes défis spécifiques et
-              concevons ensemble la solution qui transformera ton activité.
-            </p>
-            <a
-              href="mailto:hello@one-pixel.com?subject=Projet IA - Demande d'information"
-              className="inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 font-semibold text-sand-600 hover:bg-sand-50 transition-colors shadow-lg"
-            >
-              <Icon name="mail" className="w-4 h-4" />
-              Discutons de ton projet IA
-            </a>
+        {/* Call to action amélioré */}
+        <div className="mt-20">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-8 lg:p-12">
+            {/* Effet de brillance animé */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 translate-x-[-100%] animate-pulse"></div>
+
+            <div className="relative z-10 mx-auto max-w-4xl text-center">
+              {/* Badge premium */}
+              <div className="inline-flex items-center gap-2 rounded-full bg-sand-700 px-4 py-2 text-sm font-medium text-white mb-6">
+                <Icon name="sparkles" className="w-4 h-4" />
+                Diagnostic IA gratuit
+              </div>
+
+              <h3 className="text-2xl font-bold text-white mb-4 lg:text-3xl">
+                Ton entreprise peut-elle être{' '}
+                <span className="bg-gradient-to-r from-sand-400 to-sand-300 bg-clip-text text-transparent">
+                  10x plus efficace
+                </span>{' '}
+                avec l&apos;IA ?
+              </h3>
+
+              <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+                En 30 minutes, on identifie ensemble{' '}
+                <strong className="text-white">3 processus clés</strong> de ton
+                business que l&apos;IA peut automatiser dès maintenant. Même si
+                on ne travaille pas ensemble, tu repars avec un plan
+                d&apos;action concret.
+              </p>
+
+              {/* Stats impressionnantes */}
+              <div className="grid grid-cols-3 gap-6 mb-8 max-w-xl mx-auto">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-sand-400">80%</div>
+                  <div className="text-sm text-gray-400">de temps gagné</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-sand-400">24/7</div>
+                  <div className="text-sm text-gray-400">automatisation</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-sand-400">0€</div>
+                  <div className="text-sm text-gray-400">coût audit</div>
+                </div>
+              </div>
+
+              {/* CTA buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a
+                  href="https://calendly.com/david-heimfert/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex border border-white/20 items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-sand-700 hover:bg-sand-300 transition-all duration-300 "
+                >
+                  <Icon
+                    name="calendarMonth"
+                    className="w-5 h-5 group-hover:rotate-12 transition-transform"
+                  />
+                  Réserver mon audit IA gratuit
+                </a>
+
+                <a
+                  href="https://wa.me/590690771911?text=Salut David ! Je suis intéressé par un projet IA pour mon entreprise à Saint-Barth"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-6 py-3 font-medium text-white hover:bg-white/20  transition-all duration-300"
+                >
+                  <Icon name="whatsapp" className="w-4 h-4" />
+                  WhatsApp direct
+                </a>
+              </div>
+
+              {/* Testimonial ou garantie */}
+              <div className="mt-8 flex items-center justify-center gap-2 text-sm text-gray-400">
+                <Icon name="shieldCheck" className="w-5 h-5 text-green-400" />
+                <span>
+                  Aucun engagement • Conseils personnalisés • Confidentiel
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
