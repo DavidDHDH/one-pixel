@@ -82,6 +82,17 @@ export default function Legals() {
               protégé par le droit d&apos;auteur. Toute reproduction ou
               utilisation non autorisée est interdite sans accord préalable.
             </p>
+            <p>
+              Les photos drone ont été réalisées par{' '}
+              <a
+                href="https://www.instagram.com/stbarth.pictures/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-700 hover:underline"
+              >
+                StBarth Pictures
+              </a>
+            </p>
           </div>
 
           <div className="mb-8">
