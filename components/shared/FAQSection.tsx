@@ -40,12 +40,7 @@ export default function FAQSection({
           )}
         </div>
 
-        <div
-          className="space-y-8"
-          itemProp="mainEntity"
-          itemScope
-          itemType="https://schema.org/Question"
-        >
+        <div className="space-y-8">
           {faqs.map((faq, index) => (
             <div
               key={`faq-${index}`}
