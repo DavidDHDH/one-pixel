@@ -35,7 +35,7 @@ export default function HeroSectionSoft() {
               <polygon points="0,0 90,0 50,100 0,100" />
             </svg>
 
-            <div className="relative px-6 py-20 sm:py-40 lg:py-32 lg:pl-8 xl:pl-0">
+            <div className="relative px-6 py-20 sm:py-40 lg:py-48 lg:pl-8 xl:pl-0">
               <div className="mx-auto max-w-2xl lg:mx-0">
                 <div className="hidden z-10 mb-10 sm:flex items-center justify-start">
                   <div
@@ -48,7 +48,7 @@ export default function HeroSectionSoft() {
                     </AnimatedShinyText>
                   </div>
                 </div>
-                <h1 className="font-rubik text-pretty text-center sm:text-left text-4xl sm:text-[2.75rem] sm:leading-[3rem] tracking-tight text-gray-900 font-semibold">
+                <h1 className="font-rubik text-pretty text-center sm:text-left text-4xl sm:text-[2.75rem] sm:leading-[3rem] tracking-tight text-gray-900 font-semibold mb-10">
                   Agence web à Saint-Barthélemy :{' '}
                   <span className="text-sand-700">
                     création de sites internet et applications métier
@@ -58,8 +58,8 @@ export default function HeroSectionSoft() {
                 <p className="mt-6 text-pretty text-gray-600 sm:text-lg/8">
                   Je suis David, <strong>développeur web</strong> et fondateur
                   de l&apos;<strong>agence One Pixel</strong>, spécialisée en{' '}
-                  <strong>intelligence artificielle</strong> pour les
-                  entreprises.
+                  <strong>solutions d&apos;intelligence artificielle</strong>{' '}
+                  pour les entreprises.
                 </p>
 
                 <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
@@ -119,22 +119,21 @@ export default function HeroSectionSoft() {
                     height={50}
                   />
                 </div>
-                <div className="flex justify-center mt-10">
-                  <TestimonialCard
-                    testimonial={testimonial}
-                    includeItemReviewed
-                  />
-                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 relative">
           <Image
             src={beach}
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             alt="David Heimfert – développeur web IA à Saint-Barthélemy créateur de sites internet"
           />
+          <div className="absolute inset-0 flex items-center justify-center lg:items-end lg:justify-center lg:pb-28">
+            <div className="px-4">
+              <TestimonialCard testimonial={testimonial} includeItemReviewed />
+            </div>
+          </div>
         </div>
       </div>
     </div>
