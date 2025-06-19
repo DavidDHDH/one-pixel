@@ -1,3 +1,4 @@
+import AboutMe from '@/components/about-me/AboutMe'
 import BenefitsSection from '@/components/website-page/BenefitsSection'
 import CTASection from '@/components/website-page/CTASection'
 import FAQSectionWebsite from '@/components/website-page/FAQSection'
@@ -33,6 +34,7 @@ export default function CreationSiteInternetPage() {
       <IAIntegrationSection />
       <CTASection />
       <FAQSectionWebsite />
+      <AboutMe />
     </div>
   )
 }

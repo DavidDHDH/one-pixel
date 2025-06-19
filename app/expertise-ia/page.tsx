@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { metadata as pageMetadata } from './metadata'
+import AboutMe from '@/components/about-me/AboutMe'
 import HeroSectionIA from '@/components/ia-page/HeroSectionIA'
 import ExpertiseIASection from '@/components/expertise/ExpertiseIASection'
 import AIFearSection from '@/components/ia-page/AIFearSection'
@@ -25,6 +26,7 @@ export default function IntelligenceArtificiellePage() {
       <ExpertiseIASection />
       <AIFearSection />
       <FAQSectionIA />
+      <AboutMe />
     </div>
   )
 }
