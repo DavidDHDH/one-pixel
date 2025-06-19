@@ -48,8 +48,8 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-8 text-center text-sm/6 text-gray-600 md:order-1 md:mt-0">
-          &copy; {new Date().getFullYear()} One Pixel - David Heimfert, Tout
-          droit réservé.{' '}
+          &copy; {new Date().getFullYear()} One Pixel - agence web & IA à Saint
+          Barthélémy, Tout droit réservé.{' '}
           <Link
             href="/legals"
             className="text-gray-600 hover:text-gray-800 text-sm underline"

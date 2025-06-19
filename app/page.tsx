@@ -2,8 +2,9 @@
 
 import AboutMe from '@/components/about-me/AboutMe'
 import CTA from '@/components/CTA/CTA'
+import ExpertiseIAPreview from '@/components/expertise/ExpertiseIAPreview'
 import FaqSection from '@/components/faq/FaqSection'
-import HeroSectionSoft from '@/components/hero-section/HeroSectionSoft'
+import HeroSection from '@/components/hero-section/HeroSection'
 import Partners from '@/components/partners/Partners'
 import ProcessSection from '@/components/process/Process'
 import Portfolio from '@/components/projects/Portfolio'
@@ -15,18 +16,19 @@ import Script from 'next/script'
 export default function Home() {
   return (
     <>
-      <main>
-        <HeroSectionSoft />
+      <div id="calendly">
+        <HeroSection />
         <Partners />
         <Portfolio />
         <TestimonialsSection />
         <Services />
+        <ExpertiseIAPreview />
         <ProcessSection />
         <WhySection />
         <AboutMe withStack />
         <FaqSection />
         <CTA />
-      </main>
+      </div>
 
       <Script
         id="ld-json-org"

@@ -93,7 +93,7 @@ export default function MainProject({
                   <div>
                     {project.slug && (
                       <Link
-                        href={`/projects/${project.slug}`}
+                        href={`/projets/${project.slug}`}
                         className={!isEven ? 'cursor-pointer' : ''}
                       >
                         <p className="text-sm leading-6 hover:underline">

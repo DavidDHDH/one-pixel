@@ -77,7 +77,7 @@ export default function AboutMe({ withStack }: { withStack?: boolean }) {
               {pros.map((pro, i) => (
                 <div
                   key={i}
-                  className="flex flex-col items-center gap-2 border p-2 rounded-lg bg-gray-50 w-40 text-gray-900 text-center text-sm sm:text-base"
+                  className="flex flex-col items-center gap-2 border p-2 rounded-lg bg-sand-50 w-40 text-gray-900 text-center text-sm sm:text-base"
                 >
                   <Icon name={pro.icon} className="h-6 w-6 text-dark-900" />
                   <p>{pro.name}</p>

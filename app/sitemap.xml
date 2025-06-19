@@ -1,10 +1,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.one-pixel.com</loc>
-    <lastmod>2025-06-16</lastmod>
+    <lastmod>2025-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://www.one-pixel.com/creation-site-internet</loc>
+    <lastmod>2025-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.one-pixel.com/expertise-ia</loc>
+    <lastmod>2025-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.one-pixel.com/applications-metiers</loc>
+    <lastmod>2025-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- <url>
+    <loc>https://www.one-pixel.com/projets</loc>
+    <lastmod>2025-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
   <url>
     <loc>https://www.one-pixel.com/legals</loc>
     <lastmod>2025-04-30</lastmod>
