@@ -2,7 +2,7 @@
 
 import { testimonials } from '@/datas/testimonials'
 import { cn } from '@/lib/utils'
-import profile from '@/public/images/IMG_0620.webp'
+import beach from '@/public/images/drone-beach.jpg'
 import RGPD from '@/public/images/rgpdgris.webp'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
@@ -44,35 +44,37 @@ export default function HeroSectionSoft() {
                     )}
                   >
                     <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                      <span>One Pixel - Agence web & IA</span>
+                      <span>One Pixel - Agence web & IA à St Barth</span>
                     </AnimatedShinyText>
                   </div>
                 </div>
-                <h1 className="font-rubik text-pretty text-center sm:text-left text-4xl sm:text-[2.75rem] sm:leading-[3rem] tracking-tight text-gray-900">
-                  <strong>
-                    Agence web à Saint-Barthélemy :{' '}
-                    <span className="text-sand-700">
-                      création de sites internet et applications métier
-                      intelligentes
-                    </span>
-                  </strong>
+                <h1 className="font-rubik text-pretty text-center sm:text-left text-4xl sm:text-[2.75rem] sm:leading-[3rem] tracking-tight text-gray-900 font-semibold">
+                  Agence web à Saint-Barthélemy :{' '}
+                  <span className="text-sand-700">
+                    création de sites internet et applications métier
+                    intelligentes
+                  </span>
                 </h1>
-                <h2 className="mt-6 text-pretty text-gray-600 sm:text-lg/8">
-                  Je suis David, développeur web spécialisé en intelligence
-                  artificielle pour booster ta productivité.
-                </h2>
+                <p className="mt-6 text-pretty text-gray-600 sm:text-lg/8">
+                  Je suis David, <strong>développeur web</strong> et fondateur
+                  de l&apos;<strong>agence One Pixel</strong>, spécialisée en{' '}
+                  <strong>intelligence artificielle</strong> pour les
+                  entreprises.
+                </p>
+
                 <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
-                  J&apos;accompagne les entreprises des{' '}
-                  <strong>Antilles</strong> dans leur transformation digitale
-                  avec des <strong>applications métier</strong>, des{' '}
-                  <strong>outils IA personnalisés</strong> et des{' '}
-                  <strong>sites web professionnels</strong> qui te font gagner
-                  du temps <span className="italic">et</span> attirent plus de
-                  clients.
+                  J&apos;aide les entreprises des Antilles à{' '}
+                  <strong>gagner du temps</strong> et{' '}
+                  <strong>attirer plus de clients</strong> avec des{' '}
+                  <strong>sites web professionnels</strong> et des{' '}
+                  <strong>applications métier</strong> sur-mesure, le tout
+                  boosté avec de l&apos;
+                  <strong>IA personnalisée, locale, et sécurisée</strong>.
                 </p>
                 <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
-                  🔥 Ici, pas d&apos;usine à sites. Un seul projet à la fois :
-                  le tien, sur mesure.
+                  🔥 La seule agence web de l&apos;île qui met l&apos;IA à ton
+                  service pour booster ton expérience client et rester leader
+                  sur ton marché.
                 </p>
                 <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
                   📍 Basé à Saint-Barth. Disponible partout dans les Caraïbes.
@@ -105,7 +107,7 @@ export default function HeroSectionSoft() {
                         aria-label="Découvrir mes projets réalisés"
                         className="rounded-md border border-sand-700 bg-white px-4 py-3 text-center text-sm font-semibold text-sand-700 shadow hover:bg-sand-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400 transition-all"
                       >
-                        Découvrir les cas clients
+                        Découvre les cas clients
                       </a>
                     </div>
                   </div>
@@ -129,7 +131,7 @@ export default function HeroSectionSoft() {
         </div>
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <Image
-            src={profile}
+            src={beach}
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             alt="David Heimfert – développeur web IA à Saint-Barthélemy créateur de sites internet"
           />

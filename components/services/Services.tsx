@@ -10,9 +10,21 @@ type Service = {
 
 const services: Service[] = [
   {
+    label: 'Sites internet sur mesure clés en main',
+    description:
+      'Un site moderne, optimisé pour les mobiles et le référencement local, livré en 1 à 2 semaines.',
+    icon: 'website',
+    examples: [
+      'E-commerce',
+      'Agence de voyages locale',
+      'Agence immobilière',
+      'Hôtel, restaurant, bar',
+    ],
+  },
+  {
     label: 'Applications métier sur mesure',
     description:
-      'On digitalise tes process et on automatise tes tâches pour te libérer du temps.',
+      'On centralise et digitalise ton activité, et on automatise tes tâches pour te libérer du temps.',
     icon: 'application',
     examples: [
       'Gestion de réservations & planning',
@@ -22,27 +34,15 @@ const services: Service[] = [
     ],
   },
   {
-    label: 'Sites internet sur mesure clés en main',
-    description:
-      'Un site moderne, optimisé pour les mobiles et le SEO, livré en 1 à 2 semaines.',
-    icon: 'website',
-    examples: [
-      'E-commerce',
-      'Agence de voyages locale',
-      'Agence immobilière',
-      'Restaurant',
-    ],
-  },
-  {
     label: 'IA & automatisation intelligente',
     description:
-      "L'IA est devenu incontournable. Intègre-la dès maintenant dans tes process.",
+      "L'IA est devenu incontournable. Intègre-la dès maintenant dans ton entreprise.",
     icon: 'ia',
     examples: [
-      'Devis PDF instantané',
-      'Chatbot support 24/7',
+      'Assistant de réservation',
+      'Chatbot multilingue 24/7',
       'Tri intelligent d’e-mails',
-      'Analyse d’avis clients',
+      'Devis automatiques',
     ],
   },
 ]
@@ -58,10 +58,10 @@ export default function Services() {
         <p className="sm:text-lg font-semibold leading-7 text-white text-center">
           Mes services
         </p>
-        <p className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-white text-center">
-          Applications métier, sites internet et solutions web sur-mesure pour
-          booster ton activité.
-        </p>
+        <h2 className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-white text-center">
+          Applications métier, sites internet et solutions web IA sur-mesure
+          pour booster ton activité.
+        </h2>
         <p className="mt-6 sm:text-lg leading-8 text-white text-center max-w-4xl mx-auto">
           Je suis la pour t&apos;accompagner dans la digitalisation de ton
           business, que tu partes de zéro, ou que tu sois déjà présent en ligne.
