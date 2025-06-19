@@ -22,7 +22,7 @@ export default function TestimonialCard({
           itemScope
           itemType="https://schema.org/Review"
           itemProp="review"
-          className={`relative rounded-lg p-6 shadow-lg max-w-md border border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 bg-[radial-gradient(circle_at_40%_25%,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.06)_70%,rgba(255,255,255,0.02)_100%)] backdrop-blur-md lg:backdrop-blur-sm transition-all duration-500 ${
+          className={`relative max-w-lg rounded-lg p-6 shadow-lg border border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 bg-[radial-gradient(circle_at_40%_25%,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.06)_70%,rgba(255,255,255,0.02)_100%)] backdrop-blur-md lg:backdrop-blur-sm transition-all duration-500  ${
             variant === 'dark'
               ? 'hover:border-white/60'
               : 'hover:border-gray-200/60'
@@ -77,7 +77,7 @@ export default function TestimonialCard({
               </div>
               <div
                 itemProp="reviewBody"
-                className={`text-sm/5 ${
+                className={`text-sm/5 text-left ${
                   variant === 'dark' ? 'text-white/90' : 'text-gray-600'
                 }`}
               >
@@ -100,7 +100,7 @@ export default function TestimonialCard({
       itemScope
       itemType="https://schema.org/Review"
       itemProp="review"
-      className={`relative rounded-lg p-6 shadow-lg max-w-md border border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 bg-[radial-gradient(circle_at_40%_25%,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.06)_70%,rgba(255,255,255,0.02)_100%)] backdrop-blur-sm transition-all duration-500 hover:backdrop-blur-md ${
+      className={`relative rounded-lg p-6 shadow-lg max-w-xl border border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 bg-[radial-gradient(circle_at_40%_25%,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.06)_70%,rgba(255,255,255,0.02)_100%)] backdrop-blur-sm transition-all duration-500 hover:backdrop-blur-md ${
         variant === 'dark'
           ? 'hover:border-white/60'
           : 'hover:border-gray-200/60'
