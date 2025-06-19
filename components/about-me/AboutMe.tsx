@@ -52,7 +52,7 @@ export default function AboutMe({ withStack }: { withStack?: boolean }) {
             <p>
               👨🏼‍💻 Je conçois des <strong>applications</strong>, des{' '}
               <strong>logiciels</strong> personnalisés et des{' '}
-              <strong>sites internet</strong> sur-mesure, fiables, et{' '}
+              <strong>sites internet</strong> sur-mesure,{' '}
               <strong>enrichis d’IA</strong> quand ça apporte une vraie valeur.
             </p>
             <p>
