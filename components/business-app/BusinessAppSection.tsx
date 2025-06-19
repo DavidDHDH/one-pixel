@@ -183,7 +183,6 @@ export default function BusinessAppSection() {
             besoin, et conçues pour les entreprises des Antilles.
           </p>
         </div>
-
         {/* Grille des catégories d'applications */}
         <div className="space-y-16">
           {businessApps.map((category, categoryIndex) => (
@@ -240,27 +239,26 @@ export default function BusinessAppSection() {
             </div>
           ))}
         </div>
-
-        {/* Call to action
-        <div className="mt-20 text-center">
-          <div className="rounded-2xl bg-gradient-to-r from-sand-500 to-sand-600 p-8 text-white shadow-xl">
-            <h3 className="text-2xl font-semibold mb-4">
+        {/* Call to action de conclusion */}
+        <div className="mt-16 text-center">
+          <div className="max-w-3xl mx-auto">
+            <h3 className="text-xl font-semibold mb-4">
               Une application métier sur mesure pour ton entreprise ?
             </h3>
-            <p className="text-sand-100 mb-6 max-w-2xl mx-auto">
+            <p className="text-gray-600 mb-8">
               Chaque entreprise est unique. Discutons de tes processus métiers
-              et concevons ensemble l&apos;application qui transformera ta
-              productivité.
+              et concevons ensemble l&apos;application qui maximisera ta
+              rentabilité.
             </p>
             <a
-              href="mailto:hello@one-pixel.com?subject=Demande d'application métier sur mesure"
-              className="inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 font-semibold text-sand-600 hover:bg-sand-50 transition-colors shadow-lg"
+              href="mailto:hello@one-pixel.com?subject=Analyse de mes besoins - Application sur mesure"
+              className="inline-flex items-center gap-2 rounded-md bg-sand-700 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400 transition-all"
             >
               <Icon name="mail" className="w-4 h-4" />
-              Discutons de ton projet d&apos;application
+              Analysons tes besoins ensemble
             </a>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   )

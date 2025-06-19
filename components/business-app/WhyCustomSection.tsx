@@ -100,27 +100,6 @@ export default function WhyCustomSection() {
             </div>
           ))}
         </div>
-
-        {/* Call to action de conclusion */}
-        <div className="mt-16 text-center">
-          <div className="max-w-3xl mx-auto">
-            <h3 className="text-xl font-semibold mb-4">
-              Ton entreprise mérite un outil qui lui ressemble
-            </h3>
-            <p className="text-gray-600 mb-8">
-              Plutôt que de t&apos;adapter à un logiciel généraliste, créons
-              ensemble l&apos;application qui{' '}
-              <strong>maximisera ta rentabilité</strong>.
-            </p>
-            <a
-              href="mailto:hello@one-pixel.com?subject=Analyse de mes besoins - Application sur mesure"
-              className="inline-flex items-center gap-2 rounded-md bg-sand-700 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400 transition-all"
-            >
-              <Icon name="mail" className="w-4 h-4" />
-              Analysons tes besoins ensemble
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   )
