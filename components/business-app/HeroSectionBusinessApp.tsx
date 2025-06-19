@@ -38,11 +38,10 @@ export default function HeroSectionBusinessApp() {
           </h1>
 
           <p className="text-lg leading-8 text-gray-900 max-w-xl mx-auto [text-shadow:0_2px_4px_rgba(255,255,255,0.8)] mb-10">
-            <strong>
-              CRM, dashboards, planning, réservations... Des web applications
-              qui s&apos;adaptent parfaitement à tes processus métiers
-            </strong>
-            , disponibles sur ordinateur, tablette et mobile.
+            <strong>CRM, dashboards, planning, réservations... </strong> Une web
+            application qui <strong>s&apos;adapte parfaitement</strong> à{' '}
+            <strong>tes processus métiers</strong>, disponible sur ordinateur,
+            tablette et mobile.
           </p>
 
           {/* Key benefits */}
