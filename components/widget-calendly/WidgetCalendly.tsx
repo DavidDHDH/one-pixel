@@ -19,7 +19,7 @@ export default function WidgetCalendly() {
         </div>
         <iframe
           src="https://calendly.com/david-heimfert/30min"
-          className="w-full h-[calc(100vh-60px)] md:w-[400px] md:h-[500px]"
+          className="w-full h-[calc(100dvh-60px)] md:w-[400px] md:h-[500px]"
           title="Calendly - David Heimfert"
         />
       </div>

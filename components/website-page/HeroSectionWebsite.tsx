@@ -35,9 +35,7 @@ export default function HeroSectionWebsite() {
           >
             <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400 ">
               <span className="mr-2">💻</span>{' '}
-              <span>
-                Création sites internet à Saint-Barthélemy - Saint-Martin
-              </span>
+              <span>Création sites internet à Saint-Barthélemy</span>
             </AnimatedShinyText>
           </div>
 
