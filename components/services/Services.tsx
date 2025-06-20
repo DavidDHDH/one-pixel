@@ -1,6 +1,6 @@
-import { CONTACT_EMAIL } from '@/lib/const'
 import Link from 'next/link'
 import { Icon } from '../shared/Icon'
+import CTAButtons from '../website-page/CTAButtons'
 
 type Service = {
   label: string
@@ -72,13 +72,13 @@ export default function Services() {
           business, que tu partes de zéro, ou que tu sois déjà présent en ligne.
           L&apos;objectif : ne pas te laisser dépasser par la concurrence.
         </p>
-        <div className="grid gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-3  h-full">
+        <div className="grid gap-8 mt-12 sm:grid-cols-2 lg:grid-cols-3 h-full">
           {services.map((service, index) =>
             service.href ? (
               <Link
                 key={`service-${index}`}
                 href={service.href}
-                className="group flex flex-col items-center rounded-2xl shadow-lg px-8 py-6 text-center h-full border border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 bg-[radial-gradient(circle_at_40%_25%,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.06)_70%,rgba(255,255,255,0.02)_100%)] backdrop-blur-md transition-all duration-500 hover:scale-105 hover:shadow-xl hover:backdrop-blur-md"
+                className="group flex flex-col items-center rounded-xl shadow-lg px-8 py-6 text-center h-full border border-t-white/50 border-l-white/50 border-b-white/25 border-r-white/25 bg-[radial-gradient(circle_at_40%_25%,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.06)_70%,rgba(255,255,255,0.02)_100%)] backdrop-blur-md transition-all duration-500 hover:scale-105 hover:shadow-xl hover:backdrop-blur-md"
               >
                 <div
                   itemScope
@@ -220,16 +220,11 @@ export default function Services() {
           )}
         </div>
       </div>
-      <div className="flex justify-center">
-        <a
-          href={`mailto:${CONTACT_EMAIL}?subject=Demande d'information`}
-          className="mt-16"
-        >
-          <div className="rounded-md flex items-center gap-2 bg-sand-700 px-3.5 py-2.5 transition-all text-sm font-semibold text-white shadow-sm hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400">
-            <Icon name="mail" />
-            Réserve ton appel découverte gratuit
-          </div>
-        </a>
+      <div className="flex justify-center py-12">
+        <CTAButtons
+          primaryText="Réserve un audit offert"
+          primaryIcon="calendarMonth"
+        />
       </div>
     </section>
   )
