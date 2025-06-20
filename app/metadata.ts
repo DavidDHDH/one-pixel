@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title:
-    'Agence web spécialisée IA & création de sites internet à Saint-Barthélemy – One Pixel',
+    'One Pixel - Agence web spécialisée IA & création de sites internet à Saint-Barthélemy',
   description:
     'Agence web & IA à Saint-Barthélemy, spécialisée dans la création de sites internet, applications sur-mesure et logiciels métier boostés à l’IA pour les entreprises des Antilles.',
   keywords: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      'Agence web à Saint-Barthélemy – IA & création de sites internet sur-mesure | One Pixel',
+      'One Pixel - Agence web à Saint-Barthélemy – IA & création de sites internet sur-mesure',
     description:
       'Agence web à Saint-Barthélemy, spécialisée dans la création de sites internet, applications sur-mesure et logiciels métier boostés à l’IA pour les entreprises des Antilles.',
     url: 'https://www.one-pixel.com',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary',
     title:
-      'Agence web à Saint-Barthélemy – IA & création de sites internet sur-mesure | One Pixel',
+      'One Pixel - Agence web à Saint-Barthélemy – IA & création de sites internet sur-mesure',
     description:
       'Agence web à Saint-Barthélemy, spécialisée dans la création de sites internet, applications sur-mesure et logiciels métier boostés à l’IA pour les entreprises des Antilles.',
     // pas d’image tant que tu n’as pas de fichier

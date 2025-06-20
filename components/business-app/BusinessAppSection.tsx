@@ -1,4 +1,5 @@
 import { Icon } from '../shared/Icon'
+import CTAButtons from '../website-page/CTAButtons'
 import BusinessAppCard, { BusinessApp } from './BusinessAppCard'
 
 type BusinessAppCategory = {
@@ -250,13 +251,13 @@ export default function BusinessAppSection() {
               et concevons ensemble l&apos;application qui maximisera ta
               rentabilité.
             </p>
-            <a
-              href="mailto:hello@one-pixel.com?subject=Analyse de mes besoins - Application sur mesure"
-              className="inline-flex items-center gap-2 rounded-md bg-sand-700 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-sand-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sand-400 transition-all"
-            >
-              <Icon name="mail" className="w-4 h-4" />
-              Analysons tes besoins ensemble
-            </a>
+            <CTAButtons
+              primaryText="Réserve un appel découverte"
+              primaryIcon="calendarMonth"
+              secondaryText="Envoi moi un email"
+              secondaryIcon="mail"
+              secondaryHref="mailto:hello@one-pixel.com?subject=Application métier sur mesure"
+            />
           </div>
         </div>
       </div>

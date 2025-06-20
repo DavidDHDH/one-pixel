@@ -6,7 +6,10 @@ export default function ProjectsSection() {
   // Filtrer les projets avec seoCategory = 'WebSite' ou 'UI/UX'
   const websiteProjects = projects.filter(
     (project) =>
-      project.seoCategory === 'WebSite' || project.seoCategory === 'UI/UX'
+      project.seoCategory === 'WebSite' ||
+      project.seoCategory === 'UI/UX' ||
+      (project.seoCategory === 'WebApplication' &&
+        project.industry === 'Commerce')
   )
 
   return (

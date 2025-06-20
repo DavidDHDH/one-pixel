@@ -78,7 +78,6 @@ export default function HeroSection() {
                       primaryText="Réserve ton audit IA offert"
                       secondaryText="Découvre les cas clients"
                       secondaryHref="#portfolio"
-                      emailSubject="Diagnostic IA"
                     />
                   </div>
                   <Image

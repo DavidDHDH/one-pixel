@@ -34,6 +34,7 @@ import {
   IconCoffee,
   IconCreditCard,
   IconCurrencyDollar,
+  IconEye,
   IconFiles,
   IconGrowth,
   IconHeadset,
@@ -110,6 +111,7 @@ const iconOptions: {
   lightbulb: IconBulb,
   shieldCheck: IconShieldCheck,
   sparkles: IconSparkles,
+  eye: IconEye,
 }
 
 export const Icon = ({

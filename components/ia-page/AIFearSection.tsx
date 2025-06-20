@@ -36,7 +36,7 @@ export default function AIFearSection() {
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Une question légitime que se posent beaucoup d&apos;entrepreneurs.
             Voici pourquoi l&apos;IA est plus une opportunité qu&apos;une menace
-            pour votre business.
+            pour ton business.
           </p>
         </div>
 

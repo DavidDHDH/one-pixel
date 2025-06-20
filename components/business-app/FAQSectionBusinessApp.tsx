@@ -5,7 +5,7 @@ const faqs: FAQ[] = [
     question:
       'Combien de temps faut-il pour développer une application métier ?',
     answer:
-      "Le délai varie selon la complexité de l'application. Un CRM simple peut être développé en 4-6 semaines, tandis qu'une application complexe avec multiples modules peut prendre 2-4 mois. Nous établissons un planning détaillé lors de la phase de cadrage.",
+      "Le délai varie selon la complexité de l'application. Un CRM simple peut être développé en 4-6 semaines, tandis qu'une application complexe avec multiples modules peut prendre 2-4 mois. On établit un planning détaillé lors de la phase de cadrage.",
   },
   {
     question: "L'application sera-t-elle accessible sur mobile ?",
@@ -25,7 +25,7 @@ const faqs: FAQ[] = [
   {
     question: 'Comment se passe la maintenance et les évolutions ?',
     answer:
-      'Nous proposons un contrat de maintenance incluant les mises à jour de sécurité, le support technique et les petites évolutions. Pour les nouvelles fonctionnalités importantes, nous établissons un devis séparé. Votre application reste évolutive.',
+      'Je propose un contrat de maintenance incluant les mises à jour de sécurité, le support technique et les petites évolutions. Pour les nouvelles fonctionnalités importantes, on établit un devis séparé. Ton application reste évolutive.',
   },
   {
     question: "Puis-je tester l'application avant la livraison finale ?",
