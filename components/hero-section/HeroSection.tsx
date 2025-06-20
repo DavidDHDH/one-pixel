@@ -75,7 +75,8 @@ export default function HeroSection() {
                 <div className="mt-10 flex items-center justify-between gap-x-6">
                   <div>
                     <CTAButtons
-                      primaryText="Réserve ton audit IA offert"
+                      primaryText="Planifie un appel découverte"
+                      primaryIcon="calendarMonth"
                       secondaryText="Découvre les cas clients"
                       secondaryHref="#portfolio"
                     />
@@ -96,7 +97,7 @@ export default function HeroSection() {
           <Image
             src={beach}
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-            alt="David Heimfert – développeur web IA à Saint-Barthélemy créateur de sites internet"
+            alt="Plage à Saint Barthélémy"
           />
           <div className="absolute inset-0 flex items-center justify-center lg:items-end lg:justify-center lg:pb-28">
             <div className="px-4">
