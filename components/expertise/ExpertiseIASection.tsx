@@ -265,7 +265,6 @@ export default function ExpertiseIASection() {
                   secondaryText="WhatsApp direct"
                   secondaryIcon="whatsapp"
                   secondaryHref="https://wa.me/590690771911?text=Bonjour David !"
-                  emailSubject="Audit IA gratuit"
                   variant="dark"
                 />
               </div>

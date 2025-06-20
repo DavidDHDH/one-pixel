@@ -59,7 +59,6 @@ export default function CTASectionBusinessApp() {
                 secondaryText="WhatsApp direct"
                 secondaryIcon="whatsapp"
                 secondaryHref="https://wa.me/590690771911?text=Bonjour David !"
-                emailSubject="Audit application métier gratuit"
                 variant="dark"
               />
             </div>
