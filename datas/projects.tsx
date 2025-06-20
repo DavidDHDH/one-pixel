@@ -1,9 +1,8 @@
-import emailIcon from '@/assets/icons/email.png'
-import realtimeIcon from '@/assets/icons/real-time-icon.svg'
 import { TimelineEntry } from '@/components/project-page/ProcessTimeline'
 import { StackItem } from '@/components/stack/StackWithDescription'
 import { Icon12Hours } from '@tabler/icons-react'
-import Image, { StaticImageData } from 'next/image'
+import { Code, Palette, Rocket, Search, TestTube, Zap } from 'lucide-react'
+import { StaticImageData } from 'next/image'
 import { Testimonial, testimonials } from './testimonials'
 
 import artiziaMainScreen from '@/public/projects/artizia/artizia-fwi-main-screen.webp'
@@ -14,8 +13,14 @@ import VC1 from '@/public/projects/villacare/villa-care-1.webp'
 import VC2 from '@/public/projects/villacare/villa-care-2.webp'
 import VC6 from '@/public/projects/villacare/villa-care-6.webp'
 
-import { DarkModeCard } from '@/components/bento/DarkModeCard'
-import { LanguageCard } from '@/components/bento/LanguageCard'
+import { ProcessStep } from '@/components/project-page/ProcessStep'
+import { AutomationCard } from '@/components/projects/villa-care/AutomationCard'
+import { CompactDarkModeCard } from '@/components/projects/villa-care/CompactDarkModeCard'
+import { CompactLanguageCard } from '@/components/projects/villa-care/CompactLanguageCard'
+import { DocumentManagementCard } from '@/components/projects/villa-care/DocumentManagementCard'
+import { PlanningCard } from '@/components/projects/villa-care/PlanningCard'
+import { StatisticsCard } from '@/components/projects/villa-care/StatisticsCard'
+import { WorkspacesCard } from '@/components/projects/villa-care/WorkspacesCard'
 import DLmockup from '@/public/projects/DI-mockup.webp'
 import rwayMockup from '@/public/projects/Rway-mockup.webp'
 import SBmockup from '@/public/projects/SB-mockup.webp'
@@ -76,110 +81,13 @@ export const projects: Projects[] = [
     carouselImages: [VC1, VC2, VC6],
     location: 'Saint-Barthélemy',
     bentoItems: [
-      <div key="1" className="h-full w-full flex flex-col gap-4">
-        <div className="flex items-center justify-center">
-          <Image
-            src={realtimeIcon}
-            alt="Planning partagé"
-            className="w-16 h-16"
-          />
-        </div>
-        <h3 className="text-center text-xl font-bold">
-          Planning partagé et sécurisé
-        </h3>
-
-        <p>Un calendrier centralisé, mis à jour en temps réel, qui affiche :</p>
-        <ul className="list-disc list-inside">
-          <li>les demandes d&apos;options,</li>
-          <li>les options en cours,</li>
-          <li>les réservations confirmées,</li>
-          <li>les séjours propriétaires,</li>
-        </ul>
-        <p>
-          Chaque utilisateur accède uniquement aux informations qui le
-          concernent, selon son rôle (manager, agence, propriétaire…).
-        </p>
-        <p>
-          💡 Plus besoin d’Excel partagé : tout le monde a la bonne info, au bon
-          moment.
-        </p>
-      </div>,
-      <div key="2" className="h-full w-full flex flex-col gap-4">
-        <h3 className="text-center text-xl font-bold">
-          🧑‍🤝‍🧑 Espaces de travail adaptés à chaque rôle
-        </h3>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="flex flex-col gap-4">
-            <h4 className="text-center text-lg font-bold">Manager</h4>
-            <p>
-              Accès aux plannings, aux options, aux réservations, aux clients.
-            </p>
-          </div>
-          <div className="flex flex-col gap-4">
-            <h4 className="text-center text-lg font-bold">Agence</h4>
-            <p>
-              Accès aux plannings, aux options, aux réservations, aux clients.
-            </p>
-          </div>
-        </div>
-      </div>,
-      <div key="3" className="h-full w-full flex flex-col gap-4">
-        <h3 className="text-center text-xl font-bold">
-          Automatisations pour gagner du temps
-        </h3>
-        <p>
-          Fini les relances manuelles et les oublis : les tâches répétitives
-          sont automatisées, pour un suivi fluide et sans erreur.
-        </p>
-        <p>Des emails sont envoyés automatiquement pour :</p>
-        <ul className="list-disc list-inside">
-          <li>partager les plannings,</li>
-          <li>confirmer les réservations,</li>
-          <li>notifier une nouvelle demande,</li>
-          <li>relancer lorsqu&apos;une information manque…</li>
-        </ul>
-        <p>
-          💡 Un gain de temps quotidien, et une meilleure réactivité avec les
-          partenaires.
-        </p>
-        <div className="flex items-center justify-center">
-          <Image
-            src={emailIcon}
-            alt="Envois automatiques"
-            className="w-16 h-16"
-          />
-        </div>
-      </div>,
-      <p key="4" className="h-full w-full flex flex-col gap-4">
-        <h3 className="text-center text-xl font-bold ">
-          Gestion centralisée des documents
-        </h3>
-        <p>
-          Tous les fichiers liés aux villas sont stockés dans l’app : mandats,
-          contrats, inventaires, photos…
-        </p>
-        <p>🔐 Fini les documents éparpillés entre mails et Drive.</p>
-      </p>,
-      <LanguageCard key="5" />,
-      <DarkModeCard
-        key="6"
-        illustration="/projects/villacare/mobile-villacare.webp"
-      />,
-      <div key="7" className="h-full w-full flex flex-col gap-4">
-        <h3 className="text-center text-xl font-bold">
-          Statistiques & pilotage
-        </h3>
-        <p>L’application génère des tableaux de bord simples pour suivre :</p>
-        <ul className="list-disc list-inside">
-          <li>le taux d’occupation,</li>
-          <li>les revenus par villa,</li>
-          <li>les prévisions par période.</li>
-        </ul>
-        <p>
-          🎯 Une base solide pour prendre des décisions éclairées, et optimiser
-          les revenus.
-        </p>
-      </div>,
+      <PlanningCard key="1" />,
+      <WorkspacesCard key="2" />,
+      <AutomationCard key="3" />,
+      <DocumentManagementCard key="4" />,
+      <CompactLanguageCard key="5" />,
+      <CompactDarkModeCard key="6" />,
+      <StatisticsCard key="7" />,
     ],
     features: [
       {
@@ -265,32 +173,94 @@ export const projects: Projects[] = [
     ],
     process: [
       {
-        title: 'Phase 1',
-        content: <p>Phase 1 de la réalisation du projet</p>,
+        title: 'Découverte & Analyse',
+        icon: <Search className="w-5 h-5" />,
+        content: (
+          <ProcessStep
+            description="Compréhension approfondie des besoins métier et analyse des flux de travail existants."
+            highlights={[
+              'Audit des processus actuels de gestion locative',
+              'Identification des points de friction',
+              'Définition des personas utilisateurs',
+              'Cartographie des flux de données',
+            ]}
+          />
+        ),
       },
       {
-        title: 'Phase 2',
-        content: <p>Phase 2 de la réalisation du projet</p>,
+        title: 'Architecture & Design',
+        icon: <Palette className="w-5 h-5" />,
+        content: (
+          <ProcessStep
+            description="Conception de l'architecture technique et création des maquettes UX/UI."
+            highlights={[
+              'Architecture base de données relationnelle',
+              'Design system et maquettes Figma',
+              'Définition des API et endpoints',
+              'Validation des parcours utilisateur',
+            ]}
+          />
+        ),
       },
       {
-        title: 'Phase 3',
-        content: <p>Phase 3 de la réalisation du projet</p>,
+        title: 'Développement Core',
+        icon: <Code className="w-5 h-5" />,
+        content: (
+          <ProcessStep
+            description="Développement des fonctionnalités essentielles : gestion des réservations et planning."
+            highlights={[
+              'Système de réservations temps réel',
+              'Calendrier centralisé multi-utilisateurs',
+              'Gestion des états et workflows',
+              'Authentification et permissions',
+            ]}
+          />
+        ),
       },
       {
-        title: 'Phase 4',
-        content: <p>Phase 4 de la réalisation du projet</p>,
+        title: 'Automatisations',
+        icon: <Zap className="w-5 h-5" />,
+        content: (
+          <ProcessStep
+            description="Implémentation des automatisations pour réduire les tâches répétitives."
+            highlights={[
+              "Envois automatiques d'emails",
+              'Notifications temps réel',
+              'Workflows de validation',
+              'Synchronisation des données',
+            ]}
+          />
+        ),
       },
       {
-        title: 'Phase 5',
-        content: <p>Phase 5 de la réalisation du projet</p>,
+        title: 'Tests & Optimisation',
+        icon: <TestTube className="w-5 h-5" />,
+        content: (
+          <ProcessStep
+            description="Phase de tests utilisateurs et optimisation des performances."
+            highlights={[
+              'Tests avec les gestionnaires villa',
+              'Optimisation des performances',
+              'Correction des bugs identifiés',
+              "Amélioration de l'expérience utilisateur",
+            ]}
+          />
+        ),
       },
       {
-        title: 'Phase 6',
-        content: <p>Phase 6 de la réalisation du projet</p>,
-      },
-      {
-        title: 'Phase 7',
-        content: <p>Phase 7 de la réalisation du projet</p>,
+        title: 'Déploiement & Formation',
+        icon: <Rocket className="w-5 h-5" />,
+        content: (
+          <ProcessStep
+            description="Mise en production et accompagnement des utilisateurs."
+            highlights={[
+              'Déploiement sur infrastructure cloud',
+              'Formation des équipes utilisatrices',
+              'Documentation technique et user',
+              'Support et maintenance',
+            ]}
+          />
+        ),
       },
     ],
     results: {
@@ -318,6 +288,7 @@ export const projects: Projects[] = [
         (testimonial) => testimonial.author.company === 'Villa Care'
       )!,
     },
+    // slug: 'villa-care',
   },
   {
     title: 'Frip West Indies',

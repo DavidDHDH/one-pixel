@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react'
 
 export interface TimelineEntry {
   title: string
+  icon?: React.ReactNode
   content: React.ReactNode
 }
 
@@ -40,7 +41,13 @@ export const ProcessTimeline = ({ data }: { data: TimelineEntry[] }) => {
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-neutral-950 flex items-center justify-center">
-                <div className="h-4 w-4 rounded-full bg-sand-300 dark:bg-sand-700 border border-sand-400 dark:border-sand-600 p-2" />
+                {item.icon ? (
+                  <div className="text-sand-600 dark:text-sand-400">
+                    {item.icon}
+                  </div>
+                ) : (
+                  <div className="h-4 w-4 rounded-full bg-sand-300 dark:bg-sand-700 border border-sand-400 dark:border-sand-600 p-2" />
+                )}
               </div>
               <h3 className="hidden md:block font-rubik text-xl md:pl-20 md:text-xl font-bold text-sand-600 dark:text-sand-500">
                 {item.title}
