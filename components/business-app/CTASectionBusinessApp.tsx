@@ -1,4 +1,5 @@
 import { Icon } from '@/components/shared/Icon'
+import CTAButtons from '../website-page/CTAButtons'
 
 export default function CTASectionBusinessApp() {
   return (
@@ -52,28 +53,15 @@ export default function CTASectionBusinessApp() {
 
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href="https://calendly.com/david-heimfert/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex border border-white/20 items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-sand-700 hover:bg-sand-300 transition-all duration-300"
-              >
-                <Icon
-                  name="calendarMonth"
-                  className="w-5 h-5 group-hover:rotate-12 transition-transform"
-                />
-                Réserver mon audit processus gratuit
-              </a>
-
-              <a
-                href="https://wa.me/590690771911?text=Salut David ! Je souhaiterais discuter d'une application métier sur mesure pour mon entreprise à Saint-Barth"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-6 py-3 font-medium text-white hover:bg-white/20 transition-all duration-300"
-              >
-                <Icon name="whatsapp" className="w-4 h-4" />
-                WhatsApp direct
-              </a>
+              <CTAButtons
+                primaryText="Réserver mon audit offert"
+                primaryIcon="calendarMonth"
+                secondaryText="WhatsApp direct"
+                secondaryIcon="whatsapp"
+                secondaryHref="https://wa.me/590690771911?text=Bonjour David !"
+                emailSubject="Audit application métier gratuit"
+                variant="dark"
+              />
             </div>
 
             {/* Testimonial ou garantie */}

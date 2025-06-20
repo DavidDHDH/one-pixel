@@ -13,7 +13,7 @@ import CTAButtons from '../website-page/CTAButtons'
 
 export default function HeroSectionIA() {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-sand-50 to-white pt-10 h-[85vh] flex items-center">
+    <div className="relative overflow-hidden bg-gradient-to-br from-sand-50 to-white pt-10">
       {/* Background decoration avec image de plage */}
       <div className="absolute inset-0 bg-[url('/images/beach-cover.webp')] bg-center bg-cover [mask-image:linear-gradient(180deg,rgba(255,255,255,0.8)_0%,rgba(255,255,255,0.6)_40%,rgba(255,255,255,0.3)_70%,rgba(255,255,255,0)_85%,transparent_100%)]" />
 
@@ -23,8 +23,8 @@ export default function HeroSectionIA() {
       {/* White overlay for smooth transition */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/80 to-transparent" />
 
-      <div className="relative mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8 w-full">
-        <div className="mx-auto max-w-2xl text-center w-full">
+      <div className="relative mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
           {/* Badge */}
           <div className="mb-8">
             <div
@@ -72,9 +72,10 @@ export default function HeroSectionIA() {
 
           {/* CTA Buttons */}
           <CTAButtons
-            primaryText="🚀 Analyse IA gratuite"
-            emailSubject="Analyse IA gratuite"
+            primaryText="Planifie un appel découverte"
+            primaryIcon="calendarMonth"
             secondaryText="Voir les cas d'usage"
+            secondaryIcon="eye"
             secondaryHref="#expertise-ia"
           />
 

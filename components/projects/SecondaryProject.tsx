@@ -19,7 +19,7 @@ const SecondaryProject = ({ project }: { project: ProjectType }) => {
       <meta itemProp="applicationCategory" content={project.type} />
       <meta itemProp="operatingSystem" content={project.seoPlatform || 'Web'} />
       <meta itemProp="description" content={project.description} />
-      <div className="rounded-xl shadow-lg overflow-hidden bg-white h-[600px] flex flex-col text-gray-900 ">
+      <div className="rounded-xl shadow-lg overflow-hidden bg-white h-full min-h-[600px] flex flex-col text-gray-900 ">
         <div className="h-[50%]">
           <Dialog>
             <DialogTrigger asChild>
@@ -50,7 +50,7 @@ const SecondaryProject = ({ project }: { project: ProjectType }) => {
             </p>
           </div>
           <p className="flex-grow">{project.description}</p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 mt-3">
             {project.stack.map((s, i) => (
               <TooltipProvider delayDuration={100} key={i}>
                 <Tooltip>

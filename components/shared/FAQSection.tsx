@@ -18,7 +18,7 @@ export default function FAQSection({
   title,
   subtitle,
   faqs,
-  contactSubject,
+
   contactText = "Tu as d'autres questions ?",
   backgroundColor = 'white',
 }: FAQSectionProps) {
@@ -77,8 +77,11 @@ export default function FAQSection({
                 Chaque projet est unique. Parlons de tes défis spécifiques.
               </p>
               <CTAButtons
-                primaryText="📞 Planifie un appel quand tu veux"
-                emailSubject={contactSubject}
+                primaryText="Planifie un appel quand tu veux"
+                primaryIcon="calendarMonth"
+                secondaryText="Envoi moi un email"
+                secondaryIcon="mail"
+                secondaryHref="mailto:hello@one-pixel.com?subject=Application métier sur mesure"
               />
             </div>
           )}
@@ -87,8 +90,11 @@ export default function FAQSection({
             <>
               <p className="text-gray-600 mb-6">{contactText}</p>
               <CTAButtons
-                primaryText="📞 Planifie un appel quand tu veux"
-                emailSubject={contactSubject}
+                primaryText="Planifie un appel quand tu veux"
+                primaryIcon="calendarMonth"
+                secondaryText="Envoi moi un email"
+                secondaryIcon="mail"
+                secondaryHref="mailto:hello@one-pixel.com?subject=Application métier sur mesure"
               />
             </>
           )}

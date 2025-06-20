@@ -85,10 +85,11 @@ export default function HeroSectionWebsite() {
           {/* CTA Buttons */}
           <div className="mt-10">
             <CTAButtons
-              primaryText="🚀 Créer mon site maintenant"
-              secondaryText="Voir mes réalisations"
+              primaryText="Planifie un appel découverte"
+              primaryIcon="calendarMonth"
+              secondaryText="Voir les réalisations"
+              secondaryIcon="eye"
               secondaryHref="#portfolio"
-              emailSubject="Création de site internet"
             />
           </div>
           <div className="mt-10 flex justify-center">

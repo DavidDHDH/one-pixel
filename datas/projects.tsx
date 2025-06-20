@@ -397,7 +397,7 @@ export const projects: Projects[] = [
     seoCategory: 'WebApplication',
     seoPlatform: 'Web',
     description:
-      'Artizia FWI est une solution de mise en relation pensée pour les créateurs et prestataires de services des Antilles. Chacun peut créer son showroom en ligne pour exposer son activité, toucher les locaux et touristes, et recevoir des demandes de contact. L’inscription est gratuite, la création du showroom se fait via un abonnement mensuel.',
+      'Artizia FWI est une solution de mise en relation pensée pour les créateurs et prestataires de services des Antilles. Chacun peut créer son showroom en ligne pour exposer son activité, toucher les locaux et touristes, et recevoir des demandes de contact.',
     mainImage: artiziaMainScreen,
     location: 'Saint-Barthélemy, Saint-Martin',
     features: [

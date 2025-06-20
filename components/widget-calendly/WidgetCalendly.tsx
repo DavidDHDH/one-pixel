@@ -6,8 +6,8 @@ export default function WidgetCalendly() {
   const [isOpen, setIsOpen] = useState(false)
 
   const CalendlyInline = () => (
-    <div className="fixed bottom-0 right-0 z-50 m-4">
-      <div className="bg-white rounded-xl shadow-2xl border border-gray-200 overflow-hidden">
+    <div className="fixed inset-0 z-50 md:bottom-0 md:right-0 md:inset-auto md:m-4">
+      <div className="bg-white h-full w-full md:h-auto md:w-auto md:rounded-xl shadow-2xl border border-gray-200 overflow-hidden">
         <div className="bg-sand-700 text-white p-3 flex justify-between items-center">
           <span className="font-medium">Planifier du temps avec moi</span>
           <button
@@ -19,8 +19,7 @@ export default function WidgetCalendly() {
         </div>
         <iframe
           src="https://calendly.com/david-heimfert/30min"
-          width="400"
-          height="500"
+          className="w-full h-[calc(100vh-60px)] md:w-[400px] md:h-[500px]"
           title="Calendly - David Heimfert"
         />
       </div>

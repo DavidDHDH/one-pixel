@@ -94,7 +94,7 @@ export default function AboutMe({ withStack }: { withStack?: boolean }) {
                   <span>
                     <Icon name="whatsapp" />
                   </span>{' '}
-                  Écris-moi sur WhatsApp
+                  WhatsApp direct
                 </div>
               </a>
             </div>
