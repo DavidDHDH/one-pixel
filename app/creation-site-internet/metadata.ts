@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Création Site Internet Saint-Barthélemy - Saint-Martin | One Pixel',
   description:
-    'Agence web spécialisée en création de sites internet professionnels à Saint-Barthélemy. Sites modernes, responsive, optimisés SEO, avec ou sans intégration IA. Livraison en 1-2 semaines. Devis gratuit.',
+    'Agence web spécialisée en création de sites internet professionnels à Saint-Barthélemy. Sites modernes, responsive, optimisés SEO, avec ou sans intégration IA. Livraison en 2 semaines. Devis gratuit.',
   keywords: [
     'création site internet saint barthélemy',
     'création site internet antilles',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Création Site Internet Saint-Barthélemy - Saint-Martin | One Pixel',
     description:
-      'Agence web spécialisée en création de sites internet professionnels à Saint-Barthélemy. Sites modernes, responsive, optimisés SEO, avec ou sans intégration IA. Livraison en 1-2 semaines. Devis gratuit.',
+      'Agence web spécialisée en création de sites internet professionnels à Saint-Barthélemy. Sites modernes, responsive, optimisés SEO, avec ou sans intégration IA. Livraison en 2 semaines. Devis gratuit.',
     url: 'https://www.one-pixel.com/creation-site-internet',
     siteName: 'One Pixel - Agence Web Saint-Barthélemy',
     locale: 'fr_FR',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Création Site Internet Saint-Barthélemy - Antilles | One Pixel',
     description:
-      'Agence web spécialisée en création de sites internet professionnels à Saint-Barthélemy. Sites modernes, responsive, optimisés SEO, avec ou sans intégration IA. Livraison en 1-2 semaines. Devis gratuit.',
+      'Agence web spécialisée en création de sites internet professionnels à Saint-Barthélemy. Sites modernes, responsive, optimisés SEO, avec ou sans intégration IA. Livraison en 2 semaines. Devis gratuit.',
     creator: '@DavidHeim',
   },
   robots: {

@@ -7,7 +7,7 @@ import AnimatedShinyText from '../ui/animated-shiny-text'
 import CTAButtons from './CTAButtons'
 
 const highlights = [
-  'Livraison en 1-2 semaines',
+  'Livraison en 2 semaines',
   'Design professionnel unique',
   'Optimisé mobile et SEO',
   'Allers-retours illimités',
