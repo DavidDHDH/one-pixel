@@ -14,7 +14,7 @@ const services: Service[] = [
   {
     label: 'Sites internet sur mesure clés en main',
     description:
-      'Un site moderne, optimisé pour les mobiles et le référencement local, livré en 1 à 2 semaines.',
+      'Un site moderne, optimisé pour les mobiles et le référencement local, livré en 2 semaines.',
     icon: 'website',
     examples: [
       'E-commerce',
@@ -25,7 +25,7 @@ const services: Service[] = [
     href: '/creation-site-internet',
   },
   {
-    label: 'Applications métier sur mesure',
+    label: 'Applications métier personnalisées',
     description:
       'On centralise et digitalise ton activité, et on automatise tes tâches pour te libérer du temps.',
     icon: 'application',
