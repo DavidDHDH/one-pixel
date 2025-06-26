@@ -170,7 +170,7 @@ export default function BusinessAppSection() {
           <p className="sm:text-lg text-sand-700 text-pretty">
             <strong>Applications Métiers</strong>
           </p>
-          <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
+          <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold   sm:text-4xl">
             Solutions logicielles <strong>sur mesure</strong> pour digitaliser{' '}
             <strong>ton activité</strong>
           </h2>
@@ -220,9 +220,7 @@ export default function BusinessAppSection() {
                   />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {category.title}
-                  </h3>
+                  <h3 className="text-xl font-semibold  ">{category.title}</h3>
                   <p className="text-gray-600">{category.description}</p>
                 </div>
               </div>

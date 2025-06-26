@@ -19,7 +19,7 @@ const SecondaryProject = ({ project }: { project: ProjectType }) => {
       <meta itemProp="applicationCategory" content={project.type} />
       <meta itemProp="operatingSystem" content={project.seoPlatform || 'Web'} />
       <meta itemProp="description" content={project.description} />
-      <div className="rounded-xl shadow-lg overflow-hidden bg-white h-full min-h-[600px] flex flex-col text-gray-900 ">
+      <div className="rounded-xl shadow-lg overflow-hidden bg-white h-full min-h-[600px] flex flex-col   ">
         <div className="h-[50%]">
           <Dialog>
             <DialogTrigger asChild>
@@ -45,7 +45,7 @@ const SecondaryProject = ({ project }: { project: ProjectType }) => {
             <h3 className="text-sm font-semibold text-primaryText">
               {project.type}
             </h3>
-            <p className="font-rubik text-xl font-semibold text-gray-900 leading-tight">
+            <p className="font-rubik text-xl font-semibold   leading-tight">
               {project.title}
             </p>
           </div>

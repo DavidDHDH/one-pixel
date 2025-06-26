@@ -50,7 +50,7 @@ export default function ExpertiseIAPreview() {
           <p className="sm:text-lg font-semibold leading-7 text-sand-600">
             Intelligence Artificielle
           </p>
-          <h2 className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900">
+          <h2 className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance  ">
             L&apos;IA au service de ton business à Saint-Barthélemy
           </h2>
           <p className="mt-6 sm:text-lg leading-8 text-gray-600 max-w-4xl mx-auto">

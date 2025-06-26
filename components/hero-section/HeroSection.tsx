@@ -28,7 +28,7 @@ export default function HeroSection() {
               <polygon points="0,0 90,0 50,100 0,100" />
             </svg>
 
-            <div className="relative px-6 py-20 sm:py-40 lg:py-48 lg:pl-8 xl:pl-0">
+            <div className="relative px-6 py-20 sm:py-32 lg:pl-8 xl:pl-0">
               <div className="mx-auto max-w-2xl lg:mx-0">
                 <div className="hidden z-10 mb-10 sm:flex items-center justify-start">
                   <div
@@ -41,7 +41,7 @@ export default function HeroSection() {
                     </AnimatedShinyText>
                   </div>
                 </div>
-                <h1 className="font-rubik text-pretty text-center sm:text-left text-4xl sm:text-[2.75rem] sm:leading-[3rem] tracking-tight text-gray-900 font-semibold mb-10">
+                <h1 className="font-rubik text-pretty text-center sm:text-left text-4xl sm:text-[2.75rem] sm:leading-[3rem] tracking-tight font-semibold mb-10">
                   Agence web à Saint-Barthélemy :{' '}
                   <span className="text-sand-700">
                     création de sites internet et applications métier
@@ -60,9 +60,7 @@ export default function HeroSection() {
                   <strong>gagner du temps</strong> et{' '}
                   <strong>attirer plus de clients</strong> avec des{' '}
                   <strong>sites web professionnels</strong> et des{' '}
-                  <strong>applications métier</strong> sur-mesure, le tout
-                  boosté avec de l&apos;
-                  <strong>IA personnalisée, locale, et sécurisée</strong>.
+                  <strong>applications métier</strong> sur-mesure.
                 </p>
                 <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
                   🔥 La seule agence web de l&apos;île qui met l&apos;IA à ton
@@ -71,6 +69,10 @@ export default function HeroSection() {
                 </p>
                 <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
                   📍 Basé à Saint-Barth. Disponible partout dans les Caraïbes.
+                </p>
+                <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
+                  🤖 Intelligence artificielle personnalisée, locale et
+                  sécurisée.
                 </p>
                 <div className="mt-10 flex items-center justify-between gap-x-6">
                   <div>

@@ -33,7 +33,7 @@ export default function ProcessSection() {
           <p className="sm:text-lg text-sand-700 text-pretty">
             <strong>Processus de création</strong>
           </p>
-          <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
+          <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold   sm:text-4xl">
             Comment ça se passe <strong>concrètement ?</strong>
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -49,9 +49,7 @@ export default function ProcessSection() {
                 <div className="flex items-center justify-center w-12 h-12 bg-sand-700 text-white rounded-full font-semibold text-lg mb-4">
                   {step.step}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  {step.title}
-                </h3>
+                <h3 className="text-lg font-semibold   mb-2">{step.title}</h3>
                 <p className="text-gray-600">{step.description}</p>
 
                 {index < processSteps.length - 1 && (

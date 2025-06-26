@@ -39,7 +39,7 @@ export default function AboutMe({ withStack }: { withStack?: boolean }) {
           <p className="sm:text-lg font-semibold leading-7 text-primaryText">
             On ne s&apos;est pas présenté…
           </p>
-          <h2 className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900">
+          <h2 className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance">
             Je suis David, développeur passionné par le code, le design, et les
             nouvelles possibilités offertes par l’intelligence artificielle
           </h2>
@@ -67,7 +67,7 @@ export default function AboutMe({ withStack }: { withStack?: boolean }) {
               une vraie <strong>compréhension</strong> de ton contexte terrain.
             </p>
             <p>
-              ❤️ Et mon kiff ? <strong>Trouver des solutions</strong> à des{' '}
+              ❤️ Mon kiff ? <strong>Trouver des solutions</strong> à des{' '}
               <strong>problèmes concrets</strong>. Je suis là pour te simplifier
               durablement, avec{' '}
               <strong>des outils qui bossent vraiment pour toi</strong>.
@@ -77,7 +77,7 @@ export default function AboutMe({ withStack }: { withStack?: boolean }) {
               {pros.map((pro, i) => (
                 <div
                   key={i}
-                  className="flex flex-col items-center gap-2 border p-2 rounded-lg bg-sand-50 w-40 text-gray-900 text-center text-sm sm:text-base"
+                  className="flex flex-col items-center gap-2 border p-2 rounded-lg bg-sand-50 w-40 text-center text-sm sm:text-base"
                 >
                   <Icon name={pro.icon} className="h-6 w-6 text-dark-900" />
                   <p>{pro.name}</p>
@@ -120,42 +120,38 @@ export default function AboutMe({ withStack }: { withStack?: boolean }) {
                   </p>
                   <ul className="list-disc pl-5 space-y-2">
                     <li>
-                      <span className="font-medium text-gray-900">
+                      <span className="font-medium">
                         Architecture modulaire & DDD
                       </span>{' '}
                       : séparation métier stricte, organisation par domaine,
                       logique métier encapsulée.
                     </li>
                     <li>
-                      <span className="font-medium text-gray-900">
+                      <span className="font-medium">
                         Clean Code & conventions
                       </span>{' '}
                       : nommage explicite, responsabilités bien réparties,
                       composants réutilisables.
                     </li>
                     <li>
-                      <span className="font-medium text-gray-900">
+                      <span className="font-medium">
                         TDD & tests automatisés
                       </span>{' '}
                       : fiabilité assurée, régressions évitées.
                     </li>
                     <li>
-                      <span className="font-medium text-gray-900">CI/CD</span> :
-                      déploiements instantanés sur chaque commit avec Vercel &
-                      GitHub Actions.
+                      <span className="font-medium">CI/CD</span> : déploiements
+                      instantanés sur chaque commit avec Vercel & GitHub
+                      Actions.
                     </li>
                     <li>
-                      <span className="font-medium text-gray-900">
-                        Stack moderne
-                      </span>{' '}
-                      : Next.js App Router, TypeScript, TailwindCSS, Supabase,
+                      <span className="font-medium">Stack moderne</span> :
+                      Next.js App Router, TypeScript, TailwindCSS, Supabase,
                       Prisma, Zustand, shadcn/ui.
                     </li>
                     <li>
-                      <span className="font-medium text-gray-900">
-                        Qualité & outillage
-                      </span>{' '}
-                      : ESLint, Prettier, Husky, commit conventions.
+                      <span className="font-medium">Qualité & outillage</span> :
+                      ESLint, Prettier, Husky, commit conventions.
                     </li>
                   </ul>
                 </div>

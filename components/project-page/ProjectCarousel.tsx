@@ -55,7 +55,7 @@ export const ProjectCarousel = ({
   return (
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <h2 className="font-rubik text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900 dark:text-white text-center mb-8">
+        <h2 className="font-rubik text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance   dark:text-white text-center mb-8">
           Galerie du projet
         </h2>
 

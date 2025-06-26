@@ -152,7 +152,7 @@ export const projects: Projects[] = [
         icon: 'Typescript',
       },
     ],
-    // slug: 'villa-care-management',
+    slug: 'villa-care-management',
     year: '2024',
     context:
       'Villa Care est une application SaaS de gestion locative pour villas à Saint-Barthélemy. Elle permet de gérer les réservations, les disponibilités, les travaux et les informations clients.',
@@ -298,7 +298,7 @@ export const projects: Projects[] = [
     seoCategory: 'WebApplication',
     seoPlatform: 'Web',
     description:
-      "Marketplace d’occasion pensée pour les Antilles Françaises, Frip West Indies connecte les vendeurs et acheteurs locaux via un système de paiement sécurisé et des livraisons Colissimo intégrées. Une plateforme simple et fiable pour acheter et vendre en toute confiance d'une île à l'autre.",
+      "Marketplace d’occasion pensée pour les Antilles Françaises, Frip West Indies connecte les vendeurs et acheteurs de Saint-Barthélemy, Saint-Martin, Guadeloupe et Martinique via un système de paiement sécurisé et des livraisons Colissimo intégrées. Une plateforme simple et fiable pour acheter et vendre en toute confiance d'une île à l'autre.",
     mainImage: FWImainScreen,
     location: 'Saint-Barthélemy, Saint-Martin, Guadeloupe, Martinique',
     features: [
@@ -368,7 +368,7 @@ export const projects: Projects[] = [
     seoCategory: 'WebApplication',
     seoPlatform: 'Web',
     description:
-      'Artizia FWI est une solution de mise en relation pensée pour les créateurs et prestataires de services des Antilles. Chacun peut créer son showroom en ligne pour exposer son activité, toucher les locaux et touristes, et recevoir des demandes de contact.',
+      'Artizia FWI est une solution de mise en relation pensée pour les créateurs et prestataires de services de Saint-Barthélemy et Saint-Martin. Chacun peut créer son showroom en ligne pour exposer son activité, toucher les locaux et touristes, et recevoir des demandes de contact.',
     mainImage: artiziaMainScreen,
     location: 'Saint-Barthélemy, Saint-Martin',
     features: [

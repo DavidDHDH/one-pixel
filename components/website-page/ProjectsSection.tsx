@@ -19,7 +19,7 @@ export default function ProjectsSection() {
           <p className="sm:text-lg text-sand-700 text-pretty">
             <strong>Certaines de mes réalisations</strong>
           </p>
-          <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
+          <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold   sm:text-4xl">
             Sites internet <strong>créés pour mes clients</strong>
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">

@@ -18,7 +18,7 @@ const Portfolio = () => {
             Projets sur-mesure réalisés pour des entreprises locales.
           </strong>
         </p>
-        <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
+        <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold   sm:text-4xl">
           Des <strong>applications et sites internet</strong> pensés pour les{' '}
           <strong>Antilles</strong>.
         </h2>

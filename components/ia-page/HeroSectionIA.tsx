@@ -29,7 +29,7 @@ export default function HeroSectionIA() {
           <div className="mb-8">
             <div
               className={cn(
-                'group inline-block rounded-full border border-white/30 bg-white/10 backdrop-blur-sm text-sm/6 text-gray-900 transition-all ease-in shadow-lg'
+                'group inline-block rounded-full border border-white/30 bg-white/10 backdrop-blur-sm text-sm/6   transition-all ease-in shadow-lg'
               )}
             >
               <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300">
@@ -40,12 +40,12 @@ export default function HeroSectionIA() {
           </div>
 
           {/* Main headline */}
-          <h1 className="font-rubik text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl mb-8">
+          <h1 className="font-rubik text-4xl font-semibold tracking-tight   sm:text-6xl mb-8">
             Révolutionne ton business avec{' '}
             <span className="text-sand-700">l&apos;IA</span>
           </h1>
 
-          <p className="text-lg leading-8 text-gray-900 max-w-xl mx-auto [text-shadow:0_2px_4px_rgba(255,255,255,0.8)] mb-10">
+          <p className="text-lg leading-8   max-w-xl mx-auto [text-shadow:0_2px_4px_rgba(255,255,255,0.8)] mb-10">
             <strong>
               Automatise tes tâches répétitives, améliore ton service client et
               prends des décisions éclairées
