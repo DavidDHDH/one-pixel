@@ -171,7 +171,7 @@ export default function BusinessAppSection() {
             <strong>Applications Métiers</strong>
           </p>
           <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
-            Solutions <strong>sur mesure</strong> pour digitaliser{' '}
+            Solutions logicielles <strong>sur mesure</strong> pour digitaliser{' '}
             <strong>ton activité</strong>
           </h2>
           <p className="mt-6 sm:text-lg leading-8 text-gray-600 max-w-4xl mx-auto">
