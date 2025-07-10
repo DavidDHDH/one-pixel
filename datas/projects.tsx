@@ -1,6 +1,5 @@
 import { TimelineEntry } from '@/components/project-page/ProcessTimeline'
 import { StackItem } from '@/components/stack/StackWithDescription'
-import { Icon12Hours } from '@tabler/icons-react'
 import { Code, Palette, Rocket, Search, TestTube, Zap } from 'lucide-react'
 import { StaticImageData } from 'next/image'
 import { Testimonial, testimonials } from './testimonials'
@@ -21,6 +20,7 @@ import { DocumentManagementCard } from '@/components/projects/villa-care/Documen
 import { PlanningCard } from '@/components/projects/villa-care/PlanningCard'
 import { StatisticsCard } from '@/components/projects/villa-care/StatisticsCard'
 import { WorkspacesCard } from '@/components/projects/villa-care/WorkspacesCard'
+import { Icon } from '@/components/shared/Icon'
 import DLmockup from '@/public/projects/DI-mockup.webp'
 import rwayMockup from '@/public/projects/Rway-mockup.webp'
 import SBmockup from '@/public/projects/SB-mockup.webp'
@@ -50,7 +50,7 @@ type Projects = {
   location: string
   year: string
   slug?: string
-  context?: string
+  context?: React.ReactNode
   goals?: {
     icon: React.ReactNode
     description: string
@@ -154,21 +154,45 @@ export const projects: Projects[] = [
     ],
     slug: 'villa-care-management',
     year: '2024',
-    context:
-      'Villa Care est une application SaaS de gestion locative pour villas à Saint-Barthélemy. Elle permet de gérer les réservations, les disponibilités, les travaux et les informations clients.',
+    context: (
+      <>
+        <p>
+          Saint Barthélémy et les Antilles Francaises en générale sont des lieux
+          touristiques toute l&apos;année. Il y a plus d&apos;
+          <strong>un millier de villas</strong> rien que sur Saint Barth, et
+          peut etre autant d&apos;agences de location{' '}
+          <em>(ou à peine moins 🫠)</em>
+        </p>
+        <p>
+          Les managers locaux doivent gérer des centaines de réservations, tenir
+          à jour les plannings sur excel, les envoyer régulièrement à tout le
+          monde, répondre aux demandes de disponibilités, mais aussi demander
+          les informations manquantes de chaque booking.
+        </p>
+        <p>
+          Et ce n&apos;est que la partie &quot;réservation&quot;. Il faut aussi
+          gérer la partie administrative, ainsi que les travaux,
+          l&apos;entretien, et la comptabilité.
+        </p>
+        <p>
+          Tout ca, dans autant de logiciels ou solutions différentes, et sans
+          aucune intégration entre elles.
+        </p>
+      </>
+    ),
     goals: [
       {
-        icon: <Icon12Hours />,
+        icon: <Icon name="calendarMonth" />,
         description:
           'Simplifier la gestion des réservations et des disponibilités.',
       },
       {
-        icon: <Icon12Hours />,
-        description: 'Automatiser les tâches répétitives.',
+        icon: <Icon name="users" />,
+        description: 'Centraliser les informations clients pour tout le monde',
       },
       {
-        icon: <Icon12Hours />,
-        description: 'Centraliser les informations clients.',
+        icon: <Icon name="mail" />,
+        description: 'Automatiser les tâches répétitives.',
       },
     ],
     process: [
@@ -177,12 +201,12 @@ export const projects: Projects[] = [
         icon: <Search className="w-5 h-5" />,
         content: (
           <ProcessStep
-            description="Compréhension approfondie des besoins métier et analyse des flux de travail existants."
+            description="Plusieurs échanges pour comprendre le contexte métier, décortiquer les habitudes de travail, et cadrer ensemble l’application idéale à concevoir."
             highlights={[
-              'Audit des processus actuels de gestion locative',
-              'Identification des points de friction',
-              'Définition des personas utilisateurs',
-              'Cartographie des flux de données',
+              'Exploration des idées initiales du client',
+              'Audit des processus actuels de gestion locative pour les optimiser',
+              'Identification des points de friction qui ralentissent le quotidien',
+              'Définition des priorités pour maximiser l’impact dès la première version',
             ]}
           />
         ),
@@ -192,12 +216,12 @@ export const projects: Projects[] = [
         icon: <Palette className="w-5 h-5" />,
         content: (
           <ProcessStep
-            description="Conception de l'architecture technique et création des maquettes UX/UI."
+            description="À partir des croquis initiaux, l’interface a été repensée pour créer des parcours utilisateurs clairs. La base de données a été conçue sur mesure pour couvrir l’ensemble des besoins métier."
             highlights={[
-              'Architecture base de données relationnelle',
-              'Design system et maquettes Figma',
-              'Définition des API et endpoints',
-              'Validation des parcours utilisateur',
+              'Transformation des idées papier en maquettes Figmaclaires',
+              'Conception de parcours utilisateurs optimisés',
+              'Modélisation d’une base de données adaptée aux besoins métier',
+              'Validation collaborative des écrans et des données avant développement',
             ]}
           />
         ),
@@ -222,12 +246,12 @@ export const projects: Projects[] = [
         icon: <Zap className="w-5 h-5" />,
         content: (
           <ProcessStep
-            description="Implémentation des automatisations pour réduire les tâches répétitives."
+            description="Mise en place d’automatisations pour fluidifier la gestion et limiter les actions manuelles du quotidien."
             highlights={[
-              "Envois automatiques d'emails",
+              'Envois automatiques d’emails',
               'Notifications temps réel',
-              'Workflows de validation',
-              'Synchronisation des données',
+              'Tâches planifiées côté serveur',
+              'Synchronisation des données entre les différents espaces utilisateurs',
             ]}
           />
         ),
@@ -237,27 +261,26 @@ export const projects: Projects[] = [
         icon: <TestTube className="w-5 h-5" />,
         content: (
           <ProcessStep
-            description="Phase de tests utilisateurs et optimisation des performances."
+            description="Une phase de tests terrain pour fiabiliser l’application et affiner l’expérience utilisateur."
             highlights={[
               'Tests avec les gestionnaires villa',
               'Optimisation des performances',
               'Correction des bugs identifiés',
-              "Amélioration de l'expérience utilisateur",
+              'Ajustements UX pour plus de fluidité',
             ]}
           />
         ),
       },
       {
-        title: 'Déploiement & Formation',
+        title: 'Déploiement & Suivi',
         icon: <Rocket className="w-5 h-5" />,
         content: (
           <ProcessStep
             description="Mise en production et accompagnement des utilisateurs."
             highlights={[
               'Déploiement sur infrastructure cloud',
-              'Formation des équipes utilisatrices',
-              'Documentation technique et user',
-              'Support et maintenance',
+              'Support technique et maintenance pour une application sans interruption',
+              'Nouvelles fonctionnalités ajoutées en continu',
             ]}
           />
         ),
@@ -267,21 +290,10 @@ export const projects: Projects[] = [
       paragraph: (
         <div>
           <p>
-            <span className="font-semibold">
-              Villa Care a transformé la gestion locative
-            </span>
-            , en permettant une augmentation de{' '}
-            <span className="font-semibold">40% des réservations</span> sur la
-            première année. La plateforme a automatisé plus de{' '}
-            <span className="font-semibold">
-              80% des tâches administratives
-            </span>
-            , libérant ainsi du temps précieux pour les propriétaires.
+            Une solution tout en un, ou chaque donnée est centralisée et
+            accessible par tous.
           </p>
-          <p>
-            Les retours clients sont exceptionnels, avec une satisfaction de{' '}
-            <span className="font-semibold">4.8/5</span> sur plus de 200 avis.
-          </p>
+          <p></p>
         </div>
       ),
       testimonials: testimonials.find(

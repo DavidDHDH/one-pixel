@@ -49,13 +49,13 @@ export const ProcessTimeline = ({ data }: { data: TimelineEntry[] }) => {
                   <div className="h-4 w-4 rounded-full bg-sand-300 dark:bg-sand-700 border border-sand-400 dark:border-sand-600 p-2" />
                 )}
               </div>
-              <h3 className="hidden md:block font-rubik text-xl md:pl-20 md:text-xl font-bold text-sand-600 dark:text-sand-500">
+              <h3 className="hidden md:block font-rubik text-xl md:pl-20 md:text-2xl font-bold text-sand-600 dark:text-sand-500">
                 {item.title}
               </h3>
             </div>
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block font-rubik text-2xl mb-4 text-left font-bold text-sand-600 dark:text-sand-500">
+              <h3 className="md:hidden block font-rubik text-xl mb-4 text-left font-bold text-sand-600 dark:text-sand-500">
                 {item.title}
               </h3>
               {item.content}

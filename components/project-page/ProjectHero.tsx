@@ -31,7 +31,7 @@ const ProjectHero = ({
       </div>
       {/* Colonne droite */}
       <div className="flex-1 flex items-start">
-        <p className="text-base text-gray-700">{description}</p>
+        <p className="text-base sm:text-lg text-gray-700">{description}</p>
       </div>
     </div>
     {/* Image mockup */}

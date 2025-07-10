@@ -51,8 +51,11 @@ export default function HeroSection() {
                 <p className="mt-6 text-pretty text-gray-600 sm:text-lg/8">
                   Je suis David, <strong>développeur web</strong> et fondateur
                   de l&apos;<strong>agence One Pixel</strong>, spécialisée en{' '}
-                  <strong>solutions d&apos;intelligence artificielle</strong>{' '}
-                  pour les entreprises.
+                  <strong>
+                    solutions web pour les entreprises et intelligence
+                    artificielle
+                  </strong>
+                  .
                 </p>
 
                 <p className="mt-4 text-pretty text-gray-600 sm:text-lg/8">
