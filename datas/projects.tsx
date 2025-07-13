@@ -118,37 +118,38 @@ export const projects: Projects[] = [
     stack: [
       {
         name: 'Figma',
-        description: 'Figma est un outil de design graphique.',
+        description:
+          "Design système et prototypes rapides pour la création de l'application.",
         icon: 'Figma',
       },
       {
         name: 'React',
         description:
-          "React est un framework JavaScript pour la création d'interfaces utilisateur.",
+          'Interface réactive pour la gestion en temps réel des réservations et propriétés.',
         icon: 'React',
       },
       {
         name: 'NextJS',
         description:
-          "NextJS est un framework JavaScript pour la création d'interfaces utilisateur.",
+          'Performance et SEO optimisés, confort et rapidité de développement.',
         icon: 'NextJS',
       },
       {
         name: 'TailwindCSS',
         description:
-          "TailwindCSS est un framework CSS pour la création d'interfaces utilisateur.",
+          'Design élégant et responsive adapté aux standards du luxe immobilier.',
         icon: 'TailwindCSS',
       },
       {
         name: 'Supabase',
         description:
-          "Supabase est un outil de base de données pour la création d'interfaces utilisateur.",
+          'Gestion sécurisée des données clients et synchronisation multi-utilisateurs.',
         icon: 'Supabase',
       },
       {
         name: 'Typescript',
         description:
-          "Typescript est un langage de programmation pour la création d'interfaces utilisateur.",
+          'Code robuste et maintenable pour une plateforme critique métier.',
         icon: 'Typescript',
       },
     ],
@@ -288,12 +289,21 @@ export const projects: Projects[] = [
     ],
     results: {
       paragraph: (
-        <div>
+        <div className="space-y-4">
           <p>
-            Une solution tout en un, ou chaque donnée est centralisée et
-            accessible par tous.
+            Une solution tout en un : réservations, travaux, inventaires,
+            comptabilité, statistiques, automatisations, etc.
           </p>
-          <p></p>
+          <p>
+            Un outil qui permet aux gestionnaires locaux de gagner du temps, de
+            gagner en efficacité, et d&apos;augmenter leur crédibilité face aux
+            propriétaires.
+          </p>
+          <p>
+            Plus d&apos;oublis d&apos;envoi de plannings, plus de relances
+            clients manuelles, plus de double ou triple saisies
+            d&apos;informations : une seule source de vérité pour tout le monde.
+          </p>
         </div>
       ),
       testimonials: testimonials.find(
