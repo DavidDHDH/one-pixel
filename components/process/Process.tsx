@@ -35,7 +35,7 @@ export default function ProcessSection() {
           <h2 className="sm:text-lg font-semibold leading-7 text-primaryText">
             Mon approche pour créer des outils web et IA sur-mesure
           </h2>
-          <p className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight  sm:text-4xl lg:text-balance text-gray-900">
+          <p className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight  sm:text-4xl lg:text-balance  ">
             Rien n&apos;est laissé au hasard.
           </p>
           <p className="mt-6 sm:text-lg leading-8 text-gray-600">

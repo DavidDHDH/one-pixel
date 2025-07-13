@@ -71,7 +71,7 @@ export default function Navbar() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-sm/6 font-semibold text-gray-900"
+                    className="text-sm/6 font-semibold  "
                   >
                     {item.name}
                   </a>
@@ -153,7 +153,7 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block rounded-xl px-4 py-3 text-lg font-semibold text-gray-900 hover:bg-sand-50 hover:text-sand-700 transition-all duration-200 transform hover:scale-105"
+                  className="block rounded-xl px-4 py-3 text-lg font-semibold   hover:bg-sand-50 hover:text-sand-700 transition-all duration-200 transform hover:scale-105"
                   style={{
                     animationDelay: `${index * 50}ms`,
                     animation: mobileMenuOpen

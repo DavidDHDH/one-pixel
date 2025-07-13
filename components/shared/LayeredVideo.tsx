@@ -16,6 +16,7 @@ const LayeredVideo: React.FC<LayeredVideoProps> = ({
   height = 600,
 }) => {
   const [isHovered, setIsHovered] = useState(false)
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const baseVideoRef = useRef<HTMLVideoElement>(null)
   const devVideoRef = useRef<HTMLVideoElement>(null)
   const ecransVideoRef = useRef<HTMLVideoElement>(null)
@@ -104,12 +105,21 @@ const LayeredVideo: React.FC<LayeredVideoProps> = ({
     }
   }, [autoPlay])
 
+  const handleMouseMove = (e: React.MouseEvent) => {
+    setMousePosition({ x: e.clientX, y: e.clientY })
+  }
+
   return (
     <div
       className={`relative inline-block ${className}`}
-      style={{ width, height }}
+      style={{
+        width,
+        height,
+        cursor: isHovered ? 'none' : 'default',
+      }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onMouseMove={handleMouseMove}
     >
       {layers.map((layer) => (
         <video
@@ -129,6 +139,22 @@ const LayeredVideo: React.FC<LayeredVideoProps> = ({
           <source src={layer.mp4} type="video/mp4; codecs=hevc" />
         </video>
       ))}
+
+      {/* Curseur personnalisé */}
+      {isHovered && (
+        <div
+          className="fixed pointer-events-none z-[9999]"
+          style={{
+            left: mousePosition.x - 16,
+            top: mousePosition.y - 16,
+            transform: 'translate(-50%, -50%)',
+          }}
+        >
+          <div className="bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md">
+            <span className="text-sm">☕</span>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

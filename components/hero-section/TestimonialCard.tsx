@@ -48,6 +48,8 @@ export default function TestimonialCard({
               <Image
                 src={testimonial.author.image}
                 alt={`Photo de ${testimonial.author.name}, ${testimonial.author.company}`}
+                width={48}
+                height={48}
                 className="h-12 w-12 rounded-full object-cover ring-2 ring-gray-100"
               />
             </div>
@@ -126,6 +128,8 @@ export default function TestimonialCard({
           <Image
             src={testimonial.author.image}
             alt={`Photo de ${testimonial.author.name}, ${testimonial.author.company}`}
+            width={48}
+            height={48}
             className="h-12 w-12 rounded-full object-cover ring-2 ring-gray-100"
           />
         </div>

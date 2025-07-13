@@ -32,7 +32,7 @@ export default function FAQSection({
     >
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-rubik text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="font-rubik text-3xl font-semibold tracking-tight   sm:text-4xl">
             {title}
           </h2>
           {subtitle && (
@@ -49,10 +49,7 @@ export default function FAQSection({
               itemScope
               itemType="https://schema.org/Question"
             >
-              <h3
-                className="text-lg font-semibold text-gray-900 mb-3"
-                itemProp="name"
-              >
+              <h3 className="text-lg font-semibold   mb-3" itemProp="name">
                 {faq.question}
               </h3>
               <div
@@ -70,7 +67,7 @@ export default function FAQSection({
         <div className="mt-16 text-center">
           {backgroundColor === 'white' && (
             <div className="bg-sand-50 rounded-2xl p-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+              <h3 className="text-xl font-semibold   mb-4">
                 Une autre question ?
               </h3>
               <p className="text-gray-600 mb-6">

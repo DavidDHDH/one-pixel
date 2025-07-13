@@ -43,7 +43,7 @@ export default function MainProject({
                     <h3 className="text-base font-semibold leading-7 text-primaryText">
                       {project.type}
                     </h3>
-                    <p className="font-rubik mt-1 text-pretty text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
+                    <p className="font-rubik mt-1 text-pretty text-2xl font-semibold tracking-tight   sm:text-3xl">
                       {project.title}
                     </p>
                   </>
@@ -52,7 +52,7 @@ export default function MainProject({
                     <p className="text-base font-semibold leading-7 text-primaryText">
                       {project.type}
                     </p>
-                    <h3 className="font-rubik mt-1 text-pretty text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
+                    <h3 className="font-rubik mt-1 text-pretty text-2xl font-semibold tracking-tight   sm:text-3xl">
                       {project.title}
                     </h3>
                   </>
@@ -63,7 +63,7 @@ export default function MainProject({
                 <dl className="my-6 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none flex-grow">
                   {project.features.map((feature) => (
                     <div key={feature.name} className="relative pl-9">
-                      <dt className="inline font-semibold text-gray-900">
+                      <dt className="inline font-semibold  ">
                         <Icon
                           name={feature.icon}
                           aria-hidden="true"

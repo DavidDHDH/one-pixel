@@ -55,7 +55,7 @@ export default function WhyCustomSection() {
           <p className="sm:text-lg text-sand-700 text-pretty">
             <strong>Pourquoi du sur mesure ?</strong>
           </p>
-          <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
+          <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold   sm:text-4xl">
             Logiciel <strong>sur mesure</strong> vs solution existante :<br />
             <span className="text-sand-700">6 avantages décisifs</span>
           </h2>
@@ -84,7 +84,7 @@ export default function WhyCustomSection() {
 
                 {/* Contenu */}
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  <h3 className="text-lg font-semibold   mb-2">
                     {benefit.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed mb-3">

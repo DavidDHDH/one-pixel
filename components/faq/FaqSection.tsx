@@ -11,6 +11,12 @@ const defaultData = [
       'Je développe des applications métier, des plateformes SaaS et des sites internet pour les entreprises des Antilles. Chaque projet est pensé pour résoudre un problème concret : automatiser une tâche, mieux communiquer ou gagner du temps.',
   },
   {
+    id: 11,
+    question: "Tu n'accompagnes que sur Saint-Barthélemy et Saint-Martin ?",
+    answer:
+      'Non, je suis basé à Saint Barth mais je peux faire des projets et me déplacer si besoin partout dans les Antilles françaises (Saint Martin, Guadeloupe, Martinique, etc.).',
+  },
+  {
     id: 6,
     question: 'Tu travailles seul ?',
     answer:
@@ -81,7 +87,7 @@ export default function FaqSection() {
           <h2 className="sm:text-lg font-semibold leading-7 text-primaryText">
             Questions fréquentes.
           </h2>
-          <p className="text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900">
+          <p className="text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance  ">
             Tu te poses peut-être l&apos;une de ces questions.
           </p>
           <p className="mt-6 sm:text-lg leading-8 text-gray-600">

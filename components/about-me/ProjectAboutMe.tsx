@@ -9,7 +9,7 @@ export const ProjectAboutMe = () => {
           <p className="sm:text-lg font-semibold leading-7 text-primaryText">
             On ne s&apos;est pas présenté…
           </p>
-          <h2 className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900">
+          <h2 className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance ">
             Je suis David Heimfert, développeur web à Saint-Barthélemy,
             passionné par le code et l&apos;Intelligence Artificielle.
           </h2>

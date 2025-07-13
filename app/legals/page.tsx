@@ -2,16 +2,14 @@ import { CONTACT_EMAIL } from '@/lib/const'
 
 export default function Legals() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8 text-gray-900">
+    <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
       <div className="prose prose-lg prose-gray mx-auto">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-12">
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl mt-12">
           ⚙️ Mentions légales
         </h1>
         <section className="-mt-12">
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Éditeur du site
-            </h2>
+            <h2 className="text-2xl font-semibold mb-4">Éditeur du site</h2>
             <div className="space-y-2">
               <p>
                 <span className="font-medium">Nom de l&apos;entreprise :</span>{' '}
@@ -47,9 +45,7 @@ export default function Legals() {
           </div>
 
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Hébergeur
-            </h2>
+            <h2 className="text-2xl font-semibold mb-4">Hébergeur</h2>
             <div className="space-y-2">
               <p>
                 <span className="font-medium">Nom de l&apos;hébergeur :</span>{' '}
@@ -74,7 +70,7 @@ export default function Legals() {
           </div>
 
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+            <h2 className="text-2xl font-semibold mb-4">
               Propriété intellectuelle
             </h2>
             <p>
@@ -96,7 +92,7 @@ export default function Legals() {
           </div>
 
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+            <h2 className="text-2xl font-semibold mb-4">
               Données personnelles
             </h2>
             <div className="space-y-4">
@@ -124,9 +120,7 @@ export default function Legals() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Cookies
-            </h2>
+            <h2 className="text-2xl font-semibold mb-4">Cookies</h2>
             <p>
               Ce site n&apos;utilise{' '}
               <span className="font-semibold">

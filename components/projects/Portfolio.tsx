@@ -18,15 +18,19 @@ const Portfolio = () => {
             Projets sur-mesure réalisés pour des entreprises locales.
           </strong>
         </p>
-        <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
+        <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold   sm:text-4xl">
           Des <strong>applications et sites internet</strong> pensés pour les{' '}
           <strong>Antilles</strong>.
         </h2>
         <p className="mt-6 sm:text-lg leading-8 text-gray-600">
-          Je développe pour les entreprises de Saint-Barthélemy, de Saint-Martin
-          et de toutes les Antilles françaises des solutions digitales
-          sur-mesure : sites internet, logiciels métiers personnalisés,
-          applications intelligentes intégrant de l’IA.
+          Je développe pour les entreprises de <strong>Saint-Barthélemy</strong>
+          , de <strong>Saint-Martin</strong> et de toutes les{' '}
+          <strong>Antilles françaises</strong> des solutions digitales
+          sur-mesure :{' '}
+          <strong>
+            sites internet, logiciels métiers personnalisés, applications
+            intelligentes intégrant de l’IA
+          </strong>
         </p>
       </div>
       {mainProjects.map((project, index) => (

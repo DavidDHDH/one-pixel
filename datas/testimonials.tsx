@@ -1,4 +1,5 @@
 import arnaud from '@/public/testimonials/arnaud.webp'
+import clement from '@/public/testimonials/clement.png'
 import placeholder from '@/public/testimonials/dummy-profile-pic-300x300.webp'
 import melina from '@/public/testimonials/frip_app.webp'
 import margaux from '@/public/testimonials/margaux.webp'
@@ -10,7 +11,7 @@ export type Testimonial = {
   author: {
     name: string
     company: string
-    image: StaticImageData
+    image: StaticImageData | string
   }
 }
 
@@ -33,41 +34,25 @@ export const testimonials: Testimonial[] = [
       image: melina,
     },
   },
-
   {
     body: (
       <p>
+        We had a project to develop a complex site.{' '}
         <span className="font-bold">
-          Efficacité, professionnalisme, réactivité et gentillesse
+          David was able to meet our expectations.
         </span>{' '}
-        sont les atouts premiers de David. Nous avons ce que nous souhaitons
-        depuis si longtemps :{' '}
-        <span className="font-bold">un site magnifique</span> ! Merci encore
-        David.
-      </p>
-    ),
-    author: {
-      name: 'Pierre B.',
-      company: 'The Tile & Design Shop',
-      image: pierre,
-    },
-  },
-  {
-    body: (
-      <p>
-        J’ai fait appel aux services de David pour la{' '}
-        <span className="font-bold">création d’un logiciel</span> et suis plus
-        que satisfaite de son travail.{' '}
+        We let ourselves be guided, while giving him our ideas and desires.{' '}
         <span className="font-bold">
-          Efficacité, rapidité, professionnalisme et écoute
-        </span>
-        . Je recommande sans hésiter!
+          David knew how to listen, explain, and give good advice.
+        </span>{' '}
+        Very responsive and conscientious.{' '}
+        <span className="font-bold">We recommend him 100%</span>.
       </p>
     ),
     author: {
-      name: 'Margaux B.',
-      company: 'Villa Care',
-      image: margaux,
+      name: 'Clement B.',
+      company: 'Artizia FWI',
+      image: clement,
     },
   },
   {
@@ -89,6 +74,44 @@ export const testimonials: Testimonial[] = [
       image: arnaud,
     },
   },
+
+  {
+    body: (
+      <p>
+        J’ai fait appel aux services de David pour la{' '}
+        <span className="font-bold">création d’un logiciel</span> et suis plus
+        que satisfaite de son travail.{' '}
+        <span className="font-bold">
+          Efficacité, rapidité, professionnalisme et écoute
+        </span>
+        . Je recommande sans hésiter!
+      </p>
+    ),
+    author: {
+      name: 'Margaux B.',
+      company: 'Villa Care',
+      image: margaux,
+    },
+  },
+  {
+    body: (
+      <p>
+        <span className="font-bold">
+          Efficacité, professionnalisme, réactivité et gentillesse
+        </span>{' '}
+        sont les atouts premiers de David. Nous avons ce que nous souhaitons
+        depuis si longtemps :{' '}
+        <span className="font-bold">un site magnifique</span> ! Merci encore
+        David.
+      </p>
+    ),
+    author: {
+      name: 'Pierre B.',
+      company: 'The Tile & Design Shop',
+      image: pierre,
+    },
+  },
+
   {
     body: (
       <p>

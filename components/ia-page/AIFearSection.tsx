@@ -30,7 +30,7 @@ export default function AIFearSection() {
     <section className="py-24 bg-sand-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-rubik text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
+          <h2 className="font-rubik text-3xl font-bold tracking-tight   sm:text-4xl mb-6">
             Doit-on avoir peur de l&apos;IA ?
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -59,7 +59,7 @@ export default function AIFearSection() {
 
         <div className="relative rounded-xl border border-gray-200 bg-white p-8 transition-all duration-300 hover:border-sand-500">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            <h3 className="text-2xl font-bold   mb-6">
               L&apos;IA est une révolution aussi forte que ne l&apos;a été
               internet.
             </h3>

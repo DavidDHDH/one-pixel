@@ -53,7 +53,7 @@ export default function FeaturesSection() {
           <p className="sm:text-lg text-sand-700 text-pretty">
             <strong>Pourquoi choisir One Pixel ?</strong>
           </p>
-          <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
+          <h2 className="font-rubik mt-2 text-balance text-3xl tracking-tight font-bold   sm:text-4xl">
             Un site internet qui <strong>travaille pour ton business</strong>
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -77,7 +77,7 @@ export default function FeaturesSection() {
                   itemType="https://schema.org/Organization"
                   content="One Pixel"
                 />
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7  ">
                   <feature.icon
                     className="h-5 w-5 flex-none text-sand-700"
                     aria-hidden="true"

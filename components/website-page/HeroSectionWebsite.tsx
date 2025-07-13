@@ -40,13 +40,13 @@ export default function HeroSectionWebsite() {
           </div>
 
           {/* Main headline */}
-          <h1 className="font-rubik text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
+          <h1 className="font-rubik text-4xl font-semibold tracking-tight   sm:text-6xl">
             Ton{' '}
             <span className="text-sand-700">site internet professionnel</span>{' '}
             en 2 semaines
           </h1>
 
-          <p className="mt-6 text-lg leading-8 text-gray-900 max-w-xl mx-auto [text-shadow:0_2px_4px_rgba(255,255,255,0.8)]">
+          <p className="mt-6 text-lg leading-8   max-w-xl mx-auto [text-shadow:0_2px_4px_rgba(255,255,255,0.8)]">
             <strong>Fini les sites amateurs qui ne convertissent pas.</strong>{' '}
             Je crée des sites web qui attirent tes clients et génèrent des
             résultats concrets pour ton business à Saint-Barthélemy.

@@ -40,7 +40,7 @@ export default function IAIntegrationSection() {
           <p className="sm:text-lg text-sand-700 text-pretty">
             <strong>Intelligence artificielle</strong>
           </p>
-          <h2 className="font-rubik mt-2 text-pretty text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
+          <h2 className="font-rubik mt-2 text-pretty text-3xl tracking-tight font-bold   sm:text-4xl">
             Intégrer l&apos;IA à mon site pour améliorer l&apos;expérience
             client
           </h2>

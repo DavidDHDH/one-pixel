@@ -28,9 +28,7 @@ export default function StackWithDescription({
                   name={item.name}
                   className="h-14 w-14 object-contain mb-4"
                 />
-                <h3 className="text-sm font-medium text-gray-900 mb-2">
-                  {item.name}
-                </h3>
+                <h3 className="text-sm font-medium   mb-2">{item.name}</h3>
                 <p className="text-xs text-gray-600 leading-relaxed">
                   {item.description}
                 </p>

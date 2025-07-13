@@ -30,9 +30,7 @@ export default function IACard({ useCase, keyPrefix = '' }: IACardProps) {
       )}
 
       {/* Titre et description */}
-      <h3 className="text-lg font-semibold text-gray-900 mb-2">
-        {useCase.title}
-      </h3>
+      <h3 className="text-lg font-semibold   mb-2">{useCase.title}</h3>
       <p className="text-gray-600 text-sm leading-relaxed mb-4">
         {useCase.description}
       </p>

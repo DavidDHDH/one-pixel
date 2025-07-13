@@ -11,7 +11,7 @@ export default function TestimonialsSection() {
             <h2 className="sm:text-lg font-semibold leading-7 text-primaryText">
               Avis & témoignages clients
             </h2>
-            <p className="font-rubik mt-2 text-balance text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="font-rubik mt-2 text-balance text-3xl font-semibold tracking-tight   sm:text-4xl">
               La confiance est mutuelle.
             </p>
           </div>

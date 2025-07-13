@@ -50,13 +50,17 @@ export default function ExpertiseIAPreview() {
           <p className="sm:text-lg font-semibold leading-7 text-sand-600">
             Intelligence Artificielle
           </p>
-          <h2 className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance text-gray-900">
+          <h2 className="font-rubik mt-2 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl lg:text-balance  ">
             L&apos;IA au service de ton business à Saint-Barthélemy
           </h2>
           <p className="mt-6 sm:text-lg leading-8 text-gray-600 max-w-4xl mx-auto">
             Automatisation intelligente, expérience client augmentée, analyse
-            prédictive... Découvre des cas d&apos;usage concrets pour
-            révolutionner ton activité, sans jamais perdre la main.
+            prédictive... L&apos;IA commence à être partout. Dans certains cas,
+            son utilisation à fait ses preuves.
+          </p>
+          <p className="mt-6 sm:text-lg leading-8 text-gray-600 max-w-4xl mx-auto">
+            Découvre des cas d&apos;usage concrets pour révolutionner ton
+            activité, sans jamais perdre la main.
           </p>
         </div>
         {/* Exemples d'use cases */}
