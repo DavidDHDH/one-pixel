@@ -16,7 +16,7 @@ import { ProcessStep } from '@/components/project-page/ProcessStep'
 import { AutomationCard } from '@/components/projects/villa-care/AutomationCard'
 import { CompactDarkModeCard } from '@/components/projects/villa-care/CompactDarkModeCard'
 import { CompactLanguageCard } from '@/components/projects/villa-care/CompactLanguageCard'
-import { DocumentManagementCard } from '@/components/projects/villa-care/DocumentManagementCard'
+import { AccountingCard } from '@/components/projects/villa-care/AccountingCard'
 import { PlanningCard } from '@/components/projects/villa-care/PlanningCard'
 import { StatisticsCard } from '@/components/projects/villa-care/StatisticsCard'
 import { WorkspacesCard } from '@/components/projects/villa-care/WorkspacesCard'
@@ -84,10 +84,10 @@ export const projects: Projects[] = [
       <PlanningCard key="1" />,
       <WorkspacesCard key="2" />,
       <AutomationCard key="3" />,
-      <DocumentManagementCard key="4" />,
+      <StatisticsCard key="4" />,
       <CompactLanguageCard key="5" />,
       <CompactDarkModeCard key="6" />,
-      <StatisticsCard key="7" />,
+      <AccountingCard key="7" />,
     ],
     features: [
       {
@@ -113,6 +113,12 @@ export const projects: Projects[] = [
         description:
           "Différents espaces et niveaux d'accès pour les propriétaires, les managers, les employés, les agences de locations.",
         icon: 'users',
+      },
+      {
+        name: 'Comptabilité.',
+        description:
+          "Gestion complète de la facturation, rapports mensuels et annuels, export Excel pour une comptabilité simplifiée.",
+        icon: 'calculator',
       },
     ],
     stack: [
