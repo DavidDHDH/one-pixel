@@ -6,17 +6,23 @@ import { Testimonial, testimonials } from './testimonials'
 
 import artiziaMainScreen from '@/public/projects/artizia/artizia-fwi-main-screen.webp'
 import FWImainScreen from '@/public/projects/fwi/frip-west-indies-main-screen.webp'
+import VCbooking from '@/public/projects/villacare/booking.webp'
+import VCinventory from '@/public/projects/villacare/inventory.webp'
+import VCinvoices from '@/public/projects/villacare/invoices.webp'
 import VCmainProject from '@/public/projects/villacare/main-project-villa-care.webp'
 import VCmainScreen from '@/public/projects/villacare/main-screen-villa-care.webp'
-import VC1 from '@/public/projects/villacare/villa-care-1.webp'
+import VCmonthlyreport from '@/public/projects/villacare/monthly-report.webp'
+import VCproject from '@/public/projects/villacare/project.webp'
+import VCsettings from '@/public/projects/villacare/villa-settings.webp'
+
 import VC2 from '@/public/projects/villacare/villa-care-2.webp'
 import VC6 from '@/public/projects/villacare/villa-care-6.webp'
 
 import { ProcessStep } from '@/components/project-page/ProcessStep'
+import { AccountingCard } from '@/components/projects/villa-care/AccountingCard'
 import { AutomationCard } from '@/components/projects/villa-care/AutomationCard'
 import { CompactDarkModeCard } from '@/components/projects/villa-care/CompactDarkModeCard'
 import { CompactLanguageCard } from '@/components/projects/villa-care/CompactLanguageCard'
-import { DocumentManagementCard } from '@/components/projects/villa-care/DocumentManagementCard'
 import { PlanningCard } from '@/components/projects/villa-care/PlanningCard'
 import { StatisticsCard } from '@/components/projects/villa-care/StatisticsCard'
 import { WorkspacesCard } from '@/components/projects/villa-care/WorkspacesCard'
@@ -78,16 +84,26 @@ export const projects: Projects[] = [
 
     mainImage: VCmainScreen,
     mainProjectImage: VCmainProject,
-    carouselImages: [VC1, VC2, VC6],
+    carouselImages: [
+      VC2,
+      VCmainScreen,
+      VCbooking,
+      VCinventory,
+      VCinvoices,
+      VCmonthlyreport,
+      VCproject,
+      VCsettings,
+      VC6,
+    ],
     location: 'Saint-Barthélemy',
     bentoItems: [
       <PlanningCard key="1" />,
       <WorkspacesCard key="2" />,
       <AutomationCard key="3" />,
-      <DocumentManagementCard key="4" />,
+      <StatisticsCard key="4" />,
       <CompactLanguageCard key="5" />,
       <CompactDarkModeCard key="6" />,
-      <StatisticsCard key="7" />,
+      <AccountingCard key="7" />,
     ],
     features: [
       {
@@ -99,13 +115,13 @@ export const projects: Projects[] = [
       {
         name: 'Automatisations.',
         description:
-          "Envois automatiques des plannings, des confirmations de réservations, des nouvelles demandes, des rappels d'informations manquantes...",
+          "Envois auto des plannings, des confirmations, des nouvelles demandes, des rappels d'informations manquantes, etc.",
         icon: 'mail',
       },
       {
-        name: 'Statistiques.',
+        name: 'Comptabilité.',
         description:
-          "Analyse des performances des biens, des revenus et des taux d'occupation.",
+          'Gestion complète de la facturation, rapports mensuels et annuels, export Excel, statistiques pour une comptabilité simplifiée.',
         icon: 'stats',
       },
       {
