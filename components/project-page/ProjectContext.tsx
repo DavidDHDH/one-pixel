@@ -25,13 +25,13 @@ const ProjectContext: React.FC<ProjectContextProps> = ({ context, goals }) => (
       {goals && goals.length > 0 && (
         <div className="justify-self-center">
           <h3 className="text-lg font-semibold mb-4">Objectifs principaux :</h3>
-          <ul className="space-y-2 text-base sm:text-lg text-gray-700 ">
+          <ul className="space-y-3 text-base sm:text-lg text-gray-700 ">
             {goals.map((goal, idx) => (
               <li key={idx} className="">
-                <span className="flex items-center gap-2">
-                  {goal.icon}
+                <p className="flex items-start gap-2 text-pretty">
+                  <span>{goal.icon}</span>
                   {goal.description}
-                </span>
+                </p>
               </li>
             ))}
           </ul>

@@ -19,6 +19,13 @@ import VC2 from '@/public/projects/villacare/villa-care-2.webp'
 import VC6 from '@/public/projects/villacare/villa-care-6.webp'
 
 import { ProcessStep } from '@/components/project-page/ProcessStep'
+import { MessagingCard } from '@/components/projects/frip-west-indies/MessagingCard'
+import { PaymentCard } from '@/components/projects/frip-west-indies/PaymentCard'
+import { PriceNegotiationCard } from '@/components/projects/frip-west-indies/PriceNegotiationCard'
+import { SearchCard } from '@/components/projects/frip-west-indies/SearchCard'
+import { ShippingLabelCard } from '@/components/projects/frip-west-indies/ShippingLabelCard'
+import { SocialFeaturesCard } from '@/components/projects/frip-west-indies/SocialFeaturesCard'
+import { WalletCard } from '@/components/projects/frip-west-indies/WalletCard'
 import { AccountingCard } from '@/components/projects/villa-care/AccountingCard'
 import { AutomationCard } from '@/components/projects/villa-care/AutomationCard'
 import { CompactDarkModeCard } from '@/components/projects/villa-care/CompactDarkModeCard'
@@ -336,9 +343,18 @@ export const projects: Projects[] = [
     seoCategory: 'WebApplication',
     seoPlatform: 'Web',
     description:
-      "Marketplace d’occasion pensée pour les Antilles Françaises, Frip West Indies connecte les vendeurs et acheteurs de Saint-Barthélemy, Saint-Martin, Guadeloupe et Martinique via un système de paiement sécurisé et des livraisons Colissimo intégrées. Une plateforme simple et fiable pour acheter et vendre en toute confiance d'une île à l'autre.",
+      "Marketplace d'occasions pensée pour les Antilles Françaises, Frip West Indies connecte les vendeurs et acheteurs de Saint-Barthélemy, Saint-Martin, Guadeloupe et Martinique via un système de paiement sécurisé et des livraisons Colissimo intégrées. Une plateforme simple et fiable pour acheter et vendre en toute confiance d'une île à l'autre.",
     mainImage: FWImainScreen,
     location: 'Saint-Barthélemy, Saint-Martin, Guadeloupe, Martinique',
+    bentoItems: [
+      <MessagingCard key="1" />,
+      <SocialFeaturesCard key="2" />,
+      <SearchCard key="3" />,
+      <PaymentCard key="4" />,
+      <PriceNegotiationCard key="5" />,
+      <ShippingLabelCard key="6" />,
+      <WalletCard key="7" />,
+    ],
     features: [
       {
         name: 'Paiements sécurisés.',
@@ -396,6 +412,159 @@ export const projects: Projects[] = [
         icon: 'Supabase',
       },
     ],
+    context: (
+      <>
+        <p>
+          Dans les Antilles, impossible d&apos;utiliser Vinted. Sur Saint Barth
+          par exemple, la vente d&apos;articles d&apos;occasion se passe par
+          Facebook et des groupes spécialisés. {''}
+          <em>So 2010.</em>
+        </p>
+        <p>
+          Ma cliente a donc voulu créer un service qui permette de vendre ses
+          articles d&apos;occasion, avec quelques adaptations liées à la région.
+        </p>
+      </>
+    ),
+    goals: [
+      {
+        icon: <Icon name="search" />,
+        description:
+          "Faciliter la revente d'articles d'occasion avec un site moderne proposant une recherche avancée",
+      },
+      {
+        icon: <Icon name="creditcard" />,
+        description:
+          "Permettre de payer directement dans l'app pour permettre les reventes inter-îles",
+      },
+      {
+        icon: <Icon name="delivery" />,
+        description:
+          'Faciliter les envois avec une connexion directe Colissimo',
+      },
+      {
+        icon: <Icon name="users" />,
+        description:
+          "Proposer la remise en main propre, bien plus pratique lorsque l'on vit sur la même île",
+      },
+    ],
+    process: [
+      {
+        title: 'Analyse & Conception',
+        icon: <Search className="w-5 h-5" />,
+        content: (
+          <ProcessStep
+            description="Étude du marché de l'occasion aux Antilles et des habitudes d'achat-vente actuelles sur les réseaux sociaux."
+            highlights={[
+              'Analyse des groupes Facebook de vente aux Antilles',
+              'Identification des points de friction du système actuel',
+              "Conception d'une solution adaptée au contexte insulaire",
+              'Définition des fonctionnalités clés pour le marché local',
+            ]}
+          />
+        ),
+      },
+      {
+        title: 'Design UX/UI',
+        icon: <Palette className="w-5 h-5" />,
+        content: (
+          <ProcessStep
+            description="Création d'une interface intuitive inspirée des meilleures marketplaces tout en répondant aux spécificités antillaises."
+            highlights={[
+              'Design mobile-first pour une utilisation optimale',
+              'Parcours utilisateur simplifié pour poster une annonce',
+              'Système de recherche et filtres avancés',
+              'Interface de messagerie intégrée',
+            ]}
+          />
+        ),
+      },
+      {
+        title: 'Développement Marketplace',
+        icon: <Code className="w-5 h-5" />,
+        content: (
+          <ProcessStep
+            description="Développement de la plateforme avec toutes les fonctionnalités essentielles d'une marketplace moderne."
+            highlights={[
+              "Système d'annonces avec photos multiples",
+              'Moteur de recherche performant',
+              'Gestion des profils utilisateurs',
+              'Système de favoris et notifications',
+            ]}
+          />
+        ),
+      },
+      {
+        title: 'Paiements & Livraisons',
+        icon: <Zap className="w-5 h-5" />,
+        content: (
+          <ProcessStep
+            description="Intégration des systèmes de paiement sécurisé et de livraison pour faciliter les transactions inter-îles."
+            highlights={[
+              'Intégration Stripe pour les paiements sécurisés',
+              'Connexion API Colissimo pour les envois',
+              "Génération automatique des étiquettes d'expédition",
+              'Système de protection acheteur/vendeur',
+            ]}
+          />
+        ),
+      },
+      {
+        title: 'Features Sociales',
+        icon: <TestTube className="w-5 h-5" />,
+        content: (
+          <ProcessStep
+            description="Ajout des fonctionnalités sociales pour créer une vraie communauté d'acheteurs et vendeurs."
+            highlights={[
+              'Messagerie instantanée entre utilisateurs',
+              "Système d'évaluations et avis",
+              'Profils vendeurs avec statistiques',
+              'Fonctionnalités de partage social',
+            ]}
+          />
+        ),
+      },
+      {
+        title: 'Lancement & Croissance',
+        icon: <Rocket className="w-5 h-5" />,
+        content: (
+          <ProcessStep
+            description="Déploiement progressif et accompagnement pour assurer l'adoption de la plateforme."
+            highlights={[
+              'Lancement beta avec utilisateurs tests',
+              'Optimisation basée sur les retours',
+              'Campagne de lancement sur les réseaux sociaux',
+              'Support continu et nouvelles fonctionnalités',
+            ]}
+          />
+        ),
+      },
+    ],
+    results: {
+      paragraph: (
+        <div className="space-y-4">
+          <p>
+            Une marketplace moderne qui révolutionne la vente d&apos;occasion
+            aux Antilles, offrant enfin une alternative professionnelle aux
+            groupes Facebook.
+          </p>
+          <p>
+            Grâce aux paiements sécurisés et à l&apos;intégration Colissimo, les
+            utilisateurs peuvent désormais acheter et vendre en toute confiance
+            entre les îles.
+          </p>
+          <p>
+            La plateforme facilite les transactions locales avec l&apos;option
+            de remise en main propre, tout en ouvrant le marché à
+            l&apos;ensemble des Antilles françaises.
+          </p>
+        </div>
+      ),
+      testimonials: testimonials.find(
+        (testimonial) => testimonial.author.company === 'Frip West Indies'
+      )!,
+    },
+    slug: 'frip-west-indies',
     year: '2024',
   },
   {
@@ -467,6 +636,7 @@ export const projects: Projects[] = [
         icon: 'Supabase',
       },
     ],
+
     year: '2024',
   },
   {
